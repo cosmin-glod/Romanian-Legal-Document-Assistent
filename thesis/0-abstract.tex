@@ -1,0 +1,13 @@
+\begin{abstractpage}
+\begin{singlespace}
+
+\begin{abstract}{romanian}
+Această lucrare prezintă un asistent conversațional destinat cetățenilor români, care răspunde la întrebări despre proceduri administrative (înregistrarea nașterii, încheierea căsătoriei și închirierea unei locuințe), pe baza datelor structurate publicate de proiectul Code for Romania pe \emph{cezicelegea.ro}. Sistemul folosește o arhitectură RAG (Retrieval-Augmented Generation) construită deasupra unui model lingvistic mare (LLM) cuantizat, executat local pe hardware de larg consum, fără apeluri către servicii externe. Spre deosebire de lucrările existente în domeniu, contribuția centrală este un strat de verificare a ieșirii: răspunsul modelului este forțat să se conformeze unei scheme tipizate, iar un set de reguli verifică, după generare, prezența și validitatea citațiilor și faptul că documentele menționate apar efectiv în surse, abordând astfel categoria de erori nesemnalate identificate ca lucrare viitoare în Gheorghe et al. (2026). Sunt prezentate arhitectura sistemului, alegerile de implementare și un cadru de evaluare a calității regăsirii, a fidelității răspunsurilor și a costului computațional, comparând niveluri de cuantizare și scări de model.
+\end{abstract}
+
+\begin{abstract}{english}
+This thesis presents a conversational assistant for Romanian citizens that answers questions about administrative procedures (birth, marriage, housing), grounded in the structured data published by the Code for Romania project at \emph{cezicelegea.ro}. The system is built on a Retrieval-Augmented Generation (RAG) architecture on top of a quantized Large Language Model (LLM) running locally on commodity hardware, with no calls to external services. The central contribution, beyond data and domain choices, is an \emph{output-verification} layer: the model's response is constrained to a typed schema, and a set of rules check, after generation, the presence and validity of citations and that any mentioned documents actually appear in the sources, addressing the class of unflagged errors named as future work by Gheorghe et al. (2026). The thesis describes the system architecture, implementation decisions, and an evaluation framework covering retrieval quality, answer faithfulness, and computational cost across quantization levels and model scale.
+\end{abstract}
+
+\end{singlespace}
+\end{abstractpage}

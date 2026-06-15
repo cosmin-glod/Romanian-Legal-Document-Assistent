@@ -1,0 +1,1208 @@
+[
+  {
+    "id": "nume_copil-1",
+    "form_id": "declaratie_nume_copil",
+    "fields_ok": 15,
+    "fields_total": 15,
+    "required_complete": true,
+    "per_field": {
+      "parent1_full_name": {
+        "cls": "name",
+        "expected": "Andrei Popescu",
+        "got": "Andrei Popescu",
+        "ok": true
+      },
+      "parent1_cnp": {
+        "cls": "structured",
+        "expected": "1850412220011",
+        "got": "1850412220011",
+        "ok": true
+      },
+      "parent1_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Florilor 12",
+        "got": "Bucuresti Str. Florilor 12",
+        "ok": true
+      },
+      "parent1_id_series": {
+        "cls": "structured",
+        "expected": "RT",
+        "got": "RT",
+        "ok": true
+      },
+      "parent1_id_number": {
+        "cls": "structured",
+        "expected": "234567",
+        "got": "234567",
+        "ok": true
+      },
+      "parent2_full_name": {
+        "cls": "name",
+        "expected": "Maria Ionescu",
+        "got": "Maria Ionescu",
+        "ok": true
+      },
+      "parent2_cnp": {
+        "cls": "structured",
+        "expected": "2870825330022",
+        "got": "2870825330022",
+        "ok": true
+      },
+      "parent2_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Florilor 12",
+        "got": "Bucuresti Str. Florilor 12",
+        "ok": true
+      },
+      "parent2_id_series": {
+        "cls": "structured",
+        "expected": "RX",
+        "got": "RX",
+        "ok": true
+      },
+      "parent2_id_number": {
+        "cls": "structured",
+        "expected": "765432",
+        "got": "765432",
+        "ok": true
+      },
+      "child_given_name": {
+        "cls": "name",
+        "expected": "Sofia",
+        "got": "Sofia",
+        "ok": true
+      },
+      "child_sex": {
+        "cls": "structured",
+        "expected": "F",
+        "got": "F",
+        "ok": true
+      },
+      "declared_family_name": {
+        "cls": "name",
+        "expected": "Popescu-Ionescu",
+        "got": "Popescu-Ionescu",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-06-10",
+        "got": "2026-06-10",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Sectorului 3",
+        "got": "Primaria Sectorului 3",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "nume_copil-2",
+    "form_id": "declaratie_nume_copil",
+    "fields_ok": 15,
+    "fields_total": 15,
+    "required_complete": true,
+    "per_field": {
+      "parent1_full_name": {
+        "cls": "name",
+        "expected": "Vasile Marin",
+        "got": "Vasile Marin",
+        "ok": true
+      },
+      "parent1_cnp": {
+        "cls": "structured",
+        "expected": "1900101110033",
+        "got": "1900101110033",
+        "ok": true
+      },
+      "parent1_address": {
+        "cls": "freetext",
+        "expected": "Cluj Str. Mare 4",
+        "got": "Cluj Str. Mare 4",
+        "ok": true
+      },
+      "parent1_id_series": {
+        "cls": "structured",
+        "expected": "CJ",
+        "got": "CJ",
+        "ok": true
+      },
+      "parent1_id_number": {
+        "cls": "structured",
+        "expected": "111222",
+        "got": "111222",
+        "ok": true
+      },
+      "parent2_full_name": {
+        "cls": "name",
+        "expected": "Elena Dumitru",
+        "got": "Elena Dumitru",
+        "ok": true
+      },
+      "parent2_cnp": {
+        "cls": "structured",
+        "expected": "2920303440044",
+        "got": "2920303440044",
+        "ok": true
+      },
+      "parent2_address": {
+        "cls": "freetext",
+        "expected": "Cluj Str. Mare 4",
+        "got": "Cluj Str. Mare 4",
+        "ok": true
+      },
+      "parent2_id_series": {
+        "cls": "structured",
+        "expected": "CJ",
+        "got": "CJ",
+        "ok": true
+      },
+      "parent2_id_number": {
+        "cls": "structured",
+        "expected": "333444",
+        "got": "333444",
+        "ok": true
+      },
+      "child_given_name": {
+        "cls": "name",
+        "expected": "Mihai",
+        "got": "Mihai",
+        "ok": true
+      },
+      "child_sex": {
+        "cls": "structured",
+        "expected": "M",
+        "got": "M",
+        "ok": true
+      },
+      "declared_family_name": {
+        "cls": "name",
+        "expected": "Marin",
+        "got": "Marin",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-07-01",
+        "got": "2026-07-01",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Cluj-Napoca",
+        "got": "Primaria Cluj-Napoca",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "paternitate-1",
+    "form_id": "recunoastere_paternitate",
+    "fields_ok": 10,
+    "fields_total": 12,
+    "required_complete": false,
+    "per_field": {
+      "father_full_name": {
+        "cls": "name",
+        "expected": "Ion Georgescu",
+        "got": "Ion Georgescu",
+        "ok": true
+      },
+      "father_cnp": {
+        "cls": "structured",
+        "expected": "1880505550055",
+        "got": "1880505550055",
+        "ok": true
+      },
+      "father_address": {
+        "cls": "freetext",
+        "expected": "Iasi Str. Pacii 7",
+        "got": "Iasi Str. Pacii 7",
+        "ok": true
+      },
+      "father_id_series": {
+        "cls": "structured",
+        "expected": "IS",
+        "got": "IS",
+        "ok": true
+      },
+      "father_id_number": {
+        "cls": "structured",
+        "expected": "222111",
+        "got": "222111",
+        "ok": true
+      },
+      "mother_full_name": {
+        "cls": "name",
+        "expected": "Ana Vasilescu",
+        "got": "Ana Vasilescu",
+        "ok": true
+      },
+      "mother_cnp": {
+        "cls": "structured",
+        "expected": "2950606660066",
+        "got": "2950606660066",
+        "ok": true
+      },
+      "child_full_name": {
+        "cls": "name",
+        "expected": "Luca Georgescu",
+        "got": "Luca Georgescu",
+        "ok": true
+      },
+      "child_sex": {
+        "cls": "structured",
+        "expected": "M",
+        "got": null,
+        "ok": false
+      },
+      "child_birth_date": {
+        "cls": "structured",
+        "expected": "2026-05-20",
+        "got": null,
+        "ok": false
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-06-15",
+        "got": "2026-06-15",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Iasi",
+        "got": "Primaria Iasi",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "paternitate-2",
+    "form_id": "recunoastere_paternitate",
+    "fields_ok": 10,
+    "fields_total": 12,
+    "required_complete": false,
+    "per_field": {
+      "father_full_name": {
+        "cls": "name",
+        "expected": "George Stan",
+        "got": "George Stan",
+        "ok": true
+      },
+      "father_cnp": {
+        "cls": "structured",
+        "expected": "1830707770077",
+        "got": "1830707770077",
+        "ok": true
+      },
+      "father_address": {
+        "cls": "freetext",
+        "expected": "Brasov Str. Lunga 9",
+        "got": "Brasov Str. Lunga 9",
+        "ok": true
+      },
+      "father_id_series": {
+        "cls": "structured",
+        "expected": "BV",
+        "got": "BV",
+        "ok": true
+      },
+      "father_id_number": {
+        "cls": "structured",
+        "expected": "444555",
+        "got": "444555",
+        "ok": true
+      },
+      "mother_full_name": {
+        "cls": "name",
+        "expected": "Diana Munteanu",
+        "got": "Diana Munteanu",
+        "ok": true
+      },
+      "mother_cnp": {
+        "cls": "structured",
+        "expected": "2960808880088",
+        "got": "2960808880088",
+        "ok": true
+      },
+      "child_full_name": {
+        "cls": "name",
+        "expected": "Ioana Stan",
+        "got": "Ioana Stan",
+        "ok": true
+      },
+      "child_sex": {
+        "cls": "structured",
+        "expected": "F",
+        "got": null,
+        "ok": false
+      },
+      "child_birth_date": {
+        "cls": "structured",
+        "expected": "2026-04-10",
+        "got": null,
+        "ok": false
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-05-01",
+        "got": "2026-05-01",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Brasov",
+        "got": "Primaria Brasov",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "alocatie-1",
+    "form_id": "cerere_alocatie_copil",
+    "fields_ok": 11,
+    "fields_total": 11,
+    "required_complete": true,
+    "per_field": {
+      "applicant_full_name": {
+        "cls": "name",
+        "expected": "Maria Popa",
+        "got": "Maria Popa",
+        "ok": true
+      },
+      "applicant_cnp": {
+        "cls": "structured",
+        "expected": "2900909990099",
+        "got": "2900909990099",
+        "ok": true
+      },
+      "applicant_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Verde 3",
+        "got": "Str. Verde 3, Bucuresti",
+        "ok": true
+      },
+      "applicant_id_series": {
+        "cls": "structured",
+        "expected": "RD",
+        "got": "RD",
+        "ok": true
+      },
+      "applicant_id_number": {
+        "cls": "structured",
+        "expected": "555666",
+        "got": "555666",
+        "ok": true
+      },
+      "child_full_name": {
+        "cls": "name",
+        "expected": "Andrei Popa",
+        "got": "Andrei Popa",
+        "ok": true
+      },
+      "child_cnp": {
+        "cls": "structured",
+        "expected": "5260101010101",
+        "got": "5260101010101",
+        "ok": true
+      },
+      "child_birth_date": {
+        "cls": "structured",
+        "expected": "2026-01-01",
+        "got": "2026-01-01",
+        "ok": true
+      },
+      "iban": {
+        "cls": "structured",
+        "expected": "RO49AAAA1B31007593840000",
+        "got": "RO49AAAA1B31007593840000",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-02-01",
+        "got": "2026-02-01",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Sectorului 1",
+        "got": "Primaria Sectorului 1",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "alocatie-2",
+    "form_id": "cerere_alocatie_copil",
+    "fields_ok": 11,
+    "fields_total": 11,
+    "required_complete": true,
+    "per_field": {
+      "applicant_full_name": {
+        "cls": "name",
+        "expected": "Radu Ilie",
+        "got": "Radu Ilie",
+        "ok": true
+      },
+      "applicant_cnp": {
+        "cls": "structured",
+        "expected": "1910202020022",
+        "got": "1910202020022",
+        "ok": true
+      },
+      "applicant_address": {
+        "cls": "freetext",
+        "expected": "Timisoara Str. Noua 11",
+        "got": "Str. Noua 11, Timisoara",
+        "ok": true
+      },
+      "applicant_id_series": {
+        "cls": "structured",
+        "expected": "TM",
+        "got": "TM",
+        "ok": true
+      },
+      "applicant_id_number": {
+        "cls": "structured",
+        "expected": "666777",
+        "got": "666777",
+        "ok": true
+      },
+      "child_full_name": {
+        "cls": "name",
+        "expected": "Sara Ilie",
+        "got": "Sara Ilie",
+        "ok": true
+      },
+      "child_cnp": {
+        "cls": "structured",
+        "expected": "6260303030303",
+        "got": "6260303030303",
+        "ok": true
+      },
+      "child_birth_date": {
+        "cls": "structured",
+        "expected": "2026-03-03",
+        "got": "2026-03-03",
+        "ok": true
+      },
+      "iban": {
+        "cls": "structured",
+        "expected": "RO12BBBB1234567890123456",
+        "got": "RO12BBBB1234567890123456",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-04-04",
+        "got": "2026-04-04",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Timisoara",
+        "got": "Primaria Timisoara",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "indemnizatie-1",
+    "form_id": "cerere_indemnizatie_crestere",
+    "fields_ok": 12,
+    "fields_total": 12,
+    "required_complete": true,
+    "per_field": {
+      "parent_full_name": {
+        "cls": "name",
+        "expected": "Elena Toma",
+        "got": "Elena Toma",
+        "ok": true
+      },
+      "parent_cnp": {
+        "cls": "structured",
+        "expected": "2880404040044",
+        "got": "2880404040044",
+        "ok": true
+      },
+      "parent_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Lalele 8",
+        "got": "Bucuresti Str. Lalele 8",
+        "ok": true
+      },
+      "parent_id_series": {
+        "cls": "structured",
+        "expected": "RT",
+        "got": "RT",
+        "ok": true
+      },
+      "parent_id_number": {
+        "cls": "structured",
+        "expected": "777888",
+        "got": "777888",
+        "ok": true
+      },
+      "employer": {
+        "cls": "freetext",
+        "expected": "Firma SRL",
+        "got": "Firma SRL",
+        "ok": true
+      },
+      "child_full_name": {
+        "cls": "name",
+        "expected": "Matei Toma",
+        "got": "Matei Toma",
+        "ok": true
+      },
+      "child_cnp": {
+        "cls": "structured",
+        "expected": "5260505050505",
+        "got": "5260505050505",
+        "ok": true
+      },
+      "child_birth_date": {
+        "cls": "structured",
+        "expected": "2026-05-05",
+        "got": "2026-05-05",
+        "ok": true
+      },
+      "iban": {
+        "cls": "structured",
+        "expected": "RO77CCCC0000111122223333",
+        "got": "RO77CCCC0000111122223333",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-06-06",
+        "got": "2026-06-06",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Sectorului 2",
+        "got": "Primaria Sectorului 2",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "indemnizatie-2",
+    "form_id": "cerere_indemnizatie_crestere",
+    "fields_ok": 12,
+    "fields_total": 12,
+    "required_complete": true,
+    "per_field": {
+      "parent_full_name": {
+        "cls": "name",
+        "expected": "Paul Albu",
+        "got": "Paul Albu",
+        "ok": true
+      },
+      "parent_cnp": {
+        "cls": "structured",
+        "expected": "1870606060066",
+        "got": "1870606060066",
+        "ok": true
+      },
+      "parent_address": {
+        "cls": "freetext",
+        "expected": "Sibiu Str. Cetatii 2",
+        "got": "Sibiu Str. Cetatii 2",
+        "ok": true
+      },
+      "parent_id_series": {
+        "cls": "structured",
+        "expected": "SB",
+        "got": "SB",
+        "ok": true
+      },
+      "parent_id_number": {
+        "cls": "structured",
+        "expected": "888999",
+        "got": "888999",
+        "ok": true
+      },
+      "employer": {
+        "cls": "freetext",
+        "expected": "Tech Solutions",
+        "got": "Tech Solutions",
+        "ok": true
+      },
+      "child_full_name": {
+        "cls": "name",
+        "expected": "Nora Albu",
+        "got": "Nora Albu",
+        "ok": true
+      },
+      "child_cnp": {
+        "cls": "structured",
+        "expected": "6260707070707",
+        "got": "6260707070707",
+        "ok": true
+      },
+      "child_birth_date": {
+        "cls": "structured",
+        "expected": "2026-07-07",
+        "got": "2026-07-07",
+        "ok": true
+      },
+      "iban": {
+        "cls": "structured",
+        "expected": "RO88DDDD4444555566667777",
+        "got": "RO88DDDD4444555566667777",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-08-08",
+        "got": "2026-08-08",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Sibiu",
+        "got": "Primaria Sibiu",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "casatorie-1",
+    "form_id": "declaratie_casatorie",
+    "fields_ok": 13,
+    "fields_total": 15,
+    "required_complete": false,
+    "per_field": {
+      "spouse1_full_name": {
+        "cls": "name",
+        "expected": "Ion Popescu",
+        "got": "Ion Popescu",
+        "ok": true
+      },
+      "spouse1_cnp": {
+        "cls": "structured",
+        "expected": "1900101123456",
+        "got": "1900101123456",
+        "ok": true
+      },
+      "spouse1_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Lalelelor 5",
+        "got": "Bucuresti Str. Lalelelor 5",
+        "ok": true
+      },
+      "spouse1_id_series": {
+        "cls": "structured",
+        "expected": "RT",
+        "got": "RT",
+        "ok": true
+      },
+      "spouse1_id_number": {
+        "cls": "structured",
+        "expected": "123456",
+        "got": "123456",
+        "ok": true
+      },
+      "spouse1_birth_date": {
+        "cls": "structured",
+        "expected": "1990-01-01",
+        "got": null,
+        "ok": false
+      },
+      "spouse2_full_name": {
+        "cls": "name",
+        "expected": "Maria Ionescu",
+        "got": "Maria Ionescu",
+        "ok": true
+      },
+      "spouse2_cnp": {
+        "cls": "structured",
+        "expected": "2920202234567",
+        "got": "2920202234567",
+        "ok": true
+      },
+      "spouse2_address": {
+        "cls": "freetext",
+        "expected": "Cluj Str. Florilor 2",
+        "got": "Cluj Str. Florilor 2",
+        "ok": true
+      },
+      "spouse2_id_series": {
+        "cls": "structured",
+        "expected": "RX",
+        "got": "RX",
+        "ok": true
+      },
+      "spouse2_id_number": {
+        "cls": "structured",
+        "expected": "654321",
+        "got": "654321",
+        "ok": true
+      },
+      "spouse2_birth_date": {
+        "cls": "structured",
+        "expected": "1992-02-02",
+        "got": null,
+        "ok": false
+      },
+      "family_name_after": {
+        "cls": "name",
+        "expected": "Popescu",
+        "got": "Popescu",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-06-10",
+        "got": "2026-06-10",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Sectorului 3",
+        "got": "Primaria Sectorului 3",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "casatorie-2",
+    "form_id": "declaratie_casatorie",
+    "fields_ok": 13,
+    "fields_total": 15,
+    "required_complete": false,
+    "per_field": {
+      "spouse1_full_name": {
+        "cls": "name",
+        "expected": "Mihai Dan",
+        "got": "Mihai Dan",
+        "ok": true
+      },
+      "spouse1_cnp": {
+        "cls": "structured",
+        "expected": "1880303123456",
+        "got": "1880303123456",
+        "ok": true
+      },
+      "spouse1_address": {
+        "cls": "freetext",
+        "expected": "Iasi Str. Mica 1",
+        "got": "Iasi Str. Mica 1",
+        "ok": true
+      },
+      "spouse1_id_series": {
+        "cls": "structured",
+        "expected": "IS",
+        "got": "IS",
+        "ok": true
+      },
+      "spouse1_id_number": {
+        "cls": "structured",
+        "expected": "121212",
+        "got": "121212",
+        "ok": true
+      },
+      "spouse1_birth_date": {
+        "cls": "structured",
+        "expected": "1988-03-03",
+        "got": null,
+        "ok": false
+      },
+      "spouse2_full_name": {
+        "cls": "name",
+        "expected": "Ana Lung",
+        "got": "Ana Lung",
+        "ok": true
+      },
+      "spouse2_cnp": {
+        "cls": "structured",
+        "expected": "2930404123456",
+        "got": "2930404123456",
+        "ok": true
+      },
+      "spouse2_address": {
+        "cls": "freetext",
+        "expected": "Iasi Str. Mica 1",
+        "got": "Iasi Str. Mica 1",
+        "ok": true
+      },
+      "spouse2_id_series": {
+        "cls": "structured",
+        "expected": "IS",
+        "got": "IS",
+        "ok": true
+      },
+      "spouse2_id_number": {
+        "cls": "structured",
+        "expected": "343434",
+        "got": "343434",
+        "ok": true
+      },
+      "spouse2_birth_date": {
+        "cls": "structured",
+        "expected": "1993-04-04",
+        "got": null,
+        "ok": false
+      },
+      "family_name_after": {
+        "cls": "name",
+        "expected": "Dan",
+        "got": "Dan",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-09-09",
+        "got": "2026-09-09",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Iasi",
+        "got": "Primaria Iasi",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "necasatorit-1",
+    "form_id": "declaratie_necasatorit",
+    "fields_ok": 7,
+    "fields_total": 7,
+    "required_complete": true,
+    "per_field": {
+      "declarant_full_name": {
+        "cls": "name",
+        "expected": "Alexandru Pop",
+        "got": "Alexandru Pop",
+        "ok": true
+      },
+      "declarant_cnp": {
+        "cls": "structured",
+        "expected": "1950505123456",
+        "got": "1950505123456",
+        "ok": true
+      },
+      "declarant_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Soarelui 10",
+        "got": "Str. Soarelui 10, Bucuresti",
+        "ok": true
+      },
+      "declarant_id_series": {
+        "cls": "structured",
+        "expected": "RT",
+        "got": "RT",
+        "ok": true
+      },
+      "declarant_id_number": {
+        "cls": "structured",
+        "expected": "565656",
+        "got": "565656",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-06-20",
+        "got": "2026-06-20",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Sectorului 4",
+        "got": "Primaria Sectorului 4",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "necasatorit-2",
+    "form_id": "declaratie_necasatorit",
+    "fields_ok": 7,
+    "fields_total": 7,
+    "required_complete": true,
+    "per_field": {
+      "declarant_full_name": {
+        "cls": "name",
+        "expected": "Cristina Voicu",
+        "got": "Cristina Voicu",
+        "ok": true
+      },
+      "declarant_cnp": {
+        "cls": "structured",
+        "expected": "2960606123456",
+        "got": "2960606123456",
+        "ok": true
+      },
+      "declarant_address": {
+        "cls": "freetext",
+        "expected": "Constanta Str. Marii 3",
+        "got": "Constanta Str. Marii 3",
+        "ok": true
+      },
+      "declarant_id_series": {
+        "cls": "structured",
+        "expected": "CT",
+        "got": "CT",
+        "ok": true
+      },
+      "declarant_id_number": {
+        "cls": "structured",
+        "expected": "787878",
+        "got": "787878",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-07-15",
+        "got": "2026-07-15",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Primaria Constanta",
+        "got": "Primaria Constanta",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "inchiriere-1",
+    "form_id": "contract_inchiriere",
+    "fields_ok": 17,
+    "fields_total": 18,
+    "required_complete": false,
+    "per_field": {
+      "landlord_full_name": {
+        "cls": "name",
+        "expected": "Ion Popescu",
+        "got": "Ion Popescu",
+        "ok": true
+      },
+      "landlord_cnp": {
+        "cls": "structured",
+        "expected": "1900101123456",
+        "got": "1900101123456",
+        "ok": true
+      },
+      "landlord_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Lunga 1",
+        "got": "București Str. Lunga 1",
+        "ok": true
+      },
+      "landlord_id_series": {
+        "cls": "structured",
+        "expected": "RT",
+        "got": "RT",
+        "ok": true
+      },
+      "landlord_id_number": {
+        "cls": "structured",
+        "expected": "123456",
+        "got": "123456",
+        "ok": true
+      },
+      "tenant_full_name": {
+        "cls": "name",
+        "expected": "Vasile Marin",
+        "got": "Vasile Marin",
+        "ok": true
+      },
+      "tenant_cnp": {
+        "cls": "structured",
+        "expected": "1850505123456",
+        "got": "1850505123456",
+        "ok": true
+      },
+      "tenant_address": {
+        "cls": "freetext",
+        "expected": "Cluj Str. Scurta 2",
+        "got": "Str. Scurta 2, Cluj",
+        "ok": true
+      },
+      "tenant_id_series": {
+        "cls": "structured",
+        "expected": "CJ",
+        "got": "CJ",
+        "ok": true
+      },
+      "tenant_id_number": {
+        "cls": "structured",
+        "expected": "222333",
+        "got": "222333",
+        "ok": true
+      },
+      "property_address": {
+        "cls": "freetext",
+        "expected": "Bucuresti Str. Florilor 5",
+        "got": "Str. Florilor 5, București",
+        "ok": true
+      },
+      "rent_amount": {
+        "cls": "structured",
+        "expected": "1500",
+        "got": "1500",
+        "ok": true
+      },
+      "payment_day": {
+        "cls": "structured",
+        "expected": "5",
+        "got": null,
+        "ok": false
+      },
+      "deposit_amount": {
+        "cls": "structured",
+        "expected": "1500",
+        "got": "1500",
+        "ok": true
+      },
+      "duration_months": {
+        "cls": "structured",
+        "expected": "12",
+        "got": "12",
+        "ok": true
+      },
+      "start_date": {
+        "cls": "structured",
+        "expected": "2026-07-01",
+        "got": "2026-07-01",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-06-25",
+        "got": "2026-06-25",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Bucuresti",
+        "got": "București",
+        "ok": true
+      }
+    }
+  },
+  {
+    "id": "inchiriere-2",
+    "form_id": "contract_inchiriere",
+    "fields_ok": 17,
+    "fields_total": 18,
+    "required_complete": false,
+    "per_field": {
+      "landlord_full_name": {
+        "cls": "name",
+        "expected": "Elena Stan",
+        "got": "Elena Stan",
+        "ok": true
+      },
+      "landlord_cnp": {
+        "cls": "structured",
+        "expected": "2900202123456",
+        "got": "2900202123456",
+        "ok": true
+      },
+      "landlord_address": {
+        "cls": "freetext",
+        "expected": "Timisoara Str. Noua 7",
+        "got": "Timisoara Str. Noua 7, CI seria TM nr 909090",
+        "ok": true
+      },
+      "landlord_id_series": {
+        "cls": "structured",
+        "expected": "TM",
+        "got": "TM",
+        "ok": true
+      },
+      "landlord_id_number": {
+        "cls": "structured",
+        "expected": "909090",
+        "got": "909090",
+        "ok": true
+      },
+      "tenant_full_name": {
+        "cls": "name",
+        "expected": "Radu Ene",
+        "got": "Radu Ene",
+        "ok": true
+      },
+      "tenant_cnp": {
+        "cls": "structured",
+        "expected": "1870303123456",
+        "got": "1870303123456",
+        "ok": true
+      },
+      "tenant_address": {
+        "cls": "freetext",
+        "expected": "Arad Str. Veche 8",
+        "got": "Str. Veche 8, Arad",
+        "ok": true
+      },
+      "tenant_id_series": {
+        "cls": "structured",
+        "expected": "AR",
+        "got": "AR",
+        "ok": true
+      },
+      "tenant_id_number": {
+        "cls": "structured",
+        "expected": "101010",
+        "got": "101010",
+        "ok": true
+      },
+      "property_address": {
+        "cls": "freetext",
+        "expected": "Timisoara Str. Mare 20",
+        "got": "Str. Noua 7, Timisoara",
+        "ok": false
+      },
+      "rent_amount": {
+        "cls": "structured",
+        "expected": "2000",
+        "got": "2000",
+        "ok": true
+      },
+      "payment_day": {
+        "cls": "structured",
+        "expected": "10",
+        "got": "10",
+        "ok": true
+      },
+      "deposit_amount": {
+        "cls": "structured",
+        "expected": "4000",
+        "got": "4000",
+        "ok": true
+      },
+      "duration_months": {
+        "cls": "structured",
+        "expected": "24",
+        "got": "24",
+        "ok": true
+      },
+      "start_date": {
+        "cls": "structured",
+        "expected": "2026-08-01",
+        "got": "2026-08-01",
+        "ok": true
+      },
+      "declaration_date": {
+        "cls": "structured",
+        "expected": "2026-07-20",
+        "got": "2026-07-20",
+        "ok": true
+      },
+      "declaration_place": {
+        "cls": "freetext",
+        "expected": "Timisoara",
+        "got": "Timisoara",
+        "ok": true
+      }
+    }
+  }
+]

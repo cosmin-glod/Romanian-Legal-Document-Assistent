@@ -1,0 +1,179 @@
+\chapter{Sistemul propus}
+
+\section{Vedere de ansamblu}
+
+Sistemul implementează un pipeline RAG complet pentru cele trei evenimente de viață de pe \emph{cezicelegea.ro} \cite{cezicelegea} (naștere, căsătorie, locuire), rulând local după descărcarea inițială a modelelor. Se compune din șase module Python: \textbf{scraper}, \textbf{chunker} (segmentare cu breadcrumb), \textbf{index} (embedding + Chroma), \textbf{retriever}, \textbf{generator} (LLM cu constrângere de schemă) și \textbf{contracts} (reguli de verificare a ieșirii).
+
+\begin{figure}[tb]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tikzpicture}[
+        font=\small,
+        node distance=0.5cm and 0.7cm,
+        box/.style={draw, rounded corners, align=center, minimum height=1cm,
+            minimum width=1.9cm, fill=blue!8},
+        data/.style={draw, align=center, minimum height=1cm,
+            minimum width=1.7cm, fill=gray!12},
+        arr/.style={-{Stealth[length=2mm]}, thick},
+    ]
+        % offline (indexing) row
+        \node[data] (web) {cezicelegea.ro\\\scriptsize (HTML)};
+        \node[box, right=of web] (scrap) {scraper};
+        \node[box, right=of scrap] (chunk) {chunker\\\scriptsize breadcrumb};
+        \node[box, right=of chunk] (emb1) {BGE-M3\\\scriptsize embedding};
+        \node[data, right=of emb1] (chroma) {Chroma\\\scriptsize 147 vectori};
+        \draw[arr] (web) -- (scrap);
+        \draw[arr] (scrap) -- (chunk);
+        \draw[arr] (chunk) -- (emb1);
+        \draw[arr] (emb1) -- (chroma);
+
+        % online (serving) row
+        \node[data, below=1.6cm of web] (q) {Întrebare};
+        \node[box, right=of q] (emb2) {BGE-M3\\\scriptsize embedding};
+        \node[box, right=of emb2] (ret) {retriever\\\scriptsize top-$k$=4};
+        \node[box, right=of ret] (gen) {generator\\\scriptsize Qwen2.5 + schemă};
+        \node[box, right=of gen] (contr) {verificare\\\scriptsize R1-R7};
+        \node[data, right=of contr] (out) {Răspuns +\\\scriptsize citații / PDF};
+        \draw[arr] (q) -- (emb2);
+        \draw[arr] (emb2) -- (ret);
+        \draw[arr] (ret) -- (gen);
+        \draw[arr] (gen) -- (contr);
+        \draw[arr] (contr) -- (out);
+
+        % index feeds retriever
+        \draw[arr] (chroma) -- (ret);
+        % retry loop
+        \draw[arr] (contr) to[out=110, in=70] node[above, font=\scriptsize] {reîncercare dacă răspunsul e invalid} (gen);
+
+        \begin{scope}[on background layer]
+            \node[draw=gray!40, dashed, rounded corners, fit=(web)(chroma),
+                label={[gray, font=\scriptsize]above:Offline: construirea indexului}] {};
+            \node[draw=gray!40, dashed, rounded corners, fit=(q)(out),
+                label={[gray, font=\scriptsize]below:Online: servirea unei întrebări}] {};
+        \end{scope}
+    \end{tikzpicture}}
+    \caption{Arhitectura sistemului, cu faza offline de construire a indexului și faza online de servire a unei întrebări.}
+    \label{fig:pipeline}
+\end{figure}
+
+\section{Date și segmentare}
+
+Conținutul de pe \emph{cezicelegea.ro} este o aplicație de tip \emph{state machine} pe partea de client (Alpine.js): întreg arborele de decizie al fiecărui eveniment este prezent în HTML-ul static, dar vizibilitatea fiecărui nod este controlată în browser. Scraperul (\texttt{requests} + \texttt{BeautifulSoup} \cite{beautifulsoup}, fără motor de browser) parsează DOM-ul static și \emph{reconstruiește offline} arborele real: îl parcurge în pre-ordine (DFS) cu o stivă de context, luând conținutul nodului din titlurile \texttt{h2} și etichetele copiilor din \texttt{h3}-urile butoanelor de navigare. Deoarece etichetele sunt uneori prescurtate, potrivirea părinte-copil folosește o similaritate Jaccard pe cuvinte (prag $0.7$). Rezultă 107 secțiuni cu \emph{breadcrumb} complet (până la 8-9 niveluri), cu cele trei ramuri principale reconstruite corect.
+
+\begin{figure}[H]
+    \centering
+    \begin{forest}
+      for tree={
+        font=\footnotesize, grow'=0,
+        child anchor=west, parent anchor=south, anchor=west, calign=first,
+        draw=gray!55, rounded corners, fill=blue!5, inner sep=2.5pt,
+        edge={draw, gray!55},
+        edge path={\noexpand\path[\forestoption{edge}]
+          (!u.south west) +(6pt,0) |- (.child anchor)\forestoption{edge label};},
+        before typesetting nodes={if n=1{insert before={[,phantom]}}{}},
+        fit=band, before computing xy={l=16pt}, s sep=1.2mm,
+      }
+      [Nașterea, fill=blue!15
+        [Certificatul medical constatator [\ldots]]
+        [Certificatul de naștere
+          [Sunt cetățean român
+            [Nașterea a avut loc în România
+              [Partenerul este cetățean român
+                [Suntem soți]
+                [Nu suntem căsătoriți
+                  [Tatăl recunoaște copilul]
+                  [Tatăl nu recunoaște copilul]
+                ]
+              ]
+              [Partenerul este cetățean străin [\ldots]]
+            ]
+            [Nașterea a avut loc în străinătate [\ldots]]
+          ]
+          [Sunt cetățean străin [\ldots]]
+        ]
+        [Ajutor financiar
+          [Stimulente pentru nou-născut]
+          [Alocația de stat pentru copii [\ldots]]
+          [\ldots]
+        ]
+      ]
+    \end{forest}
+    \caption{Fragment simplificat din arborele de decizie al evenimentului \emph{Nașterea}, reconstruit offline din DOM-ul static (subarborii marcați cu \ldots\ sunt omiși). Arborele real atinge 8-9 niveluri; fiecare frunză primește un breadcrumb complet, prefixat în textul indexat.}
+    \label{fig:tree}
+\end{figure}
+
+Modulul \texttt{chunker} prefixează breadcrumb-ul în textul indexat, sub forma \texttt{[Nașterea > Certificatul de naștere > {\ldots} > Tatăl recunoaște copilul]} urmată de conținut (Figura~\ref{fig:tree}). Prefixul contribuie la embedding și distinge ramuri semantice apropiate (de exemplu, documente pentru cuplu căsătorit versus pentru un părinte necăsătorit), păstrând trasabilitatea sursei. Secțiunile mai mari de $\sim$3000 de caractere sunt împărțite greedy la limite de propoziție; indexul final conține 147 de fragmente.
+
+\section{Regăsire și generare}
+
+Embedding-urile sunt calculate cu \emph{BGE-M3} \cite{chen2024bgem3} (multilingv, 1024 de dimensiuni), normalizate L2 astfel încât similaritatea cosinus din \emph{Chroma} să se reducă la produs scalar. La interogare, baza returnează cele mai relevante $k = 4$ fragmente. Valoarea este un compromis (un $k$ prea mic ratează fragmentul cu răspunsul, iar unul prea mare diluează contextul și crește costul), iar la $k = 4$ regăsirea acoperă deja aproape integral fragmentele relevante (Capitolul~\ref{cap:evaluare}). Cele trei evenimente formează grupuri bine separate în spațiul de embedding, ceea ce explică recall-ul ridicat al regăsirii (Figura~\ref{fig:embeddings}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.62\textwidth]{fig_embeddings.pdf}
+    \caption{Fragmentele celor trei evenimente, separate în spațiul de embedding.}
+    \label{fig:embeddings}
+\end{figure}
+
+Generarea rulează \emph{integral local} prin Ollama (peste \texttt{llama.cpp}, format \texttt{GGUF}); configurația implicită este \emph{Qwen2.5-3B-Instruct} \cite{yang2024qwen25}, suficient de mică pentru hardware de larg consum. Apelul conține un prompt de sistem care impune limba română și ancorarea strictă în surse, un mesaj de utilizator cu sursele numerotate \texttt{[S1]} \ldots \texttt{[Sn]} și întrebarea, plus o schemă JSON derivată din clasa Pydantic \cite{pydantic} \texttt{AnswerSchema}, transmisă prin parametrul \texttt{format} pentru a forța conformitatea structurală.
+
+Promptul de sistem (redat condensat mai jos) codifică regulile de comportament pe care stratul de verificare a ieșirii le controlează ulterior automat:
+
+\begin{center}
+\setlength{\fboxsep}{8pt}%
+\fcolorbox{codeframe}{codebg}{%
+\begin{minipage}{0.9\textwidth}
+\ttfamily\small\raggedright
+Ești un asistent care ajută cetățenii români să înțeleagă proceduri administrative (naștere, căsătorie, locuire). Respectă strict următoarele reguli:\\[3pt]
+(1) Răspunde exclusiv în limba română.\\
+(2) Bazează-te numai pe SURSELE furnizate; nu inventa documente, termene, instituții sau cifre.\\
+(3) Indică sursele folosite prin indici (de exemplu, sursele 1 și 3 -> cited\_source\_indices=[1,3]).\\
+(4) Dacă SURSELE nu conțin răspunsul, setează is\_refusal=true și răspunde: „Nu am suficiente informații în sursele disponibile pentru a răspunde."\\
+(5) În documents\_mentioned trece doar numele reale de documente care apar explicit în SURSE.\\
+(6) Formulează răspunsul concis și structurat.\\
+(7) Setează form\_offer numai dacă utilizatorul își exprimă intenția de a completa un formular.
+\end{minipage}}
+\end{center}
+
+Schema răspunsului are cinci câmpuri: \texttt{answer\_text}, \texttt{is\_refusal}, \texttt{cited\_source\_indices}, \texttt{documents\_mentioned} și \texttt{form\_offer}. Ultimele două sunt esențiale pentru regulile care împiedică inventarea de documente, respectiv pentru tranziția către pre-completarea formularelor.
+
+\section{Stratul de verificare a ieșirii}
+
+După obținerea răspunsului structurat, sistemul aplică reguli automate care verifică nu \emph{forma} (garantată de schemă), ci \emph{conținutul}: măsura în care răspunsul se sprijină pe surse. Fiecare regulă vizează un mod în care un răspuns poate părea corect, dar poate induce cetățeanul în eroare:
+
+\begin{itemize}
+    \item \textbf{R1: existența unui răspuns.} Verifică faptul că schema conține un text de răspuns nevid (câmpul \texttt{answer\_text}). \emph{Motivație:} prinde eșecurile complete de generare (răspuns gol, ieșire degenerată sau generare întreruptă), care altfel ar fi servite cetățeanului ca răspuns valid. Această regulă este totodată o precondiție pentru celelalte reguli, întrucât fără text nu există ce cita sau ancora.
+    \item \textbf{R2: citarea afirmațiilor.} Un răspuns care nu este refuz trebuie să indice cel puțin o sursă. \emph{Motivație:} în lipsa citației, informația nu poate fi verificată, iar un fapt real nu poate fi distins de unul inventat.
+    \item \textbf{R3: validitatea citațiilor.} Indicii citați trebuie să existe efectiv în lista de surse (între 1 și $n$). \emph{Motivație:} o trimitere la ,,sursa 7" atunci când există doar 4 surse reprezintă o citație inventată.
+    \item \textbf{R4: ancorarea documentelor menționate.} Orice document numit în răspuns trebuie să se regăsească în textul sursei citate. \emph{Motivație:} este principala regulă care prinde documentele inventate, identificând situațiile în care modelul indică un act sau un formular ce nu există în procedură.
+    \item \textbf{R5: refuzul nu menționează documente.} Atunci când modelul refuză să răspundă, nu are voie să enumere documente. \emph{Motivație:} un refuz însoțit de documente reprezintă o invenție mascată: pare prudent, dar introduce informație nesusținută.
+    \item \textbf{R6: absența identificatorilor interni de formular.} Identificatorii tehnici (de exemplu \texttt{declaratie\_nume\_copil}) nu trebuie confundați cu nume reale de acte. \emph{Motivație:} se evită expunerea catalogului intern de formulare în răspunsul oferit cetățeanului.
+\end{itemize}
+
+Regulile R1-R6 constituie setul evaluat în Capitolul~\ref{cap:evaluare}. Ulterior a fost adăugată regula \textbf{R7}, care semnalează un \emph{refuz nejustificat}: modelul refuză, deși o sursă regăsită cu similaritate ridicată conține răspunsul. \emph{Motivație:} este singura regulă care vizează modul de eșec dominant, în care cetățeanul primește un refuz la o întrebare legitimă. Acest mod de eșec este invizibil pentru R1-R6, deoarece un refuz nu conține nici citații, nici documente care să poată fi verificate.
+
+Limba de răspuns nu este verificată printr-o regulă separată, deoarece este deja impusă de promptul de sistem și a fost respectată de toate modelele evaluate. Regulile R1-R7 se concentrează pe modul de eșec relevant pentru fidelitate: ancorarea răspunsului în surse.
+
+Atunci când o regulă nu este satisfăcută și mai există încercări disponibile, sistemul reapelează modelul cu un mesaj de feedback explicit. La epuizarea încercărilor (implicit una), răspunsul este marcat drept \emph{invalid}, iar interfața afișează un refuz controlat.
+
+În testarea manuală s-au observat trei comportamente. Pentru întrebări clare, sistemul produce răspunsuri ancorate în surse. Pentru întrebări care combină mai multe evenimente, regăsirea este dominată de termenul cu pondere mai mare, iar modelul refuză în loc să fabrice. Pentru întrebări din afara domeniului, modelul tinde să genereze o procedură generică, pe care verificarea o identifică prin R2 sau R4.
+
+\section{Pre-completarea formularelor și interfața}
+
+Sistemul include un strat de pre-completare a formularelor, declanșat atunci când utilizatorul își exprimă intenția (prin câmpul \texttt{form\_offer} și un detector pe cuvinte-cheie). Stratul este \emph{condus de specificații}: fiecare formular este declarat o singură dată, ca listă de câmpuri tipizate, din care se derivă automat schema Pydantic, validatorul (CNP, serie și număr CI, dată ISO 8601, IBAN), randarea PDF (\texttt{fpdf2} \cite{fpdf2}) și extractorul; astfel, adăugarea unui formular nou se reduce la o descriere declarativă, fără cod suplimentar. Catalogul acoperă șapte formulare pe cele trei evenimente. Extragerea folosește o schemă JSON partiționată pe secțiuni (3-6 câmpuri), pentru a evita omiterea câmpurilor; la eșec, sistemul comută la un mod manual cu validare prin expresii regulate, garantând producerea unui PDF semnabil.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.75\textwidth, trim={1cm 18.5cm 1cm 0.8cm}, clip]{cerere_alocatie.pdf}}
+    \caption{Antetul și corpul unui formular generat de stratul de pre-completare (cererea pentru alocația de stat), pornind de la datele extrase dintr-o conversație în limbaj natural.}
+    \label{fig:sampleform}
+\end{figure}
+
+Interfața web (\emph{Streamlit} \cite{streamlit}) afișează conversația, sursele citate marcate distinct și butoanele de descărcare a formularelor, deschizând la nevoie blocul de pre-completare cu intrare generată de model sau introdusă manual (Figura~\ref{fig:interfata}). Interfața folosește aceeași infrastructură ca varianta în linie de comandă, ceea ce asigură un comportament unic, derivat dintr-o singură sursă de adevăr.
+
+\begin{figure}[H]
+    \centering
+    \fbox{\includegraphics[width=0.75\textwidth]{interfata_completa.png}}
+    \caption{Interfața web: în bara laterală, istoricul de întrebări și panoul \emph{Surse} (sursele citate marcate distinct); în centru, dialogul cu modelul și blocul de pre-completare a formularelor.}
+    \label{fig:interfata}
+\end{figure}

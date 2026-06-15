@@ -1,0 +1,394 @@
+[
+  {
+    "id": "nastere-04",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-05",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-09",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Nașterea unui copil cetățean străin născut în România poate fi înregistrată la ambasada sau consulatul țării tale de origine, conform legilor acesteia. Dacă țar"
+  },
+  {
+    "id": "nastere-10",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informațiuni în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-11",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Părinții pot primi stimulant financiar de 2500 RON în București dacă cel puțin unul dintre părinți are domiciliul sau reședința în municipiul București cu cel p"
+  },
+  {
+    "id": "nastere-12",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-14",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Stimulantul de inserție este un ajutor financiar care poate fi obținut pentru persoanele care se întorc la serviciu sau la job după ce copilul împlinește 6 luni"
+  },
+  {
+    "id": "nastere-15",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-17",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "În România, pentru a recunoași legal copilul și fiu căsătorit cu mama copilului, tatăl trebuie să îndeplinească cerințele de recunoaștere a copilului din afara "
+  },
+  {
+    "id": "nastere-19",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-x34",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-05",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Basînta, nu pare a fi permis să iați numele partenerului ca nume de familie după căsătorie în România. Regimul legal este comunitatea legală, care presupune că "
+  },
+  {
+    "id": "casatorie-06",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Există rude apropiate cu care nu mă pot căsători în conformitate cu condițiile prezentate în sursele disponibile."
+  },
+  {
+    "id": "casatorie-07",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Bază de analiză se bazează pe condițiile specifice ale României pentru oferirea de servicii de starea civilă în străinătate. Conform textului dat, România permi"
+  },
+  {
+    "id": "casatorie-08",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-13",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Din întrebarea dvs., pare clar că ați fost cunoscut ca fiind cetățean român și că vă căsătoresi cu un cetățean UE. În acest caz, documentele care trebuie să fie"
+  },
+  {
+    "id": "casatorie-16",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Sunt verișor primar și sunt încântat să vă pot oferi informații despre procedura de căsătământ în România. În general, pentru a putea ne căsători, amândoi trebu"
+  },
+  {
+    "id": "casatorie-17",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": ""
+  },
+  {
+    "id": "casatorie-x26",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Ca cetățean român, pentru a-mi permite să mă căsătoară, sunt necesare următoarele documente în original și traduceri legalizate (dacă este cazul): \n\n1. Act de i"
+  },
+  {
+    "id": "casatorie-x29",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informațiile în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-03",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-05",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-06",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-10",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-12",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-13",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Proprietarii au drepturi și obligații precum următoarele asupra unui imobil închiriat:\n1. Declarați contractele la ANAF în termen de 30 de zile de la semnarea a"
+  },
+  {
+    "id": "locuire-14",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Ca membru al unei asociații de proprietari, ai următoarele drepturi:\n1. Să participi și să votezi la adunarea generală a respectivei asociații.\n2. Să îți înscri"
+  },
+  {
+    "id": "locuire-16",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-17",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu sunt suficiente informațiile în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-x25",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-x29",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-x30",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-x31",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informațiuni în surse disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-21",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": false,
+    "refined_refused": false,
+    "refined_answer": "Înțeleg că vrei să întrebi cum să schimbi buletinul la 14 de ani după naștere. În general, pentru a schimba buletinul la 14 de ani după naștere, trebuie să înce"
+  },
+  {
+    "id": "nastere-22",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": ""
+  },
+  {
+    "id": "nastere-23",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": false,
+    "refined_refused": false,
+    "refined_answer": "Pentru a primi pensia alimentară de la fostul soț pentru copilul tău, trebuie să încerci să te adresezi Direcţiei Generale de Asistență Socială și Protecția Cop"
+  },
+  {
+    "id": "nastere-24",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": false,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde cu exactitate la întrebarea 'Cât costă un test DNA pentru stabilirea paternității?'. Este r"
+  },
+  {
+    "id": "nastere-x35",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-19",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-20",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-21",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-22",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-x30",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-19",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-20",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informațiilor în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-21",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-22",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informațiuni în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-x32",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Pentru a obține un pasaport pentru o vacanță în străinătate, trebuie să vă asigurați că sunteți cetățeni români sau dintr-un alt stat care permite poligamie. Da"
+  },
+  {
+    "id": "locuire-x33",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": false,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  }
+]

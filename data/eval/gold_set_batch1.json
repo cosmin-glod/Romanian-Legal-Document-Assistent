@@ -1,0 +1,17 @@
+[
+  {"id": "nastere-25", "category": "nastere", "should_refuse": false, "question": "Câte zile de concediu de maternitate am dreptul ca femeie asigurată?", "expected_breadcrumb_contains": ["Indemnizația de maternitate"], "expected_keywords": ["126", "concediu", "lăuzie"]},
+  {"id": "nastere-26", "category": "nastere", "should_refuse": false, "question": "Ce stimulent financiar primesc pentru nou-născut dacă locuiesc în București?", "expected_breadcrumb_contains": ["Municipiul București"], "expected_keywords": ["2500", "RON", "stimulent"]},
+  {"id": "nastere-27", "category": "nastere", "should_refuse": false, "question": "Pot primi alocație de stat pentru copil dacă acesta are un grad de handicap?", "expected_breadcrumb_contains": ["grad de handicap"], "expected_keywords": ["alocația de stat", "copii"]},
+  {"id": "nastere-28", "category": "nastere", "should_refuse": false, "question": "Cine poate beneficia de indemnizația pentru creșterea copilului?", "expected_breadcrumb_contains": ["Indemnizația pentru creșterea copilului"], "expected_keywords": ["părinți", "creșterea copilului"]},
+  {"id": "nastere-29", "category": "nastere", "should_refuse": true, "question": "Cât costă să fac pașaport pentru copilul meu nou-născut?", "expected_breadcrumb_contains": [], "expected_keywords": []},
+
+  {"id": "casatorie-23", "category": "casatorie", "should_refuse": false, "question": "Mă pot recăsători dacă sunt deja căsătorit?", "expected_breadcrumb_contains": ["Monogamie"], "expected_keywords": ["poligamia", "interzis"]},
+  {"id": "casatorie-24", "category": "casatorie", "should_refuse": false, "question": "Ce înseamnă regimul de separație de bunuri?", "expected_breadcrumb_contains": ["Separația de bunuri"], "expected_keywords": ["fiecare", "bunurile"]},
+  {"id": "casatorie-25", "category": "casatorie", "should_refuse": false, "question": "Ce presupune comunitatea legală a bunurilor în căsătorie?", "expected_breadcrumb_contains": ["Comunitatea legală"], "expected_keywords": ["dobândite", "comune"]},
+  {"id": "casatorie-26", "category": "casatorie", "should_refuse": false, "question": "Pot să mă căsătoresc cu un partener de același sex în România?", "expected_breadcrumb_contains": ["persoanele de același sex"], "expected_keywords": ["interzis"]},
+  {"id": "casatorie-27", "category": "casatorie", "should_refuse": true, "question": "Ce taxe trebuie să plătesc pentru a divorța?", "expected_breadcrumb_contains": [], "expected_keywords": []},
+
+  {"id": "locuire-23", "category": "locuire", "should_refuse": false, "question": "Sunt cetățean UE cu reședința în România. Ce acte îmi trebuie ca să cumpăr un apartament?", "expected_breadcrumb_contains": ["Am reședința în România"], "expected_keywords": ["actul de identitate"]},
+  {"id": "locuire-24", "category": "locuire", "should_refuse": false, "question": "Ce acte trebuie să aducă vânzătorul când cumpăr un imobil?", "expected_breadcrumb_contains": ["Ce acte trebuie să aducă vânzătorul"], "expected_keywords": ["documente", "vânzător"]},
+  {"id": "locuire-25", "category": "locuire", "should_refuse": true, "question": "Cât costă onorariul notarului pentru autentificarea contractului de vânzare?", "expected_breadcrumb_contains": [], "expected_keywords": []}
+]

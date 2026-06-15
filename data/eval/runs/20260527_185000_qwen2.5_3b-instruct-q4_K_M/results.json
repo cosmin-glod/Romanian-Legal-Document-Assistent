@@ -1,0 +1,114 @@
+[
+  {
+    "case_id": "smoke-nastere-01",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Ce documente îmi trebuie pentru înregistrarea nașterii copilului meu, dacă sunt căsătorit cu partenera?",
+    "should_refuse": false,
+    "answer_text": "Nașterea copilului este înregistrată la Stare Civilă. Documentele necesare sunt:\n- Actele de identitate ale tale și ale partenerului/partenerei\n- Certificatul medical constatator al nașterii care trebuie să poarte număr de înregistrare, dată certă, sigiliul/ştampila unității sanitare, semnătura şi parafa medicului\n- Certificatul vostru de căsătorie (dacă este cazul)\n- Declarația din care rezulte numele copilului, dacă nu aveți același nume de familie.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": false,
+    "violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2,
+    "latency_s": 61.86082601547241,
+    "top_breadcrumbs": [
+      "Nașterea > Suntem căsătoriți",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Suntem căsătoriți"
+    ]
+  },
+  {
+    "case_id": "smoke-casatorie-01",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Pot să mă căsătoresc la 16 ani?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 24.892605781555176,
+    "top_breadcrumbs": [
+      "Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ]
+  },
+  {
+    "case_id": "smoke-locuire-01",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Sunt cetățean român și vreau să cumpăr un apartament. Care este primul pas?",
+    "should_refuse": false,
+    "answer_text": "Primul pas este să găsiți imobilul pe care dorești să-l cumpere.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 22.59350037574768,
+    "top_breadcrumbs": [
+      "Locuire > Sunt cetățean român",
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățeanul unui alt stat"
+    ]
+  },
+  {
+    "case_id": "smoke-refuse-01",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Cum îmi schimb buletinul la 14 ani după naștere?",
+    "should_refuse": true,
+    "answer_text": "Schimbarea buletinului la vârsta de 14 ani în România implică următoarele etape:\n\n1. Încercați să schimbi buletinul pe platforma online a Serviciului de Stare Civil (www.starc.ro). Dacă nu reușești, contactați serviciile de stare civil pentru ajutor.\n\n2. Între 14 și 18 ani, persoana trebuie să schimbe buletinul în funcție de locația actuală a domiciliului sau de modificarea datelor personale.\n\n3. Dacă nu reușești să schimbi buletinul online, contactați serviciile de stare civil pentru o schimbare oficială.\n\n4. Încercați să schimbi buletinul pe platforma online la vârsta de 18 ani și după aceea nu mai poți face schimburi.\n\n5. Dacă nu reușești să schimbi buletinul online, contactați serviciile de stare civil pentru o schimbare oficială.\n\n6. Încercați să schimbi buletinul pe platforma online la vârsta de 18 ani și după aceea nu mai poți face schimburi.\n\n7. Dacă nu reușești să schimbi buletinul online, contactați serviciile de stare civil pentru o schimbare oficială.\n\n8. Încercați să schimbi buletinul pe platforma online la vârsta de 18 ani și după aceea nu mai poți face schimburi.\n\n9. Dacă nu reușești să schimbi buletinul online, contactați serviciile de stare civil pentru o schimbare oficială.\n\n10. Încercați să schimbi buletinul pe platforma online la vârsta de 18 ani și după aceea nu mai poți face schimburi.\n\nNu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 106.13325905799866,
+    "top_breadcrumbs": [
+      "Nașterea > Părinții nu au avut niciodată domiciliul în România",
+      "Nașterea > Vreau să transcriu certificatul de naștere la ambasada / oficiul consular al României",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Suntem căsătoriți"
+    ]
+  },
+  {
+    "case_id": "smoke-refuse-02",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Cum obțin un credit ipotecar de la bancă?",
+    "should_refuse": true,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 21.07853412628174,
+    "top_breadcrumbs": [
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 De ce acte am nevoie?"
+    ]
+  }
+]

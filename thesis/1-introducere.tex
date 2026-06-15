@@ -1,0 +1,20 @@
+\chapter{Introducere}
+
+\section{Motivație și problemă}
+
+Digitalizarea administrației publice este o prioritate europeană, urmărită în România prin platforme precum SPV-ul ANAF, Ghișeul.ro sau RO e-Factura. Beneficiul direct pentru cetățean rămâne însă limitat. Proceduri obișnuite, cum sunt înregistrarea unei nașteri, încheierea unei căsătorii sau închirierea unei locuințe, presupun interacțiuni cu mai multe instituții, reglementări care se modifică în timp și formulare specializate, fără o sursă unică de informare. Proiectul \emph{cezicelegea.ro} (Code for Romania) structurează informația pe \emph{evenimente de viață}, însă rămâne un site informativ. Cetățeanul identifică singur ramura din arborele decizional și completează formularele de la zero.
+
+Asistenții conversaționali bazați pe modele lingvistice mari și pe RAG (Retrieval-Augmented Generation) pot transforma un astfel de corpus într-un dialog cu răspunsuri ancorate în surse. În sectorul public există însă două constrângeri importante: confidențialitatea, întrucât datele cetățeanului nu pot părăsi dispozitivul, și \emph{fidelitatea}, întrucât un răspuns plauzibil, dar nesusținut de surse, induce cetățeanul în eroare. Lucrarea abordează astfel întrebarea: \emph{cum poate fi construit un asistent pentru proceduri administrative românești care oferă răspunsuri verificabile și rulează integral pe hardware de larg consum, fără apeluri externe?}
+
+\section{Obiective și contribuții}
+
+Lucrarea își propune să construiască și să evalueze un pipeline RAG complet, executabil integral local, pentru trei evenimente de viață (naștere, căsătorie, locuire), care să ofere răspunsuri verificabile, ancorate în sursele oficiale. Elementul central urmărit este un strat de verificare a ieșirii care vizează exact categoria de erori nesemnalate indicată drept lucrare viitoare în Gheorghe et al.\ (2026) \cite{gheorghe2026robust}. În acest scop, lucrarea aduce următoarele contribuții:
+
+\begin{itemize}
+    \item \textbf{Strat de verificare a ieșirii}: generarea este constrânsă la o schemă JSON tipizată, iar un set de reguli verifică, după generare, prezența și validitatea citațiilor și faptul că documentele menționate apar în surse.
+    \item \textbf{Cadru de evaluare reproductibil} al sistemului: pe un set de aur de întrebări, sunt măsurate calitatea regăsirii, fidelitatea răspunsurilor și costul computațional, comparând niveluri de cuantizare, scări de model și un model dintr-o altă familie, specializat pe limba română.
+    \item \textbf{Pre-completarea formularelor} printr-un motor condus de specificații, care acoperă un catalog de formulare administrative și extrage automat câmpurile dintr-o conversație în limbaj natural.
+    \item \textbf{Arhitectură integral locală}, pe hardware de larg consum, motivată de constrângerile de confidențialitate din sectorul public.
+\end{itemize}
+
+Față de lucrările grupului de cercetare (Gheorghe et al.\ \cite{gheorghe2026robust}; Paduraru et al.\ \cite{paduraru2026guardrail}), care propun arhitecturi multi-agent și injecție de erori, contribuția distinctă a acestei lucrări este implementarea și evaluarea concretă a stratului de verificare a ieșirii, pe o sursă de date și evenimente disjuncte, cu execuție locală.

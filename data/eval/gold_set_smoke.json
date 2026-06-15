@@ -1,0 +1,47 @@
+[
+  {
+    "id": "smoke-nastere-01",
+    "category": "nastere",
+    "difficulty": "easy",
+    "should_refuse": false,
+    "question": "Ce documente îmi trebuie pentru înregistrarea nașterii copilului meu, dacă sunt căsătorit cu partenera?",
+    "expected_breadcrumb_contains": ["Suntem căsătoriți"],
+    "expected_keywords": ["certificatul medical", "actele de identitate"]
+  },
+  {
+    "id": "smoke-casatorie-01",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "should_refuse": false,
+    "question": "Pot să mă căsătoresc la 16 ani?",
+    "expected_breadcrumb_contains": ["Vârsta minimă"],
+    "expected_keywords": ["16", "părinți"]
+  },
+  {
+    "id": "smoke-locuire-01",
+    "category": "locuire",
+    "difficulty": "easy",
+    "should_refuse": false,
+    "question": "Sunt cetățean român și vreau să cumpăr un apartament. Care este primul pas?",
+    "expected_breadcrumb_contains": ["Sunt cetățean român"],
+    "expected_keywords": ["notar"]
+  },
+  {
+    "id": "smoke-refuse-01",
+    "category": "nastere",
+    "difficulty": "easy",
+    "should_refuse": true,
+    "question": "Cum îmi schimb buletinul la 14 ani după naștere?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "smoke-refuse-02",
+    "category": "locuire",
+    "difficulty": "easy",
+    "should_refuse": true,
+    "question": "Cum obțin un credit ipotecar de la bancă?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  }
+]

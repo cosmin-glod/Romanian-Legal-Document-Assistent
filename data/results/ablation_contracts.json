@@ -1,0 +1,849 @@
+[
+  {
+    "id": "nastere-01",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R5_REFUSAL_WITH_DOCS",
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-02",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-03",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-04",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-05",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-06",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-07",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-08",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-09",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-10",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-11",
+    "off_violations": [
+      "R2_UNCITED",
+      "R6_FORM_ID_IN_DOCS",
+      "R6_FORM_ID_IN_DOCS"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-12",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-13",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-14",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-15",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-16",
+    "off_violations": [],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-17",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-18",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-19",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "nastere-20",
+    "off_violations": [],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-21",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-22",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-23",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-24",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x25",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x26",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x27",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x28",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R5_REFUSAL_WITH_DOCS",
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x29",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x30",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x31",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x32",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x33",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "nastere-x34",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "nastere-x35",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "casatorie-01",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-02",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-03",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-04",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-05",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-06",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-07",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-08",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "casatorie-09",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-10",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-11",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-12",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R3_BAD_CITATION",
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-13",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-14",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-15",
+    "off_violations": [],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-16",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "casatorie-17",
+    "off_violations": [],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-18",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-19",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "casatorie-20",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-21",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "casatorie-22",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "casatorie-x23",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-x24",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-x25",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-x26",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-x27",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-x28",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC",
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "casatorie-x29",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "casatorie-x30",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "locuire-01",
+    "off_violations": [
+      "R2_UNCITED",
+      "R6_FORM_ID_IN_DOCS"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-02",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-03",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-04",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-05",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-06",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-07",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-08",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-09",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC",
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-10",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-11",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-12",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "locuire-13",
+    "off_violations": [
+      "R2_UNCITED",
+      "R6_FORM_ID_IN_DOCS"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-14",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-15",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-16",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-17",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "locuire-18",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-19",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "locuire-20",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "locuire-21",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-22",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "locuire-x23",
+    "off_violations": [
+      "R2_UNCITED",
+      "R6_FORM_ID_IN_DOCS"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x24",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R4_FABRICATED_DOC",
+      "R4_FABRICATED_DOC",
+      "R4_FABRICATED_DOC"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x25",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x26",
+    "off_violations": [
+      "R2_UNCITED",
+      "R6_FORM_ID_IN_DOCS",
+      "R6_FORM_ID_IN_DOCS"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x27",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x28",
+    "off_violations": [
+      "R2_UNCITED",
+      "R6_FORM_ID_IN_DOCS"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x29",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x30",
+    "off_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "on_violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x31",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  },
+  {
+    "id": "locuire-x32",
+    "off_violations": [
+      "R2_UNCITED"
+    ],
+    "on_violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2
+  },
+  {
+    "id": "locuire-x33",
+    "off_violations": [],
+    "on_violations": [],
+    "attempts": 1
+  }
+]

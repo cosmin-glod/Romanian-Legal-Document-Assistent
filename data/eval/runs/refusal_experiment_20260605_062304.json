@@ -1,0 +1,266 @@
+[
+  {
+    "id": "nastere-04",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-09",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-15",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-17",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-19",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-03",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-04",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-05",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Sursele mențin că, dacă nu aveți același nume de familie, este obligator să declarați în scris pe ofițerul de stare civilă care va fi numele de familie pe care "
+  },
+  {
+    "id": "casatorie-07",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-08",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Da, puteți să păstrați fiecare numele pe care l-ați avut înainte de căsătorie și să luați amândoi numele unuia dintre soți. În cazul în care nu reușiți să ajung"
+  },
+  {
+    "id": "casatorie-10",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Puteți lua fiecare nume pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi sau să purtați numele voști reunite. Regimul matrimon"
+  },
+  {
+    "id": "casatorie-13",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-14",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": ""
+  },
+  {
+    "id": "casatorie-15",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Pentru căsătoria cu un partener cetățean străin, sunt necesare informațiuni suplimentare care includ:\n\n1. Documente de identitate pentru ambele persoane (carte "
+  },
+  {
+    "id": "casatorie-16",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-17",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele pentru a răspunde."
+  },
+  {
+    "id": "casatorie-18",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-04",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-12",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-16",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-17",
+    "subset": "spurious",
+    "should_refuse": false,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informațiilor în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-21",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": false,
+    "refined_refused": false,
+    "refined_answer": "Schimbarea buletinului la vârsta de 14 ani în România implică următoarele etape:\n\n1. Încercați să schimbi buletinul pe platforma online a Serviciului de Stare C"
+  },
+  {
+    "id": "nastere-22",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-23",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "nastere-24",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-19",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": false,
+    "refined_answer": "Nu am suficiente informații în sursele pentru a răspunde direct la întrebarea. Citez sursele:\n1. Surse 4\n3. Surse 4"
+  },
+  {
+    "id": "casatorie-20",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-21",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "casatorie-22",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-19",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-20",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  },
+  {
+    "id": "locuire-21",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": false,
+    "refined_refused": false,
+    "refined_answer": "Obținând un certificat de urbanism pentru a construi o casă pe terenul tău implică o serie de etape și documente. Iată câteva pasaje principale care trebuie făc"
+  },
+  {
+    "id": "locuire-22",
+    "subset": "control",
+    "should_refuse": true,
+    "base_refused": true,
+    "refined_refused": true,
+    "refined_answer": "Nu am suficiente informații în sursele disponibile pentru a răspunde."
+  }
+]

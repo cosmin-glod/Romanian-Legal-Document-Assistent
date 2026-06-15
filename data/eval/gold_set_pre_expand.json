@@ -1,0 +1,932 @@
+[
+  {
+    "id": "nastere-01",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Ce documente îmi trebuie pentru înregistrarea nașterii copilului meu, dacă sunt căsătorit cu partenera?",
+    "expected_breadcrumb_contains": [
+      "Suntem căsătoriți"
+    ],
+    "expected_keywords": [
+      "certificatul medical",
+      "actele de identitate",
+      "certificat"
+    ]
+  },
+  {
+    "id": "nastere-02",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Cine eliberează certificatul medical constatator al nașterii?",
+    "expected_breadcrumb_contains": [
+      "Am domiciliul",
+      "medical",
+      "Certificatul medical"
+    ],
+    "expected_keywords": [
+      "spital",
+      "medic"
+    ]
+  },
+  {
+    "id": "nastere-03",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Unde se înregistrează nașterea copilului meu dacă a fost născut într-un spital în România?",
+    "expected_breadcrumb_contains": [
+      "Am domiciliul în România",
+      "primări",
+      "stare civilă"
+    ],
+    "expected_keywords": [
+      "primări",
+      "stare civilă"
+    ]
+  },
+  {
+    "id": "nastere-04",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Am născut acasă, nu într-un spital. Cum obțin certificatul medical constatator al nașterii?",
+    "expected_breadcrumb_contains": [
+      "Am născut acasă",
+      "acasă"
+    ],
+    "expected_keywords": [
+      "medic",
+      "declarație"
+    ],
+    "notes": "Tests retrieval on a specific branch of the decision tree."
+  },
+  {
+    "id": "nastere-05",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Părinții nu sunt căsătoriți. Tatăl recunoaște copilul. Ce documente trebuie depuse la primărie?",
+    "expected_breadcrumb_contains": [
+      "Tatăl recunoaște"
+    ],
+    "expected_keywords": [
+      "declarație",
+      "recunoaștere",
+      "identitate"
+    ]
+  },
+  {
+    "id": "nastere-06",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Sunt cetățean român și am născut într-o clinică privată. Unde primesc certificatul medical?",
+    "expected_breadcrumb_contains": [
+      "Am domiciliul",
+      "spital",
+      "clinic"
+    ],
+    "expected_keywords": [
+      "medic",
+      "clinică",
+      "spital"
+    ]
+  },
+  {
+    "id": "nastere-07",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Cine eliberează certificatul de naștere al copilului meu?",
+    "expected_breadcrumb_contains": [
+      "Suntem căsătoriți",
+      "Tatăl recunoaște",
+      "stare civilă"
+    ],
+    "expected_keywords": [
+      "stare civilă",
+      "primări"
+    ]
+  },
+  {
+    "id": "nastere-08",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Ce este certificatul medical constatator al nașterii?",
+    "expected_breadcrumb_contains": [
+      "medical",
+      "Certificatul medical"
+    ],
+    "expected_keywords": [
+      "medical",
+      "spital",
+      "document"
+    ]
+  },
+  {
+    "id": "nastere-09",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Am născut în străinătate. Ce trebuie să fac pentru ca nașterea să fie recunoscută în România?",
+    "expected_breadcrumb_contains": [
+      "străinătate",
+      "ambasad",
+      "transcri"
+    ],
+    "expected_keywords": [
+      "transcri",
+      "consul"
+    ]
+  },
+  {
+    "id": "nastere-10",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Cine poate primi indemnizația pentru creșterea copilului?",
+    "expected_breadcrumb_contains": [
+      "Indemnizația pentru creșterea copilului",
+      "Indemnizația"
+    ],
+    "expected_keywords": [
+      "părinte",
+      "venit"
+    ]
+  },
+  {
+    "id": "nastere-11",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Ce alocații financiare primesc părinții pentru un nou-născut?",
+    "expected_breadcrumb_contains": [
+      "Ajutor financiar",
+      "alocați",
+      "Municipiul",
+      "Indemnizația"
+    ],
+    "expected_keywords": [
+      "alocați",
+      "stat"
+    ]
+  },
+  {
+    "id": "nastere-12",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Pe ce perioadă se acordă indemnizația pentru creșterea copilului?",
+    "expected_breadcrumb_contains": [
+      "Indemnizația pentru creșterea copilului"
+    ],
+    "expected_keywords": [
+      "lună",
+      "ani",
+      "copil"
+    ]
+  },
+  {
+    "id": "nastere-13",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Am primit certificatul de naștere al copilului în străinătate. Cum îl transcriu pe cel românesc?",
+    "expected_breadcrumb_contains": [
+      "transcri",
+      "ambasad",
+      "consul"
+    ],
+    "expected_keywords": [
+      "transcri",
+      "consul"
+    ]
+  },
+  {
+    "id": "nastere-14",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Ce este stimulentul de inserție și în ce condiții îl primesc?",
+    "expected_breadcrumb_contains": [
+      "Stimulent",
+      "Stimulentul de inserție"
+    ],
+    "expected_keywords": [
+      "stimulent",
+      "inserți",
+      "muncă"
+    ]
+  },
+  {
+    "id": "nastere-15",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Părinții mei nu au avut niciodată domiciliul în România. Pot înregistra nașterea copilului meu aici?",
+    "expected_breadcrumb_contains": [
+      "Părinții nu au avut",
+      "domiciliul"
+    ],
+    "expected_keywords": [
+      "domiciliu",
+      "copilului"
+    ],
+    "notes": "Edge case — tests retrieval on a less common branch."
+  },
+  {
+    "id": "nastere-16",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Sunt cetățean român cu domiciliul în Franța. Am născut acolo. Cum obțin certificatul de naștere al copilului meu românesc?",
+    "expected_breadcrumb_contains": [
+      "străinătate",
+      "ambasad",
+      "transcri",
+      "consul"
+    ],
+    "expected_keywords": [
+      "consul",
+      "ambasad",
+      "transcri"
+    ]
+  },
+  {
+    "id": "nastere-17",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Nu sunt căsătorit cu mama copilului. Cum recunosc legal copilul?",
+    "expected_breadcrumb_contains": [
+      "Tatăl recunoaște"
+    ],
+    "expected_keywords": [
+      "declarație",
+      "recunoaștere",
+      "stare civilă"
+    ]
+  },
+  {
+    "id": "nastere-18",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Părinții au nume de familie diferite. Ce nume va purta copilul?",
+    "expected_breadcrumb_contains": [
+      "Tatăl recunoaște",
+      "Suntem căsătoriți",
+      "nume"
+    ],
+    "expected_keywords": [
+      "declarație",
+      "nume",
+      "instanță"
+    ]
+  },
+  {
+    "id": "nastere-19",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Sunt mamă singură, tatăl copilului nu recunoaște copilul. Cum stabilesc paternitatea legal?",
+    "expected_breadcrumb_contains": [
+      "Tatăl nu recunoaște",
+      "paternitate"
+    ],
+    "expected_keywords": [
+      "instanță",
+      "paternitate",
+      "recunoaștere"
+    ]
+  },
+  {
+    "id": "nastere-20",
+    "category": "nastere",
+    "should_refuse": false,
+    "question": "Am cetățenie dublă, română și franceză, iar copilul s-a născut în Franța. Care e procedura completă pentru a-i obține certificatul românesc?",
+    "expected_breadcrumb_contains": [
+      "străinătate",
+      "transcri",
+      "ambasad"
+    ],
+    "expected_keywords": [
+      "consul",
+      "transcri"
+    ],
+    "notes": "Multi-step reasoning — useful for 3B vs 7B comparison."
+  },
+  {
+    "id": "nastere-21",
+    "category": "nastere",
+    "should_refuse": true,
+    "question": "Cum îmi schimb buletinul la 14 ani după naștere?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "nastere-22",
+    "category": "nastere",
+    "should_refuse": true,
+    "question": "Vreau să adopt un copil cu vârsta de peste 5 ani. Procedura?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "nastere-23",
+    "category": "nastere",
+    "should_refuse": true,
+    "question": "Cum primesc pensie alimentară de la fostul soț pentru copilul nostru?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "nastere-24",
+    "category": "nastere",
+    "should_refuse": true,
+    "question": "Cât costă un test DNA pentru stabilirea paternității?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "casatorie-01",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Care este vârsta minimă pentru căsătorie în România?",
+    "expected_breadcrumb_contains": [
+      "Vârsta minimă"
+    ],
+    "expected_keywords": [
+      "18",
+      "16"
+    ]
+  },
+  {
+    "id": "casatorie-02",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Două persoane de același sex se pot căsători în România?",
+    "expected_breadcrumb_contains": [
+      "același sex",
+      "acelaș"
+    ],
+    "expected_keywords": [
+      "nu",
+      "bărbat",
+      "femeie"
+    ]
+  },
+  {
+    "id": "casatorie-03",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Sunt deja căsătorit. Pot încheia o nouă căsătorie?",
+    "expected_breadcrumb_contains": [
+      "Monogamie",
+      "Condiții"
+    ],
+    "expected_keywords": [
+      "nu",
+      "interzis"
+    ]
+  },
+  {
+    "id": "casatorie-04",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Pot să mă căsătoresc la 16 ani?",
+    "expected_breadcrumb_contains": [
+      "Vârsta minimă"
+    ],
+    "expected_keywords": [
+      "16",
+      "părinți",
+      "aviz",
+      "încuviințare"
+    ],
+    "notes": "User-tested case where the 3B over-refuses despite correct retrieval."
+  },
+  {
+    "id": "casatorie-05",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Pot să iau numele partenerului ca nume de familie după căsătorie?",
+    "expected_breadcrumb_contains": [
+      "nume",
+      "Ne căsătorim"
+    ],
+    "expected_keywords": [
+      "nume",
+      "soți"
+    ]
+  },
+  {
+    "id": "casatorie-06",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Există rude apropiate cu care nu mă pot căsători?",
+    "expected_breadcrumb_contains": [
+      "Condiții",
+      "Rudenie",
+      "rudă"
+    ],
+    "expected_keywords": [
+      "rudenie",
+      "nu",
+      "interzis"
+    ]
+  },
+  {
+    "id": "casatorie-07",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Putem să oficiem căsătoria la o ambasadă a României din străinătate?",
+    "expected_breadcrumb_contains": [
+      "străinătate",
+      "ambasad",
+      "consul"
+    ],
+    "expected_keywords": [
+      "consul",
+      "ambasad",
+      "misiun"
+    ]
+  },
+  {
+    "id": "casatorie-08",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Pot purta un nume compus din numele ambilor soți?",
+    "expected_breadcrumb_contains": [
+      "nume",
+      "Ne căsătorim"
+    ],
+    "expected_keywords": [
+      "nume",
+      "reunit"
+    ]
+  },
+  {
+    "id": "casatorie-09",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Ce documente trebuie să depun la primărie pentru căsătorie în România?",
+    "expected_breadcrumb_contains": [
+      "Ne căsătorim în România"
+    ],
+    "expected_keywords": [
+      "certific",
+      "casatoriei"
+    ]
+  },
+  {
+    "id": "casatorie-10",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Ce nume de familie pot să aleg după căsătorie?",
+    "expected_breadcrumb_contains": [
+      "nume",
+      "Ne căsătorim"
+    ],
+    "expected_keywords": [
+      "nume",
+      "soți"
+    ]
+  },
+  {
+    "id": "casatorie-11",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Vreau să mă căsătoresc în străinătate. Ce procedură există?",
+    "expected_breadcrumb_contains": [
+      "Ne căsătorim în străinătate"
+    ],
+    "expected_keywords": [
+      "consul",
+      "ambasad"
+    ]
+  },
+  {
+    "id": "casatorie-12",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Care sunt pașii pentru depunerea declarației de căsătorie când partenerul este cetățean străin?",
+    "expected_breadcrumb_contains": [
+      "Partenerul este cetățean străin",
+      "PASUL"
+    ],
+    "expected_keywords": [
+      "declarație",
+      "PASUL",
+      "document"
+    ]
+  },
+  {
+    "id": "casatorie-13",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Sunt cetățean român căsătorit cu un cetățean UE. Trebuie traduceri pentru actele lui?",
+    "expected_breadcrumb_contains": [
+      "străin",
+      "Partenerul este cetățean străin"
+    ],
+    "expected_keywords": [
+      "traducere",
+      "tradus",
+      "interpret"
+    ]
+  },
+  {
+    "id": "casatorie-14",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Am încheiat căsătoria în străinătate. Cum o transcriu/recunosc în România?",
+    "expected_breadcrumb_contains": [
+      "străinătate",
+      "transcri",
+      "ambasad"
+    ],
+    "expected_keywords": [
+      "consul",
+      "ambasad"
+    ]
+  },
+  {
+    "id": "casatorie-15",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Partenerul meu este cetățean străin. Ce trebuie să știu suplimentar înainte de căsătorie?",
+    "expected_breadcrumb_contains": [
+      "Partenerul este cetățean străin"
+    ],
+    "expected_keywords": [
+      "interpret",
+      "tradu",
+      "document"
+    ]
+  },
+  {
+    "id": "casatorie-16",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Sunt verișor primar cu partenera. Putem să ne căsătorim?",
+    "expected_breadcrumb_contains": [
+      "Condiții",
+      "Rudenie",
+      "rudă"
+    ],
+    "expected_keywords": [
+      "rudenie",
+      "nu",
+      "interzis"
+    ]
+  },
+  {
+    "id": "casatorie-17",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Sunt minor de 16 ani și vreau să mă căsătoresc. Care sunt pașii legali completi?",
+    "expected_breadcrumb_contains": [
+      "Vârsta minimă"
+    ],
+    "expected_keywords": [
+      "încuviințare",
+      "părinți",
+      "aviz",
+      "instanță"
+    ]
+  },
+  {
+    "id": "casatorie-18",
+    "category": "casatorie",
+    "should_refuse": false,
+    "question": "Partenerul meu nu cunoaște limba română. Ce este obligatoriu la oficierea căsătoriei?",
+    "expected_breadcrumb_contains": [
+      "Partenerul este cetățean străin",
+      "interpret",
+      "limba"
+    ],
+    "expected_keywords": [
+      "interpret",
+      "autorizat",
+      "obligatori"
+    ]
+  },
+  {
+    "id": "casatorie-19",
+    "category": "casatorie",
+    "should_refuse": true,
+    "question": "Cum divorțez de partenerul meu?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "casatorie-20",
+    "category": "casatorie",
+    "should_refuse": true,
+    "question": "Cât costă oficierea unei căsătorii la primărie?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "casatorie-21",
+    "category": "casatorie",
+    "should_refuse": true,
+    "question": "Cum împart pensia de soț decedat?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "casatorie-22",
+    "category": "casatorie",
+    "should_refuse": true,
+    "question": "Putem semna un contract prematrimonial înainte de căsătorie?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "locuire-01",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Sunt cetățean român și vreau să cumpăr un apartament. Care este primul pas?",
+    "expected_breadcrumb_contains": [
+      "Sunt cetățean român",
+      "notar"
+    ],
+    "expected_keywords": [
+      "notar",
+      "imobil"
+    ]
+  },
+  {
+    "id": "locuire-02",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Ce acte îmi trebuie ca cumpărător al unui imobil în România?",
+    "expected_breadcrumb_contains": [
+      "acte am nevoie",
+      "Sunt cetățean român"
+    ],
+    "expected_keywords": [
+      "notar",
+      "imobil"
+    ]
+  },
+  {
+    "id": "locuire-03",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Ce trebuie să conțină un contract de închiriere între proprietar și chiriaș?",
+    "expected_breadcrumb_contains": [
+      "locațiune",
+      "închiriere",
+      "Despre contractul"
+    ],
+    "expected_keywords": [
+      "chirie",
+      "imobil",
+      "părți"
+    ]
+  },
+  {
+    "id": "locuire-04",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Vreau să închiriez un apartament. Trebuie obligatoriu să facem contract în scris?",
+    "expected_breadcrumb_contains": [
+      "locațiune",
+      "contract"
+    ],
+    "expected_keywords": [
+      "contract",
+      "scris"
+    ]
+  },
+  {
+    "id": "locuire-05",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt obligațiile proprietarului față de chiriaș?",
+    "expected_breadcrumb_contains": [
+      "Obligațiile proprietarului",
+      "obligaț"
+    ],
+    "expected_keywords": [
+      "proprietar",
+      "obligaț"
+    ]
+  },
+  {
+    "id": "locuire-06",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt drepturile mele ca chiriaș?",
+    "expected_breadcrumb_contains": [
+      "Drepturile chiriașului",
+      "chiriaș",
+      "locatar"
+    ],
+    "expected_keywords": [
+      "chiriaș",
+      "drept"
+    ]
+  },
+  {
+    "id": "locuire-07",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt obligațiile mele ca proprietar într-o asociație de proprietari?",
+    "expected_breadcrumb_contains": [
+      "asociația de proprietari",
+      "obligaț"
+    ],
+    "expected_keywords": [
+      "asociați",
+      "obligaț"
+    ]
+  },
+  {
+    "id": "locuire-08",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt obligațiile chiriașului față de proprietar?",
+    "expected_breadcrumb_contains": [
+      "Obligațiile chiriașului",
+      "obligaț"
+    ],
+    "expected_keywords": [
+      "chiriaș",
+      "locatar",
+      "obligaț"
+    ]
+  },
+  {
+    "id": "locuire-09",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Sunt cetățean al unui stat UE. În ce condiții pot cumpăra o casă în România?",
+    "expected_breadcrumb_contains": [
+      "UE",
+      "stat membru",
+      "alt stat"
+    ],
+    "expected_keywords": [
+      "cetățean",
+      "român",
+      "condiț"
+    ]
+  },
+  {
+    "id": "locuire-10",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Sunt cetățean al unui stat non-UE. Pot cumpăra un imobil în România?",
+    "expected_breadcrumb_contains": [
+      "alt stat",
+      "străin",
+      "cetățean"
+    ],
+    "expected_keywords": [
+      "acord",
+      "reciproc",
+      "internațional"
+    ]
+  },
+  {
+    "id": "locuire-11",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt obligațiile chiriașului față de imobil?",
+    "expected_breadcrumb_contains": [
+      "chiriaș",
+      "locatar",
+      "obligaț"
+    ],
+    "expected_keywords": [
+      "chiriaș",
+      "locatar"
+    ]
+  },
+  {
+    "id": "locuire-12",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Sunt cetățean turc. Pot cumpăra un apartament în România?",
+    "expected_breadcrumb_contains": [
+      "alt stat",
+      "străin"
+    ],
+    "expected_keywords": [
+      "acord",
+      "cetățean"
+    ]
+  },
+  {
+    "id": "locuire-13",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt drepturile proprietarului asupra unui imobil închiriat?",
+    "expected_breadcrumb_contains": [
+      "Drepturile proprietarului",
+      "drept"
+    ],
+    "expected_keywords": [
+      "proprietar",
+      "drept"
+    ]
+  },
+  {
+    "id": "locuire-14",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt drepturile mele ca membru al unei asociații de proprietari?",
+    "expected_breadcrumb_contains": [
+      "asociația",
+      "drept"
+    ],
+    "expected_keywords": [
+      "asociați",
+      "drept"
+    ]
+  },
+  {
+    "id": "locuire-15",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care sunt drepturile mele dacă sunt proprietarul unui apartament și membru al asociației de proprietari?",
+    "expected_breadcrumb_contains": [
+      "proprietar",
+      "asociație"
+    ],
+    "expected_keywords": [
+      "proprietar",
+      "drept",
+      "asociați"
+    ]
+  },
+  {
+    "id": "locuire-16",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Vreau să închiriez locuința altcuiva și nu vrem să încheiem contract în scris. E legal?",
+    "expected_breadcrumb_contains": [
+      "locațiune",
+      "contract"
+    ],
+    "expected_keywords": [
+      "contract",
+      "scris",
+      "obligator"
+    ]
+  },
+  {
+    "id": "locuire-17",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Sunt cetățean român, vreau să cumpăr un imobil împreună cu un partener cetățean turc. Există restricții?",
+    "expected_breadcrumb_contains": [
+      "alt stat",
+      "cetățean",
+      "străin"
+    ],
+    "expected_keywords": [
+      "acord",
+      "cetățean"
+    ],
+    "notes": "Cross-category synthesis — should expose 3B vs 7B differences."
+  },
+  {
+    "id": "locuire-18",
+    "category": "locuire",
+    "should_refuse": false,
+    "question": "Care e diferența între un cetățean UE și unul non-UE când vine vorba despre cumpărarea unui imobil în România?",
+    "expected_breadcrumb_contains": [
+      "alt stat",
+      "UE",
+      "cetățean"
+    ],
+    "expected_keywords": [
+      "UE",
+      "acord",
+      "cetățean",
+      "reciproc"
+    ],
+    "notes": "Comparison question — multi-chunk synthesis required."
+  },
+  {
+    "id": "locuire-19",
+    "category": "locuire",
+    "should_refuse": true,
+    "question": "Cum obțin un credit ipotecar de la bancă?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "locuire-20",
+    "category": "locuire",
+    "should_refuse": true,
+    "question": "Ce taxe plătesc dacă cumpăr o casă de vacanță în Bulgaria?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "locuire-21",
+    "category": "locuire",
+    "should_refuse": true,
+    "question": "Cum obțin un certificat de urbanism pentru a construi o casă pe terenul meu?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  },
+  {
+    "id": "locuire-22",
+    "category": "locuire",
+    "should_refuse": true,
+    "question": "Cât costă mutarea cu o firmă de mutări în București?",
+    "expected_breadcrumb_contains": [],
+    "expected_keywords": []
+  }
+]

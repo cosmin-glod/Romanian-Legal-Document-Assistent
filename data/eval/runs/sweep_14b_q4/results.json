@@ -1,0 +1,2085 @@
+[
+  {
+    "case_id": "nastere-01",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Ce documente îmi trebuie pentru înregistrarea nașterii copilului meu, dacă sunt căsătorit cu partenera?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 56.23132395744324,
+    "top_breadcrumbs": [
+      "Nașterea > Suntem căsătoriți",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Suntem căsătoriți"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.74 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "nastere-02",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Cine eliberează certificatul medical constatator al nașterii?",
+    "should_refuse": false,
+    "answer_text": "Certificatul medical constatator al nașterii este eliberat de medicul care a asistat, supravegheat sau constatat nașterea, sau de medicul șef de secție de obstetrică-ginecologie. Acest certificat se eliberează în termen de 24 de ore.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.5,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 29.129995346069336,
+    "top_breadcrumbs": [
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în străinătate",
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în străinătate"
+    ],
+    "documents_mentioned": [
+      "certificat medical constatator al nașterii"
+    ],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Am domiciliul în România]\nCertificatul medical constatator al nașterii e un document medical pe care îl vei primi de la spitalul sau clinica unde ai născut. Atenție! Acest document este unul medical, și nu ține locul certificatului de naștere. Certificatul se eliberează în termen de 24 de ore de către medicul care a asistat, a supravegheat sau a constatat nașterea, sau medicul șef de secție de obstetrică-ginecologie. Pentru a elibera certificatul medical constatator al nașterii, personalul spitalului îți va cere și următoarele documente: Actele tale de identitate și ale partenerului/partenerei (părinții); Certificatul de căsătorie (dacă este cazul); Document cu care se face dovada adresei de domiciliu sau reședinței.\n\n- Actele tale de identitate și ale partenerului/partenerei (părinții);\n- Certificatul de căsătorie (dacă este cazul);\n- Document cu care se face dovada adresei de domiciliu sau reședinței."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-03",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Unde se înregistrează nașterea copilului meu dacă a fost născut într-un spital în România?",
+    "should_refuse": false,
+    "answer_text": "Nașterea unui copil care s-a întâmplat într-un spital din România poate fi înregistrată la Primaria localității unde a avut loc nașterea. În acest caz, este necesar să prezentezi următoarele documente: certificatul medical constatator al nașterii, actele de identitate ale părinților și alte documente specifice situației (de exemplu, declarația de recunoaștere a copilului în cazul născerutelor în afara căsătoriei sau certificatul de căsătorie dacă părinții sunt căsătoriți).",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": false,
+    "keyword_coverage": 0.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 50.172128200531006,
+    "top_breadcrumbs": [
+      "Nașterea > Vreau să înregistrez nașterea la ambasadă",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Vreau să înregistrez nașterea la ambasada țării mele de origine",
+      "Nașterea > Suntem căsătoriți"
+    ],
+    "documents_mentioned": [
+      "certificat medical constatator al nașterii",
+      "carte de identitate"
+    ],
+    "cited_source_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Vreau să înregistrez nașterea la ambasadă]\nÎnregistrarea nașterii unui copil străin născut în România se poate face la ambasada sau consulatul țării de cetățenie și depinde de legile acesteia. Dacă țara de cetățenie nu are o ambasadă sau un consulat în România, va trebui să verifici care ambasadă sau consulat din regiune este răspunzătoare de România. Poți găsi lista completă a țărilor care au misiuni diplomatice în România aici. ATENȚIE! Pentru a fi sigur că informațiile sunt corecte, îți recomandăm să contactezi direct ambasada sau consulatul țării tale de origine pentru a confirma care este procedura de înregistrare a nașterii!",
+      "[Nașterea > Tatăl recunoaște copilul]\nÎn România, copiii născuți din părinți căsătoriți au aceleași drepturi ca și copiii născuți în afara căsătoriei. Pentru a înregistra nașterea copilului, Serviciul de Stare Civilă al Primăriei îți va cere următoarele documente: Certificatul de naştere al mamei; Actele de identitate ale tale și ale partenerului/partenerei (buletin sau carte de identitate, etc.); Certificatul medical constatator al nașterii care trebuie să poarte număr de înregistrare, dată certă, sigiliul/ştampila unităţii sanitare, semnătura şi parafa medicului; Declarație de recunoaștere a copilului din afara căsătoriei. Aceasta trebuie să fie completată de ambii părinți, în fața notarului sau a ofițerului de stare civilă. Declarație privind numele pe care îl va purta copilul. ATENȚIE! Dacă tu și partenerul/partenera aveți nume de familie diferite, veți declara în scris, în fața ofițerului de stare civilă sau a notarului, care este numele de familie pe care îl va avea copilul. Spre exemplu, copilul poate să poarte numele de familie al unuia dintre voi, un nume compus din numele voastre, etc. Dacă nu reușiți să ajungeți la un acord privind numele de familie al copilului, cazul va ajunge la instanța de tutelă (în fața unui judecător) care va decide cu privire la acesta. În acest caz, certificatul de naștere va fi eliberat numai după ce instanța ia o decizie privind numele copilului.\n\n- Certificatul de naştere al mamei;\n- Actele de identitate ale tale și ale partenerului/partenerei (buletin sau carte de identitate, etc.);\n- Certificatul medical constatator al nașterii care trebuie să poarte număr de înregistrare, dată certă, sigiliul/ştampila unităţii sanitare, semnătura şi parafa medicului;\n- Declarație de recunoaștere a copilului din afara căsătoriei. Aceasta trebuie să fie completată de ambii părinți, în fața notarului sau a ofițerului de stare civilă.\n- Declarație privind numele pe care îl va purta copilul.",
+      "[Nașterea > Vreau să înregistrez nașterea la ambasada țării mele de origine]\nÎnregistrarea nașterii unui copil cetățean străin născut în România se poate face la ambasada sau consulatul țării tale de origine și depinde de legile acesteia. Dacă țara de cetățenie nu are o ambasadă sau un consulat în România, va trebui să verifici care ambasadă sau consulat din regiune este răspunzătoare de România. Poți găsi lista completă a țărilor care au misiuni diplomatice în România aici. ATENȚIE! Pentru a fi sigur că informațiile sunt corecte, îți recomandăm să contactezi direct ambasada sau consulatul țării tale de origine pentru a confirma care este procedura de înregistrare a nașterii!",
+      "[Nașterea > Suntem căsătoriți]\nPentru a înregistra nașterea copilului, Serviciul de Stare Civilă al Primăriei îți va cere următoarele documente: Actele de identitate ale tale și ale partenerului/partenerei (buletin sau carte de identitate, etc.); Certificatul medical constatator al nașterii care trebuie să poarte număr de înregistrare, dată certă, sigiliul/ştampila unităţii sanitare, semnătura şi parafa medicului; Certificatul vostru de căsătorie; Declarația din care să rezulte numele copilului, dacă nu aveți același nume de familie. Dacă tu și partenerul/partenera v-ați căsătorit în străinătate, nașterea copilului poate fi înregistrată numai după ce certificatul de căsătorie e transcris în România. De exemplu, dacă tu și soțul tău/soția ta v-ați căsătorit în Germania, va trebui să duceți certificatul de căsătorie la Serviciul de Stare Civilă unde aveți domiciliul pentru a fi transcris. ATENȚIE! Dacă tu și partenerul/partenera aveți nume de familie diferite, veți declara în scris, în fața ofițerului de stare civilă sau a notarului, care este numele de familie pe care îl va avea copilul. Spre exemplu, copilul poate să poarte numele de familie al unuia dintre voi, un nume compus din numele voastre, etc. Dacă tu și partenerul/partenera nu reușiți să ajungeți la un acord privind numele de familie al copilului, cazul va ajunge la instanța de tutelă (în fața unui judecător) care va decide cu privire la acesta. În acest caz, certificatul de naștere va fi eliberat numai după ce instanța ia o decizie privind numele copilului.\n\n- Actele de identitate ale tale și ale partenerului/partenerei (buletin sau carte de identitate, etc.);\n- Certificatul medical constatator al nașterii care trebuie să poarte număr de înregistrare, dată certă, sigiliul/ştampila unităţii sanitare, semnătura şi parafa medicului;\n- Certificatul vostru de căsătorie;\n- Declarația din care să rezulte numele copilului, dacă nu aveți același nume de familie."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-04",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Am născut acasă, nu într-un spital. Cum obțin certificatul medical constatator al nașterii?",
+    "should_refuse": false,
+    "answer_text": "Dacă ai născut acasă și nu la spital sau clinica, trebuie să contactezi medicul de familie sau un medic care a fost prezent la naștere pentru a obține certificatul medical constatator al nașterii. Acest document este necesar pentru înregistrarea nașterii.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": false,
+    "keyword_coverage": 0.5,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 33.70518684387207,
+    "top_breadcrumbs": [
+      "Nașterea > Am domiciliul în străinătate",
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în străinătate",
+      "Nașterea > Am domiciliul în România"
+    ],
+    "documents_mentioned": [
+      "certificat medical constatator al nașterii",
+      "carte de identitate",
+      "certificat de căsătorie"
+    ],
+    "cited_source_indices": [
+      3
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Am domiciliul în străinătate]\nCertificatul medical constatator al nașterii e un document medical pe care trebuie să îl obții de la medicul de familie sau de la spitalul pe raza căruia a avut loc nașterea. Atenție! Acest document este unul medical, și nu ține locul certificatului de naștere. Pentru a elibera certificatul medical constatator al nașterii, doctorul sau personalul spitalului îți va cere și următoarele documente: Actele tale de identitate și ale partenerului/partenerei (părinții); Certificatul de căsătorie (dacă este cazul); Document cu care se face dovada adresei de domiciliu sau reședinței. La eliberarea certificatului medical constatator al nașterii, veți declara atât domiciliul (adresa din țara de origine, așa cum este notată în documentul de identitate), cât și adresa de reședință din România (ex. apartamentul, hotelul, etc unde locuiți în prezent). Nu e nevoie să prezinți documente suplimentare (precum permisul de ședere sau documentul care atestă statutul de beneficiar al protecției temporare). Spitalul nu verifică legalitatea șederii tale în țară. Dacă documentele sunt în altă limbă decât română, acestea trebuie să fie prezentate în traducere legalizată. O traducere legalizată este făcută de către un traducător profesionist (autorizat) și are ștampila unui notar public. Ca să obții o traducere legalizată, apelează la serviciile unui birou de notari publici care colaborează cu traducători autorizați specializați în limba în care sunt scrise documentele tale.\n\n- Actele tale de identitate și ale partenerului/partenerei (părinții);\n- Certificatul de căsătorie (dacă este cazul);\n- Document cu care se face dovada adresei de domiciliu sau reședinței."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-05",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Părinții nu sunt căsătoriți. Tatăl recunoaște copilul. Ce documente trebuie depuse la primărie?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 83.54541754722595,
+    "top_breadcrumbs": [
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.76 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "nastere-06",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Sunt cetățean român și am născut într-o clinică privată. Unde primesc certificatul medical?",
+    "should_refuse": false,
+    "answer_text": "Pentru a obține certificatul medical constatator al nașterii, trebuie să te adresezi medicului de familie sau personalului spitalului/clinicii unde s-a întâmplat nașterea. În cazul tău, cum ai născut într-o clinică privată, poți primi certificatul direct de la această instituție medicală.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 10.339560508728027,
+    "top_breadcrumbs": [
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în străinătate",
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în străinătate"
+    ],
+    "documents_mentioned": [
+      "certificat medical constatator al nașterii",
+      "acte de identitate",
+      "certificat de căsătorie"
+    ],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Am domiciliul în România]\nCertificatul medical constatator al nașterii e un document medical pe care îl vei primi de la spitalul sau clinica unde ai născut. Atenție! Acest document este unul medical, și nu ține locul certificatului de naștere. Certificatul se eliberează în termen de 24 de ore de către medicul care a asistat, a supravegheat sau a constatat nașterea, sau medicul șef de secție de obstetrică-ginecologie. Pentru a elibera certificatul medical constatator al nașterii, personalul spitalului îți va cere și următoarele documente: Actele tale de identitate și ale partenerului/partenerei (părinții); Certificatul de căsătorie (dacă este cazul); Document cu care se face dovada adresei de domiciliu sau reședinței.\n\n- Actele tale de identitate și ale partenerului/partenerei (părinții);\n- Certificatul de căsătorie (dacă este cazul);\n- Document cu care se face dovada adresei de domiciliu sau reședinței."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-07",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Cine eliberează certificatul de naștere al copilului meu?",
+    "should_refuse": false,
+    "answer_text": "Certificatul de naștere este eliberat de ofițerul de stare civilă la Primaria județului sau municipiului unde s-a întâmplat nașterea, bazându-se pe informațiile din certificatul medical constatator al nașterii și alte documente necesare.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.5,
+    "contract_valid": false,
+    "violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2,
+    "latency_s": 61.62433338165283,
+    "top_breadcrumbs": [
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în străinătate",
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Tatăl recunoaște copilul"
+    ],
+    "documents_mentioned": [
+      "certificat de naștere",
+      "certificat medical constatator al nașterii"
+    ],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Răspuns afirmativ fără nicio citație. Trebuie cel puțin o sursă."
+    ]
+  },
+  {
+    "case_id": "nastere-08",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Ce este certificatul medical constatator al nașterii?",
+    "should_refuse": false,
+    "answer_text": "Certificatul medical constatator al nașterii este un document pe care îl vei primi de la spital sau clinica unde s-a întâmplat nașterea. Acest document este emis în termen de 24 de ore și atestă faptul că s-a avut loc o naștere. Este important să reții că acest document nu poate înlocui certificatul de naștere.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": false,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 21.264591932296753,
+    "top_breadcrumbs": [
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în România",
+      "Nașterea > Am domiciliul în străinătate",
+      "Nașterea > Am domiciliul în străinătate"
+    ],
+    "documents_mentioned": [
+      "certificat medical constatator al nașterii"
+    ],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Am domiciliul în România]\nCertificatul medical constatator al nașterii e un document medical pe care trebuie să îl obții de la medicul de familie sau de la spitalul pe raza căruia a avut loc nașterea. Atenție! Acest document este unul medical, și nu ține locul certificatului de naștere. Pentru a elibera certificatul medical constatator al nașterii, doctorul sau personalul spitalului îți va cere și următoarele documente: Actele tale de identitate și ale partenerului/partenerei (părinții); Certificatul de căsătorie (dacă este cazul); Document cu care se face dovada adresei de domiciliu sau reședinței.\n\n- Actele tale de identitate și ale partenerului/partenerei (părinții);\n- Certificatul de căsătorie (dacă este cazul);\n- Document cu care se face dovada adresei de domiciliu sau reședinței."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-09",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Am născut în străinătate. Ce trebuie să fac pentru ca nașterea să fie recunoscută în România?",
+    "should_refuse": false,
+    "answer_text": "Înregistrarea nașterii unui cetățean străin născut în România se poate face la ambasada sau consulatul țării de origine a persoanei, conform legilor acesteia. Dacă țara respectivă nu are o misiune diplomatică în România, va trebui să verificați care ambasadă sau consulat din regiune este responsabil pentru România. Poți găsi lista completă a țărilor cu misiuni diplomatice în România aici: [link]. ATENȚIE! Pentru a fi sigur că informațiile sunt corecte, îți recomandăm să contactezi direct ambasada sau consulatul țării tale de origine pentru a confirma procedura de înregistrare a nașterii.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.5,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 98.70074224472046,
+    "top_breadcrumbs": [
+      "Nașterea > Vreau să înregistrez nașterea la ambasada țării mele de origine",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Vreau să înregistrez nașterea la ambasadă",
+      "Nașterea > Tatăl recunoaște copilul"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Vreau să înregistrez nașterea la ambasada țării mele de origine]\nÎnregistrarea nașterii unui copil cetățean străin născut în România se poate face la ambasada sau consulatul țării tale de origine și depinde de legile acesteia. Dacă țara de cetățenie nu are o ambasadă sau un consulat în România, va trebui să verifici care ambasadă sau consulat din regiune este răspunzătoare de România. Poți găsi lista completă a țărilor care au misiuni diplomatice în România aici. ATENȚIE! Pentru a fi sigur că informațiile sunt corecte, îți recomandăm să contactezi direct ambasada sau consulatul țării tale de origine pentru a confirma care este procedura de înregistrare a nașterii!"
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-10",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Cine poate primi indemnizația pentru creșterea copilului?",
+    "should_refuse": false,
+    "answer_text": "Indemnizația pentru creșterea copilului poate fi acordată părinților firești ai copilului, adoptatorii, persoanei căreia i s-a încredințat copilul în vederea adopției, persoanei care are copilul în plasament sau în plasament în regim de urgență, asistentului maternal și tutorelor.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 13.624776124954224,
+    "top_breadcrumbs": [
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Stimulentul de inserție"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Indemnizația pentru creșterea copilului] (parte 1/8)\nPot beneficia de indemnizația pentru creșterea copilului părinţii fireşti ai copilului, adoptatorii, persoana căreia i s-a încredinţat copilul în vederea adopţiei, persoana care are copilul în plasament ori în plasament în regim de urgenţă, asistentul maternal și tutorele. Indemnizația pentru creșterea copilului este în cuantum de 85% din media veniturilor nete realizate, cu mențiunea că nu poate fi mai mică de 1651 RON/lună, dar nici mai mare de 8500 RON/lună. Ca să obții indemnizația pentru creșterea copilului, trebuie să te adresezi Direcției Generale de Asistență Socială și Protecția Copilului (DGASPC) din județul sau sectorul unde locuiești. Pentru a primi indemnizația pentru creșterea copilului, trebuie să fi realizat venituri pentru o perioadă de 12 luni în ultimii 2 ani anteriori nașterii, aprobării adopţiei, încredințării sau instituirii plasamentul sau tutelei. Ești eligibil(ă) pentru indemnizația pentru creșterea copilului și dacă te afli într-una dintre următoarele situații: trimis într-o misiune permanentă în străinătate; a beneficiat de indemnizaţia lunară în contextul pandemiei COVID-19; a însoţit soţul/soţia trimis/trimisă în misiune permanentă în străinătate; a beneficiat de indemnizaţie de şomaj sau a realizat perioade de stagiu de cotizare în sistemul public de pensii, în condiţiile concedierii colective; aflat în evidenţa agenţiilor judeţene pentru ocuparea forţei de muncă, respectiv a municipiului bucureşti, în vederea acordării indemnizaţiei de şomaj; a beneficiat de concedii şi de indemnizaţii de asigurări sociale de sănătate; a beneficiat de concedii medicale şi de indemnizaţii pentru prevenirea îmbolnăvirilor şi recuperarea capacităţii de muncă, exclusiv pentru situaţiile rezultate ca urmare a unor accidente de munca sau boli profesionale; a beneficiat de pensie de invaliditate; aflat în perioada de întrerupere temporară a activităţii, din iniţiativa angajatorului, fără încetarea raportului de muncă, pentru motive economice, tehnologice, structurale sau similare; a beneficiat de concediu şi indemnizaţie lunară pentru creşterea copilului; a beneficiat de concediu fără plata pentru creşterea copilului; aflat în perioada de 3 luni de la încetarea unui contract de muncă pe durată determinată şi începerea unui alt contract de muncă pe durată determinată; doctorand, în condiţiile prevăzute de legea educaţiei naţionale nr."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-11",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Ce alocații financiare primesc părinții pentru un nou-născut?",
+    "should_refuse": false,
+    "answer_text": "Pentru un nou-născut, există sprijinuri financiare care variază în funcție de localitate. În Municipiul Constanța este acordat un cuantum de 2000 RON, în București 2500 RON și în Făgăraș 1500 RON. Aceste sprijinuri sunt condiționate prin respectarea anumitor criterii legate de domiciliu, născere la un spital din localitatea respectivă și absența datorierilor la bugetul local.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 37.08408498764038,
+    "top_breadcrumbs": [
+      "Nașterea > Municipiul Constanța",
+      "Nașterea > Municipiul București",
+      "Nașterea > Municipiul Făgăraș",
+      "Nașterea > Copilul nu este încadrat într-un grad de handicap"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1,
+      2,
+      3
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Municipiul Constanța]\nSprijinul financiar pentru nou-născuți este în cuantum de 2000 RON și se acordă prin intermediul unui card securizat. Cardul poate fi folosit numai pentru achiziționarea de produse destinate creșterii și îngrijirii copilului în primele luni de viață (alimente, scutece, îmbrăcăminte, produse de igienă etc.). Ca părinte poți obține acest sprijin dacă respecți următoarele condiții: Unul dintre părinți are cetățenia română și domiciliul stabil sau reședința pe raza Municipiului Constanța de cel puțin 1 an înainte de data nașterii copilului. Dacă ești un părinte singur care cere ajutorul, trebuie să fii cetățean român. Nu ai datorii la bugetul local (ți-ai plătit, spre exemplu, impozitul pe clădire, impozitul pentru mijlocul de transport, amenzile contravenționale, taxele de salubritate sau alte taxe și impozite locale). Ai la dispoziție 90 de zile calendaristice pentru a depune cererea, alături de documentele justificative. Poți vedea lista completă de documente necesare aici. Pentru mai multe detalii, poți apela Direcția Generală de Asistență Socială a Municipiului Constanța la 0341.180115 sau 0341.180.109 sau la email bebetrusou@dgas-ct.ro.\n\n- Unul dintre părinți are cetățenia română și domiciliul stabil sau reședința pe raza Municipiului Constanța de cel puțin 1 an înainte de data nașterii copilului. Dacă ești un părinte singur care cere ajutorul, trebuie să fii cetățean român.\n- Nu ai datorii la bugetul local (ți-ai plătit, spre exemplu, impozitul pe clădire, impozitul pentru mijlocul de transport, amenzile contravenționale, taxele de salubritate sau alte taxe și impozite locale).",
+      "[Nașterea > Municipiul București]\nCa părinte al unui nou-născut poți primi un stimulent financiar de 2500 RON dacă respecți următoarele condiții: Cel puțin un părinte are domiciliu (adresa principală, așa cum este notată în actul de identitate) sau reședința (ex. apartamentul unde locuiești în prezent) în municipiul București cu cel puțin 6 luni înainte de depunerea cererii. Copilul s-a născut la o clinică sau la un spital din Municipiul București; Nu ai datorii la bugetul local (la Direcția Generală de Impozite și Taxe Locale a sectorului unde locuiești). Exemple de taxe și impozite pe care poți să le plătești către bugetul local sunt: impozitul pe clădire, impozitul pe mijloc de transport (pentru mașina pe care o conduci), amenzi contravenționale (ex. pentru depășirea vitezei legale atunci când conduci), taxa de salubritate etc. Ai la dispoziție 1 lună pentru a depune cererea, alături de documentele justificative. Poți vedea lista completă de documente necesare aici. Pentru mai multe detalii și pentru înregistrarea cererii tale, te poți adresa: #bebedebucuresti 2 – (în incinta Complexului de Servicii Sociale – OMINIS) – Strada Turnu Măgurele nr. 17 A, sector 4. #bebedebucuresti 3 – (în incinta sediului Direcției Generale de Asistență Socială a Municipiului București) – Str. Constantin Mille nr. 10, sector 1.\n\n- Cel puțin un părinte are domiciliu (adresa principală, așa cum este notată în actul de identitate) sau reședința (ex. apartamentul unde locuiești în prezent) în municipiul București cu cel puțin 6 luni înainte de depunerea cererii.\n- Copilul s-a născut la o clinică sau la un spital din Municipiul București;\n- Nu ai datorii la bugetul local (la Direcția Generală de Impozite și Taxe Locale a sectorului unde locuiești).\n- #bebedebucuresti 2 – (în incinta Complexului de Servicii Sociale – OMINIS) – Strada Turnu Măgurele nr. 17 A, sector 4.\n- #bebedebucuresti 3 – (în incinta sediului Direcției Generale de Asistență Socială a Municipiului București) – Str. Constantin Mille nr. 10, sector 1.",
+      "[Nașterea > Municipiul Făgăraș]\nPoți primi stimulentul financiar pentru nou-născut în cuantum de 1500 RON, dacă respecți următoarele condiții: Cel puțin unul dintre părinți are domiciliul sau reședința în Municipiul Făgăraș de cel puțin 6 luni înainte de depunerea cererii; Copilul s-a născut la o clinică sau la un spital din Municipiul Făgăraș; Nu ai datorii la bugetul local (ți-ai plătit, spre exemplu, impozitul pe clădire, impozitul pentru mijlocul de transport, amenzile contravenționale, taxele de salubritate sau alte taxe și impozite locale); Ai realizat venituri în minim 12 luni din ultimii 2 ani. Prin venituri, putem înțelege salarii, câștiguri pe care le-ai avut din afaceri, din drepturi de proprietate intelectuală, din activitatea ca persoană fizică autorizată, din chirii etc. Ai la dispoziție 30 de zile pentru a înregistra cerere, alături de documentele justificative. Poți vedea lista completă de documente aici.\n\n- Cel puțin unul dintre părinți are domiciliul sau reședința în Municipiul Făgăraș de cel puțin 6 luni înainte de depunerea cererii;\n- Copilul s-a născut la o clinică sau la un spital din Municipiul Făgăraș;\n- Nu ai datorii la bugetul local (ți-ai plătit, spre exemplu, impozitul pe clădire, impozitul pentru mijlocul de transport, amenzile contravenționale, taxele de salubritate sau alte taxe și impozite locale);\n- Ai realizat venituri în minim 12 luni din ultimii 2 ani. Prin venituri, putem înțelege salarii, câștiguri pe care le-ai avut din afaceri, din drepturi de proprietate intelectuală, din activitatea ca persoană fizică autorizată, din chirii etc."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-12",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Pe ce perioadă se acordă indemnizația pentru creșterea copilului?",
+    "should_refuse": false,
+    "answer_text": "Indemnizația pentru creșterea copilului este acordată timp de 12 luni, începând cu data intrării în concediu de creștere a copilului sau, în cazul în care nu se poate beneficia de acesta, de la data nașterii copilului.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.3333333333333333,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 33.966257095336914,
+    "top_breadcrumbs": [
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      2
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Indemnizația pentru creșterea copilului] (parte 4/8)\nÎn cazul în care ai avut venituri din exercitarea profesiilor medicale sau de avocat se adaugă: Declaraţia unică şi adeverinţa cu veniturile realizate, eliberată de administraţia financiară (pentru anul anterior naşterii copilului și pentru anul de naștere al copilului); Dovada întreruperii activităţii; Declaraţia pe propria răspundere că în anul următor va prezenta Agenției pentru Plăți și Inspecție Socială, în termen de 30 zile de la comunicare, dovada cu privire la veniturile efectiv realizate, eliberată de administraţia financiară. În cazul în care ai avut venituri din convenții civile, contracte de comision sau alte venituri asimilate salariilor se adaugă: Declaraţia unică şi adeverinţa cu veniturile realizate, eliberată de administraţia financiară (pentru anul anterior naşterii copilului și pentru anul de naștere al copilului); O copie a dovezii suspendării activităţii; O copie a contractului; Declaraţia pe propria răspundere că în anul următor va prezenta Agenției pentru Plăți și Inspecție Socială, în termen de 30 zile de la comunicare, dovada cu privire la veniturile efectiv realizate, eliberată de administraţia financiară. În cazul în care ai avut venituri obținute ca persoană fizică autorizată se adaugă: Declaraţia unică şi adeverinţa cu veniturile realizate, eliberată de administraţia financiară (pentru anul anterior naşterii copilului și pentru anul de naștere al copilului); O copie a rezoluţiei de la Camera de Comerţ cu privire la suspendarea activităţii; Declaraţia pe propria răspundere că în anul următor va prezenta Agenției pentru Plăți și Inspecție Socială, în termen de 30 zile de la comunicare, dovada cu privire la veniturile efectiv realizate, eliberată de administraţia financiară. În cazul în care în ultimele 12 luni din ultimii doi ani anteriori nașterii copilului ai urmat cursuri la zi ale învățământului preuniversitar, universitar sau postuniversitar se adaugă: Adeverinţe cu veniturile realizate, eliberată de administraţia financiară (pentru anul anterior naşterii copilului și pentru anul de naștere al copilului) Adeverinţă eliberată de instituţia de învăţământ preuniversitar sau, după caz, universitar, care să ateste frecventarea cursurilor de zi fără întrerupere, în anul anterior și în anul nașterii copilului. Termenul de depunere a dosarului indemnizatiei creșterii copilului este de 30 zile înainte de intrarea în concediu de creştere copil (suspendarea activităţii) sau 60 zile de la încetarea concediului de maternitate sau de la data naşterii copilului în situaţia în care nu sunt îndeplinite condiţiile de acordare a concediului de maternitate."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-13",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Am primit certificatul de naștere al copilului în străinătate. Cum îl transcriu pe cel românesc?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 48.7990026473999,
+    "top_breadcrumbs": [
+      "Nașterea > Vreau să transcriu certificatul de naștere la ambasada / oficiul consular al României",
+      "Nașterea > Cel puțin un părinte are domiciliul în România",
+      "Nașterea > Părinții nu au avut niciodată domiciliul în România",
+      "Nașterea > Părinții nu mai stau în România, dar cel puțin un părinte a avut domiciliul în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.74 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "nastere-14",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Ce este stimulentul de inserție și în ce condiții îl primesc?",
+    "should_refuse": false,
+    "answer_text": "Stimulentul de inserție este un ajutor financiar acordat persoanelor care se întorc la muncă după concediu pentru creștere a copilului (sursa [S2]). Pentru a-l primi, trebuie să îndeplinești următoarele condiții: fi fost părinte în concediu de creștere a copilului sau adoptator și să ai avut venituri în ultimele 12 luni din cele două ani precedenți nașterii, adopției, plasamentului sau instituirii regimurilor de urgență (sursa [S3]). Valoarea stimulentului variază în funcție de momentul întorcerei la muncă: 1576 RON dacă te întorci înainte ca copilul să împlinească 6 luni și 683 RON dacă te întorci după această perioadă (sursa [S2]).",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 57.40486431121826,
+    "top_breadcrumbs": [
+      "Nașterea > Stimulentul de inserție",
+      "Nașterea > Stimulentul de inserție",
+      "Nașterea > Stimulentul de inserție",
+      "Nașterea > Stimulente pentru nou-născut"
+    ],
+    "documents_mentioned": [
+      "acte de identitate",
+      "certificat medical constatator al nașterii"
+    ],
+    "cited_source_indices": [
+      2,
+      3
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Stimulentul de inserție] (parte 1/5)\nPoți beneficia de stimulentul de inserție dacă ești părinte aflat în concediu de creștere a copilului, adoptator, cel căruia i s-a încredințat copilul în vederea adopției sau care are copilul în plasament sau regim de urgență. În 2023, valoarea stimulentului de inserție pentru persoanele care se întorc la serviciu înainte ca bebelușul să împlinească 6 luni este de 1576 RON, iar valoarea stimulentului de inserție pentru cei care se întorc la job după ce copilul împlinește 6 luni va fi de 683 RON. Ca să obții stimulentul de inserție, trebuie să te adresezi direcției de asistență socială din orașul unde locuiești sau la primărie (dacă localitatea nu are o direcție de asistență socială). Pentru a primi stimulentul de inserție, trebuie să fi realizat venituri pentru o perioadă de 12 luni în ultimii 2 ani anteriori nașterii, aprobării adopţiei, încredințării sau instituirii plasamentul.",
+      "[Nașterea > Stimulentul de inserție] (parte 3/5)\nSunt necesare următoarele acte pentru primirea stimulentului de inserție: O cerere completată; Actele de identitate ale părinților - copie și original; Certificatul de căsătorie (dacă este cazul) - copie și original; Certificatul de naștere al copilului - copie și original; Certificatele de naștere ale celorlalți copii aflați în întreținere (dacă este cazul) - copie și original; Actele care dovedesc calitatea solicitantului și relația pe care acesta o are cu copilul (în cazul copiilor adoptați sau în plasament); Dovada reluării activității; Adeverință-tip completată de angajator; Adeverință de la ANAF pentru anul nașterii copilului și pentru anul anterior (în cazul persoanelor care obțin venituri din activități independente); Dovada eliberată de angajator sau de organele competente privind veniturile realizate; Declarația beneficiarului; Declarația celuilalt părinte; Extras de cont pentru persoanele care doresc plata indemnizației prin transfer bancar. Află mai multe despre resursele de sănătate la care ai acces ca femeie însărcinată sau lăuză."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-15",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Părinții mei nu au avut niciodată domiciliul în România. Pot înregistra nașterea copilului meu aici?",
+    "should_refuse": false,
+    "answer_text": "Dacă părinții copilului nascut nu au domiciliu în România, procedura de înregistrare a nașterii depinde de legi ale țării cetățeniei acestora. Poți să înregistrezi nașterea la ambasada sau consulatul țării cetățeniei părinților, dacă acestea au misiuni diplomatice în România. Dacă nu există astfel de misiuni, va trebui să verifici care ambasadă sau consulat din regiune este responsabil pentru România și să contactezi direct această misiune diplomatică pentru a afla procedura specifică.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": false,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 35.69290828704834,
+    "top_breadcrumbs": [
+      "Nașterea > Vreau să înregistrez nașterea la ambasada țării mele de origine",
+      "Nașterea > Vreau să înregistrez nașterea la ambasadă",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1,
+      2
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Vreau să înregistrez nașterea la ambasada țării mele de origine]\nÎnregistrarea nașterii unui copil cetățean străin născut în România se poate face la ambasada sau consulatul țării tale de origine și depinde de legile acesteia. Dacă țara de cetățenie nu are o ambasadă sau un consulat în România, va trebui să verifici care ambasadă sau consulat din regiune este răspunzătoare de România. Poți găsi lista completă a țărilor care au misiuni diplomatice în România aici. ATENȚIE! Pentru a fi sigur că informațiile sunt corecte, îți recomandăm să contactezi direct ambasada sau consulatul țării tale de origine pentru a confirma care este procedura de înregistrare a nașterii!",
+      "[Nașterea > Vreau să înregistrez nașterea la ambasadă]\nÎnregistrarea nașterii unui copil străin născut în România se poate face la ambasada sau consulatul țării de cetățenie și depinde de legile acesteia. Dacă țara de cetățenie nu are o ambasadă sau un consulat în România, va trebui să verifici care ambasadă sau consulat din regiune este răspunzătoare de România. Poți găsi lista completă a țărilor care au misiuni diplomatice în România aici. ATENȚIE! Pentru a fi sigur că informațiile sunt corecte, îți recomandăm să contactezi direct ambasada sau consulatul țării tale de origine pentru a confirma care este procedura de înregistrare a nașterii!"
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-16",
+    "category": "nastere",
+    "difficulty": "medium",
+    "question": "Sunt cetățean român cu domiciliul în Franța. Am născut acolo. Cum obțin certificatul de naștere al copilului meu românesc?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 62.45605492591858,
+    "top_breadcrumbs": [
+      "Nașterea > Suntem căsătoriți",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Vreau să transcriu certificatul de naștere la ambasada / oficiul consular al României"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.72 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "nastere-17",
+    "category": "nastere",
+    "difficulty": "hard",
+    "question": "Nu sunt căsătorit cu mama copilului. Cum recunosc legal copilul?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 34.65748977661133,
+    "top_breadcrumbs": [
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.69 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "nastere-18",
+    "category": "nastere",
+    "difficulty": "hard",
+    "question": "Părinții au nume de familie diferite. Ce nume va purta copilul?",
+    "should_refuse": false,
+    "answer_text": "Dacă părinții au nume de familie diferite, ei trebuie să completeze declarația privind numele copilului pentru a stabili care este numele de familie pe care îl va purta copilul la naștere. Acest document este necesar pentru înregistrarea nașterii și poate fi completat după acord între părinți.\n\nSurse 1 și 3 indică că această declarație trebuie să fie depusă la Oficiul de Stare Civilă sau la Primaria respectivă pentru a finaliza procesul de înregistrare a nașterii.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.6666666666666666,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 64.08245778083801,
+    "top_breadcrumbs": [
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Suntem căsătoriți"
+    ],
+    "documents_mentioned": [
+      "declarația privind numele copilului"
+    ],
+    "cited_source_indices": [
+      1,
+      3
+    ],
+    "cited_sources_text": [
+      "[Nașterea > Tatăl recunoaște copilul] (parte 1/2)\nCopilul care are cel puțin un părinte cetățean român va dobândi și el cetățenia română prin naștere. În România, copiii născuți din părinți căsătoriți au aceleași drepturi ca și copiii născuți în afara căsătoriei. Pentru a înregistra nașterea copilului, Serviciul de Stare Civilă al Primăriei îți va cere următoarele documente: Certificatul medical constatator al nașterii care trebuie să poarte număr de înregistrare, dată certă, sigiliul/ştampila unităţii sanitare, semnătura şi parafa medicului; Declarația din care să rezulte numele copilului, dacă tu și partenerul/partenera nu aveți același nume de familie; Declarație de recunoaștere a copilului din afara căsătoriei. Aceasta trebuie să fie completată de amândoi, în fața notarului sau a ofițerului de stare civilă. De asemenea, va fi necesar să prezentați un document al părintelui cetățean străin, după cum urmează: Dacă ești cetățean al unui stat membru al Uniunii Europene sau al Confederației Elvețiene, poți prezenta actul de identitate sau pașaportul, în original și copie. Dacă ești cetățean al unui stat terț (non-UE) sau apatrid, trebuie să prezinți pașaportul, în original și copie. Dacă ai un statut special în România (ex. ești recunoscut ca refugiat), poți prezenta permisul de ședere eliberat de către Inspectoratul General pentru Imigrări. Dacă actul tău de identitate nu este scris în alfabetul latin, va fi necesară traducerea legalizată a filei din document care conține datele tale de identificare (nume, data nașterii etc.). De exemplu, dacă pașaportul tău conține datele personale scrise numai în alfabet chirilic sau arab, va fi nevoie să prezinți și traducerea legalizată a acestuia. O traducere legalizată este făcută de către un traducător profesionist (autorizat) și are ștampila unui notar public. Ca să obții o traducere legalizată, apelează la serviciile unui birou de notari publici care colaborează cu traducători autorizați specializați în limba în care sunt scrise documentele tale. ATENȚIE! Dacă tu și partenerul/partenera aveți nume de familie diferite, veți declara în scris, în fața ofițerului de stare civilă sau a notarului, care este numele de familie pe care îl va avea copilul. Spre exemplu, puteți decide ca copilul să poarte numele de familie al unuia dintre voi, un nume compus din numele voastre, etc. Dacă nu reușiți să ajungeți la un acord privind numele de familie al copilului, cazul va ajunge la instanța de tutelă (în fața unui judecător) care va decide cu privire la acesta. În acest caz, certificatul de naștere va fi eliberat numai după ce instanța ia o decizie privind numele copilului. Dacă unul dintre părinți nu cunoaște limba română, se va folosi un interpret autorizat.",
+      "[Nașterea > Tatăl recunoaște copilul] (parte 1/2)\nÎn România, copiii născuți din părinți căsătoriți au aceleași drepturi ca și copiii născuți în afara căsătoriei. Pentru a înregistra nașterea copilului, Serviciul de Stare Civilă al Primăriei îți va cere următoarele documente: Certificatul medical constatator al nașterii care trebuie să poarte număr de înregistrare, dată certă, sigiliul/ştampila unităţii sanitare, semnătura şi parafa medicului; Declarația din care să rezulte numele copilului, dacă tu și partenerul/partenera nu aveți același nume de familie; Declarație de recunoaștere a copilului din afara căsătoriei. Aceasta trebuie să fie completată de ambii părinți, în fața notarului sau a ofițerului de stare civilă. De asemenea, va fi necesar să prezentați un document al părintelui cetățean străin, după cum urmează: Dacă părintele este cetățean al unui stat membru al Uniunii Europene sau al Confederației Elvețiene, poate prezenta actul de identitate sau pașaportul, în original și copie. Dacă părintele este cetățean al unui stat terț (non-UE) sau apatrid, trebuie să prezinte pașaportul, în original și copie. Dacă părintele are un statut special în România (ex. este recunoscut ca refugiat), poate prezenta permisul de ședere eliberat de către Inspectoratul General pentru Imigrări. Dacă actul tău de identitate, ca părinte, nu este scris în alfabetul latin, va fi necesară traducerea legalizată a filei din document care conține datele tale de identificare (nume, data nașterii etc.). De exemplu, dacă pașaportul tău conține datele personale scrise numai în alfabet chirilic sau arab, va fi nevoie să prezinți și traducerea legalizată a acestuia. O traducere legalizată este făcută de către un traducător profesionist (autorizat) și are ștampila unui notar public. Ca să obții o traducere legalizată, apelează la serviciile unui birou de notari publici care colaborează cu traducători autorizați specializați în limba în care sunt scrise documentele tale. ATENȚIE! Dacă tu și partenerul/partenera aveți nume de familie diferite, veți declara în scris, în fața ofițerului de stare civilă sau a notarului, care este numele de familie pe care îl va avea copilul. Spre exemplu, puteți decide ca copilul să poarte numele de familie al unuia dintre voi, un nume compus din numele vostru, etc. Dacă nu reușiți să ajungeți la un acord privind numele de familie al copilului, cazul va ajunge la instanța de tutelă (în fața unui judecător) care va decide cu privire la acesta. În acest caz, certificatul de naștere va fi eliberat numai după ce instanța ia o decizie privind numele copilului. Dacă unul dintre voi nu cunoaște limba română, se va folosi un interpret autorizat."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-19",
+    "category": "nastere",
+    "difficulty": "hard",
+    "question": "Sunt mamă singură, tatăl copilului nu recunoaște copilul. Cum stabilesc paternitatea legal?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 24.31274652481079,
+    "top_breadcrumbs": [
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl recunoaște copilul"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.67 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "nastere-20",
+    "category": "nastere",
+    "difficulty": "hard",
+    "question": "Am cetățenie dublă, română și franceză, iar copilul s-a născut în Franța. Care e procedura completă pentru a-i obține certificatul românesc?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 47.72436237335205,
+    "top_breadcrumbs": [
+      "Nașterea > Suntem căsătoriți",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Vreau să transcriu certificatul de naștere la ambasada / oficiul consular al României"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.70 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "nastere-21",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Cum îmi schimb buletinul la 14 ani după naștere?",
+    "should_refuse": true,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 26.37174963951111,
+    "top_breadcrumbs": [
+      "Nașterea > Părinții nu au avut niciodată domiciliul în România",
+      "Nașterea > Vreau să transcriu certificatul de naștere la ambasada / oficiul consular al României",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Suntem căsătoriți"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-22",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Vreau să adopt un copil cu vârsta de peste 5 ani. Procedura?",
+    "should_refuse": true,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde la procedura adoptării unui copil cu vârsta de peste 5 ani.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 40.74382758140564,
+    "top_breadcrumbs": [
+      "Nașterea > Stimulentul de inserție",
+      "Nașterea > Copilul nu este încadrat într-un grad de handicap",
+      "Nașterea > Copilul nu este încadrat într-un grad de handicap",
+      "Nașterea > Copilul nu este încadrat într-un grad de handicap"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-23",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Cum primesc pensie alimentară de la fostul soț pentru copilul nostru?",
+    "should_refuse": true,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 30.719822645187378,
+    "top_breadcrumbs": [
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului",
+      "Nașterea > Indemnizația pentru creșterea copilului"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "nastere-24",
+    "category": "nastere",
+    "difficulty": "easy",
+    "question": "Cât costă un test DNA pentru stabilirea paternității?",
+    "should_refuse": true,
+    "answer_text": "Nu am informații detaliate în sursele disponibile despre prețul unui test DNA pentru stabilirea paternității. Pentru a afla acest tip de informație, te sfătuiesc să contactezi direct o instituție medical-juridică care oferă aceste servicii sau un cabinet medical autorizat.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 22.394291400909424,
+    "top_breadcrumbs": [
+      "Nașterea > Municipiul București",
+      "Nașterea > Municipiul Constanța",
+      "Nașterea > Tatăl nu recunoaște copilul",
+      "Nașterea > Tatăl nu recunoaște copilul"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-01",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Care este vârsta minimă pentru căsătorie în România?",
+    "should_refuse": false,
+    "answer_text": "Vârsta minimă pentru căsătorie în România este de 18 ani. În cazuri speciale, cu motive justificate și după obținerea unor permise suplimentare (aviz medical, încuviințarea părinților sau tutorelor), persoanele care au cel puțin 16 ani pot căsători.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 22.26353883743286,
+    "top_breadcrumbs": [
+      "Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria dintre persoanele de același sex",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie]\nAmândoi trebuie să aveți minim 18 ani. Ca excepție, pentru motive justificate, te poți căsători și dacă ai cel puțin 16 ani. În acest caz, va fi nevoie de un aviz medical, de încuviinţarea părinţilor tăi, după caz, a tutorelui, sau de autorizarea instanţei de tutelă. Avizul medical trebuie să fie obținut înainte de încuviințarea părinților. Din aviz, trebuie să rezulte starea ta de sănătate, inclusiv gradul de maturizare fizică, psihică și intelectuală. Dacă viitoarea soție este deja însărcinată, avizul trebuie să menționeze asta. Dacă unul dintre părinţi refuză să încuviinţeze căsătoria, instanţa de tutelă hotărăşte asupra acestei situații, având în vedere interesul tău superior."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-02",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Două persoane de același sex se pot căsători în România?",
+    "should_refuse": false,
+    "answer_text": "În România, căsătoria dintre persoane de același sex este interzisă. Căsătoriile din acest fel încheiate în străinătate nu sunt recunoscute pe teritoriul românesc.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.3333333333333333,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 17.3515784740448,
+    "top_breadcrumbs": [
+      "Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria dintre persoanele de același sex",
+      "Căsătoria > Condiții pentru a te căsători",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Monogamie",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria dintre persoanele de același sex]\nÎn România, este interzisă căsătoria dintre persoane de acelaşi sex, iar căsătoriile dintre persoane de acelaşi sex încheiate în străinătate de cetăţeni români sau de cetăţeni străini nu sunt recunoscute în România. Parteneriatele civile dintre persoane de sex opus sau de acelaşi sex încheiate în străinătate fie de cetăţeni români sau de cetăţeni străini nu sunt recunoscute în România. Potrivit Curții Constiuționale, aceste interdicții sunt constituţionale în măsura în care permit acordarea dreptului de şedere pe teritoriul statului român, în condiţiile stipulate de dreptul european, soţilor - cetăţeni ai statelor membre ale Uniunii Europene şi/sau cetăţeni ai statelor terţe - din căsătoriile dintre persoane de acelaşi sex, încheiate sau contractate într-un stat membru al Uniunii Europene."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-03",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Sunt deja căsătorit. Pot încheia o nouă căsătorie?",
+    "should_refuse": false,
+    "answer_text": "Dacă ești deja căsătorit, nu poți încheia o altă căsătorie deoarece poligamia este interzisă în România.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 17.63224959373474,
+    "top_breadcrumbs": [
+      "Căsătoria > Condiții pentru a te căsători > 📌 Monogamie",
+      "Căsătoria > Condiții pentru a te căsători",
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria dintre persoanele de același sex"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Condiții pentru a te căsători > 📌 Monogamie]\nDacă ești deja căsătorit sau căsătorită, nu mai poți încheia o altă căsătorie. Poligamia este interzisă în România."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-04",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Pot să mă căsătoresc la 16 ani?",
+    "should_refuse": false,
+    "answer_text": "Pot să te căsătoresc la vârsta de 16 ani, dar doar în cazuri justificate. În acest caz, trebuie să ai aviz medical care să ateste starea ta de sănătate și maturitate fizică, psihică și intelectuală. De asemenea, vei avea nevoie de încuviințare părinților sau tutorelui și eventual autorizarea instanței de tutelă.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 22.080199718475342,
+    "top_breadcrumbs": [
+      "Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie]\nAmândoi trebuie să aveți minim 18 ani. Ca excepție, pentru motive justificate, te poți căsători și dacă ai cel puțin 16 ani. În acest caz, va fi nevoie de un aviz medical, de încuviinţarea părinţilor tăi, după caz, a tutorelui, sau de autorizarea instanţei de tutelă. Avizul medical trebuie să fie obținut înainte de încuviințarea părinților. Din aviz, trebuie să rezulte starea ta de sănătate, inclusiv gradul de maturizare fizică, psihică și intelectuală. Dacă viitoarea soție este deja însărcinată, avizul trebuie să menționeze asta. Dacă unul dintre părinţi refuză să încuviinţeze căsătoria, instanţa de tutelă hotărăşte asupra acestei situații, având în vedere interesul tău superior."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-05",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Pot să iau numele partenerului ca nume de familie după căsătorie?",
+    "should_refuse": false,
+    "answer_text": "Da, poți să iei numele partenerului ca nume de familie după căsătorie. Alegeți unul dintre următoarele opțiuni: păstrați fiecare numele pe care l-ați avut înainte de căsătorie, luați amândoi numele unuia dintre soții sau purtați numele voștri reunite.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 29.229315042495728,
+    "top_breadcrumbs": [
+      "Căsătoria > Relația de cuplu",
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Nașterea > Suntem căsătoriți",
+      "Căsătoria > Ne căsătorim în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      2
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie]\nÎnainte de oficierea căsătoriei, va trebui să dați o declaraţie de căsătorie la primăria locului de domiciliu sau de reşedinţă al unuia dintre voi. Ca excepție, căsătoria poate fi oficiată și la o altă primărie decât cea de domiciliu sau de reședință, cu aprobarea primarului localității unde urmează să se încheie căsătoria În declaraţia de căsătorie, veți arăta că respectați toate condițiile legale pentru a vă căsători, veți menţiona numele de familie pe care îl veți purta în timpul căsătoriei, precum şi regimul matrimonial ales. În ce privește numele, aveți posibilitatea: să păstrați fiecare numele pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi, să purtați numele voastre reunite. În ceea ce privește regimul matrimonial, comunitatea legală se aplică automat în cazul în care nu alegeți un alt regim. Comunitatea legală presupune că toate bunurile dobândite în timpul căsătoriei de către oricare dintre soţi sunt, de la data dobândirii lor, bunuri comune ale voastre. În situaţia în care decideți să alegeți un alt regim matrimonial decât cel al comunităţii legale, veți prezenta o copie a convenţiei matrimoniale, autentificată de către notarul public. Convenţia matrimonială poate fi încheiată înainte de căsătorie sau în timpul căsătoriei, caz în care produce efecte de la data încheierii ei. După cel puţin un an de la data căsătoriei, puteți, ori de câte ori doriți, să înlocuiți regimul matrimonial existent cu un alt regim matrimonial ori să îl modificați, cu respectarea acelorași condiţii ca la încheierea convenției matrimoniale.\n\n- să păstrați fiecare numele pe care l-ați avut înainte de căsătorie,\n- să luați amândoi numele unuia dintre soţi,\n- să purtați numele voastre reunite."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-06",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Există rude apropiate cu care nu mă pot căsători?",
+    "should_refuse": false,
+    "answer_text": "Da, există rude apropiate cu care nu poți să te căsătorești. În linie dreaptă acestea includ părinți, copii și bunici. În linie colaterala sunt interzise căsătoriile până la al patrulea grad inclusiv (de exemplu: frații, unchiul sau mătuşa cu nepotul, verii primari). Cu excepția cazelor în care instanța de tutelă autorizează, pe baza unui aviz medical special, căsătoria între rudele în linie colaterală de gradul al patrulea.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.6666666666666666,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 23.82895541191101,
+    "top_breadcrumbs": [
+      "Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria între rude",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Persoana pusă sub o măsură de ocrotire specială",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria dintre persoanele de același sex",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Monogamie"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria între rude]\nEste interzis să te căsătorești cu rude în linie dreaptă (părinți, bunici, descendenți, naturali sau adoptivi), precum şi cu cele în linie colaterală până la al patrulea grad inclusiv. Rudenia este în linie colaterală atunci când rezultă din faptul că mai multe persoane au un ascendent comun (de ex.: frații sunt rude în linie colaterală). Gradul de rudenie se stabileşte astfel: în linie dreaptă, după numărul naşterilor: astfel, copiii şi părinţii sunt rude de gradul întâi, nepoţii şi bunicii sunt rude de gradul al doilea; în linie colaterală, după numărul naşterilor, urcând de la una dintre rude până la ascendentul comun şi coborând de la acesta până la cealaltă rudă. Astfel: fraţii sunt rude de gradul al doilea; unchiul sau mătuşa şi nepotul, de gradul al treilea; verii primari, de gradul al patrulea. Ca excepție, pentru motive temeinice, căsătoria între rudele în linie colaterală de gradul al patrulea poate fi autorizată de instanţa de tutelă, pe baza unui aviz medical special dat în acest sens. Este interzis să te căsătorești cu persoane care ți-au devenit rude ca rezultat al adopției.\n\n- în linie dreaptă, după numărul naşterilor: astfel, copiii şi părinţii sunt rude de gradul întâi, nepoţii şi bunicii sunt rude de gradul al doilea;\n- în linie colaterală, după numărul naşterilor, urcând de la una dintre rude până la ascendentul comun şi coborând de la acesta până la cealaltă rudă. Astfel:fraţii sunt rude de gradul al doilea;unchiul sau mătuşa şi nepotul, de gradul al treilea;verii primari, de gradul al patrulea.\n- fraţii sunt rude de gradul al doilea;\n- unchiul sau mătuşa şi nepotul, de gradul al treilea;\n- verii primari, de gradul al patrulea."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-07",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Putem să oficiem căsătoria la o ambasadă a României din străinătate?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 112.7477695941925,
+    "top_breadcrumbs": [
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.80 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "casatorie-08",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Pot purta un nume compus din numele ambilor soți?",
+    "should_refuse": false,
+    "answer_text": "Da, în timpul oficierei căsătoriei puteți alege să puneți numele voștri reunite. Acesta este unul dintre opțiunile pe care le aveți pentru nume de familie în căsătorie: să păstrați fiecare numele propriu, să luați amândoi numele unuia dintre soți sau să purtați numele voștri reunite.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.6666666666666666,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 22.906692266464233,
+    "top_breadcrumbs": [
+      "Căsătoria > Relația de cuplu",
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Nașterea > Tatăl recunoaște copilul",
+      "Căsătoria > Ne căsătorim în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      2
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie]\nÎnainte de oficierea căsătoriei, va trebui să dați o declaraţie de căsătorie la primăria locului de domiciliu sau de reşedinţă al unuia dintre voi. Ca excepție, căsătoria poate fi oficiată și la o altă primărie decât cea de domiciliu sau de reședință, cu aprobarea primarului localității unde urmează să se încheie căsătoria În declaraţia de căsătorie, veți arăta că respectați toate condițiile legale pentru a vă căsători, veți menţiona numele de familie pe care îl veți purta în timpul căsătoriei, precum şi regimul matrimonial ales. În ce privește numele, aveți posibilitatea: să păstrați fiecare numele pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi, să purtați numele voastre reunite. În ceea ce privește regimul matrimonial, comunitatea legală se aplică automat în cazul în care nu alegeți un alt regim. Comunitatea legală presupune că toate bunurile dobândite în timpul căsătoriei de către oricare dintre soţi sunt, de la data dobândirii lor, bunuri comune ale voastre. În situaţia în care decideți să alegeți un alt regim matrimonial decât cel al comunităţii legale, veți prezenta o copie a convenţiei matrimoniale, autentificată de către notarul public. Convenţia matrimonială poate fi încheiată înainte de căsătorie sau în timpul căsătoriei, caz în care produce efecte de la data încheierii ei. După cel puţin un an de la data căsătoriei, puteți, ori de câte ori doriți, să înlocuiți regimul matrimonial existent cu un alt regim matrimonial ori să îl modificați, cu respectarea acelorași condiţii ca la încheierea convenției matrimoniale.\n\n- să păstrați fiecare numele pe care l-ați avut înainte de căsătorie,\n- să luați amândoi numele unuia dintre soţi,\n- să purtați numele voastre reunite."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-09",
+    "category": "casatorie",
+    "difficulty": "medium",
+    "question": "Ce documente trebuie să depun la primărie pentru căsătorie în România?",
+    "should_refuse": false,
+    "answer_text": "Pentru a vă căsătoria în România, este necesar să depuneți documente precum declarația de căsătorie și actele de identitate la primăria locului de domiciliu sau reședință al unuia dintre voi. Sursele disponibile nu specifică detaliile exacte ale tuturor documentelor necesare, dar pot include declarații jurate privind starea civilă și numele pe care îl veți purta în căsătorie.\n\nVă recomand să consultați serviciile publicului local sau un avocat pentru informații specifice în funcție de situația dumneavoastră personală.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2,
+    "latency_s": 139.95608282089233,
+    "top_breadcrumbs": [
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în România"
+    ],
+    "documents_mentioned": [
+      "declarația de căsătorie",
+      "actele de identitate"
+    ],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Răspuns afirmativ fără nicio citație. Trebuie cel puțin o sursă."
+    ]
+  },
+  {
+    "case_id": "casatorie-10",
+    "category": "casatorie",
+    "difficulty": "medium",
+    "question": "Ce nume de familie pot să aleg după căsătorie?",
+    "should_refuse": false,
+    "answer_text": "După căsătorie, puteți alege unul dintre următoarele opțiuni pentru numele de familie pe care îl veți purta în timpul căsătoriei:",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.5,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 12.667674779891968,
+    "top_breadcrumbs": [
+      "Căsătoria > Relația de cuplu",
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      2,
+      3
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie]\nÎnainte de oficierea căsătoriei, va trebui să dați o declaraţie de căsătorie la primăria locului de domiciliu sau de reşedinţă al unuia dintre voi. Ca excepție, căsătoria poate fi oficiată și la o altă primărie decât cea de domiciliu sau de reședință, cu aprobarea primarului localității unde urmează să se încheie căsătoria În declaraţia de căsătorie, veți arăta că respectați toate condițiile legale pentru a vă căsători, veți menţiona numele de familie pe care îl veți purta în timpul căsătoriei, precum şi regimul matrimonial ales. În ce privește numele, aveți posibilitatea: să păstrați fiecare numele pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi, să purtați numele voastre reunite. În ceea ce privește regimul matrimonial, comunitatea legală se aplică automat în cazul în care nu alegeți un alt regim. Comunitatea legală presupune că toate bunurile dobândite în timpul căsătoriei de către oricare dintre soţi sunt, de la data dobândirii lor, bunuri comune ale voastre. În situaţia în care decideți să alegeți un alt regim matrimonial decât cel al comunităţii legale, veți prezenta o copie a convenţiei matrimoniale, autentificată de către notarul public. Convenţia matrimonială poate fi încheiată înainte de căsătorie sau în timpul căsătoriei, caz în care produce efecte de la data încheierii ei. După cel puţin un an de la data căsătoriei, puteți, ori de câte ori doriți, să înlocuiți regimul matrimonial existent cu un alt regim matrimonial ori să îl modificați, cu respectarea acelorași condiţii ca la încheierea convenției matrimoniale.\n\n- să păstrați fiecare numele pe care l-ați avut înainte de căsătorie,\n- să luați amândoi numele unuia dintre soţi,\n- să purtați numele voastre reunite.",
+      "[Căsătoria > Ne căsătorim în România] (parte 1/4)\nPAS 1 - Declarația de căsătorie Înainte de încheierea căsătoriei, va trebui să dați o declaraţie de căsătorie la primăria locului de domiciliu sau de reşedinţă al unuia dintre voi. Ca excepție, căsătoria se poate încheia și la o altă primărie decât cea de domiciliu sau de reședință, cu aprobarea primarului localității unde urmează să se încheie căsătoria. În declaraţia de căsătorie, veți arăta că respectați toate condițiile legale pentru a vă căsători, veți menţiona numele de familie pe care îl veți purta în timpul căsătoriei, precum şi regimul matrimonial ales.În ce privește numele, aveți posibilitatea: să păstrați fiecare numele pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi, să purtați numele voastre reunite. În ceea ce privește regimul matrimonial, comunitatea legală se aplică automat în cazul în care nu alegeți un alt regim. Comunitatea legală presupune că toate bunurile dobândite în timpul căsătoriei de către oricare dintre soţi sunt, de la data dobândirii lor, bunuri comune ale voastre. În situaţia în care decideți să alegeți un alt regim matrimonial decât cel al comunităţii legale, veți prezenta o copie a convenţiei matrimoniale, autentificată de către notarul public. Convenţia matrimonială poate fi încheiată înainte de căsătorie sau în timpul căsătoriei, caz în care produce efecte de la data încheierii ei. După cel puţin un an de la data căsătoriei, puteți, ori de câte ori doriți, să înlocuiți regimul matrimonial existent cu un alt regim matrimonial ori să îl modificați, cu respectarea acelorași condiţii ca la încheierea convenției matrimoniale. PASUL 2 - Oficierea căsătorieiCăsătoria va fi oficiată începând cu a 11-a zi de la depunerea declarației de căsătorie, dar nu mai târziu de a 30-a zi. Căsătoria va fi oficiată de regulă, la sediul Serviciului Public Comunitar Local de Evidenţă a Persoanelor (SPCLEP) al primăriei localității unde îşi are domiciliul ori reşedinţa unul dintre voi sau, după caz, la un sediu destinat acestui scop, stabilit de primarul localității respective. Prin excepție, se poate oficia și în afara sediului, în locuri precum grădinile publice, parcuri, muzee, plaje şi alte locuri în aer liber, la cererea voastră, cu aprobarea primarului. Căsătoria mai poate fi oficiată și la sediul primăriei unei alte localități decât cea în care aveți domiciliul sau reședința, cu aprobarea primarului localității unde se încheie căsătoria. La oficierea căsătoriei trebuie să fie prezenți și doi martori. În cazul cetăţenilor străini care nu cunosc limba română, la oficierea căsătoriei este obligatorie prezenţa unui interpret autorizat."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-11",
+    "category": "casatorie",
+    "difficulty": "medium",
+    "question": "Vreau să mă căsătoresc în străinătate. Ce procedură există?",
+    "should_refuse": false,
+    "answer_text": "Pentru a vă căsători în străinătate, trebuie să urmați pași și condiții specificate de legi românești și internaționale. În general, aceste etape includ:\n\n1. **Localizarea ambasadei sau consulatului român**: Căsătoria poate fi oficiată la sediul unei misiuni diplomatice ale României care este acreditată în statul unde aveți domiciliu sau reședință.\n\n2. **Documente necesare**:\n   - Pasaporturi valide pentru ambii parteneri\n   - Actele de naștere\n   - Dovada domiciliului/reședinței în străinătate a cel puțin unuia dintre parteneri\n   - Declarație pe proprie răspundere că nu sunteți căsătoriți deja (în caz contrar, trebuie să prezentați certificat de divorț sau decedare)\n   - Certificat medical prenupțial care trebuie să fie tradus în limba română și legalizat\n\n3. **Termen minim între depunerea cererii și oficierea căsătoriei**: Oficierea căsătoriei poate fi făcută doar după trecerea unui termen de 10 zile de la data înregistrării cererii.\n\n4. **Traducerea documentelor**: Toate documentele depuse care sunt emise de autorități străine trebuie să fie traduse în limba română și certificate de ambasada sau consulatul român.\n\n5. **Certificat de căsătorie**: După oficierea căsătoriei, ambasada sau consulatul român va elibera certificatul de căsătorie pe baza semnăturilor în registrele de stare civilă.\n\nInformațiile detaliate despre procedura specifică pentru fiecare țară pot varia. Vă recomandăm să consultați site-ul oficial al ambasadei sau consulatului român din țara respectivă pentru informații specifice.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.6666666666666666,
+    "contract_valid": false,
+    "violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2,
+    "latency_s": 207.41386103630066,
+    "top_breadcrumbs": [
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [
+      "pasaporturi valide",
+      "actele de naștere",
+      "dovada domiciliului/reședinței în străinătate",
+      "declarație pe proprie răspundere că nu sunteți căsătoriți deja (în caz contrar, trebuie să prezentați certificat de divorț sau decedare)",
+      "certificat medical prenupțial tradus și legalizat"
+    ],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Răspuns afirmativ fără nicio citație. Trebuie cel puțin o sursă."
+    ]
+  },
+  {
+    "case_id": "casatorie-12",
+    "category": "casatorie",
+    "difficulty": "medium",
+    "question": "Care sunt pașii pentru depunerea declarației de căsătorie când partenerul este cetățean străin?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 46.349130153656006,
+    "top_breadcrumbs": [
+      "Căsătoria > Partenerul este cetățean străin > 🗂 În cazul cetăţenilor străini care nu cunosc limba română, la oficierea căsătoriei este obligatorie prezenţa unui interpret autorizat.",
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.71 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "casatorie-13",
+    "category": "casatorie",
+    "difficulty": "medium",
+    "question": "Sunt cetățean român căsătorit cu un cetățean UE. Trebuie traduceri pentru actele lui?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 86.8148865699768,
+    "top_breadcrumbs": [
+      "Căsătoria > Partenerul este cetățean străin > ⚠️ ATENȚIE!",
+      "Căsătoria > Partenerul este cetățean străin > 🗂 În cazul cetăţenilor străini care nu cunosc limba română, la oficierea căsătoriei este obligatorie prezenţa unui interpret autorizat.",
+      "Căsătoria > Ne căsătorim în România",
+      "Nașterea > Părinții nu au avut niciodată domiciliul în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.73 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "casatorie-14",
+    "category": "casatorie",
+    "difficulty": "medium",
+    "question": "Am încheiat căsătoria în străinătate. Cum o transcriu/recunosc în România?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 22.269662141799927,
+    "top_breadcrumbs": [
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.71 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "casatorie-15",
+    "category": "casatorie",
+    "difficulty": "hard",
+    "question": "Partenerul meu este cetățean străin. Ce trebuie să știu suplimentar înainte de căsătorie?",
+    "should_refuse": false,
+    "answer_text": "Pentru căsătorire cu un cetățean străin, este necesar să îndepliniți anumite condiții și să furnizați documente specifice. Acest proces poate include:\n\n1. **Documentele de identitate**: Partenerul dumneavoastră trebuie să prezinte actele sale de identitate (cartea de identitate sau pașaport).\n2. **Certificatul de naștere**.\n3. **Traducerea legalizată a acestor documente în limba română**.\n4. **Document eliberat de misiunea diplomatică sau oficiul consular din România**, care confirmă că partenerul dumneavoastră îndeplinește condițiile cerute de legea sa națională și că nu există impedimente pentru încheierea căsătoriei.\n5. **Certificatul prenupțial** care confirmă starea sănătate a partenerului dumneavoastră.\n6. **Dovada domiciliului sau a reședinței în străinătate**, dacă este necesară.\n7. **Declarație autentificată** care confirmă că nu există motive legale care să împiedice încheierea căsătoriei.\n\nEste important să consultați un avocat sau notar pentru a vă asigura că toate documentele și procedurile sunt corecte și complete.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.6666666666666666,
+    "contract_valid": false,
+    "violations": [
+      "R2_UNCITED"
+    ],
+    "attempts": 2,
+    "latency_s": 199.24577617645264,
+    "top_breadcrumbs": [
+      "Căsătoria > Partenerul este cetățean străin > 🗂 În cazul cetăţenilor străini care nu cunosc limba română, la oficierea căsătoriei este obligatorie prezenţa unui interpret autorizat.",
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [
+      "actele de identitate (cartea de identitate sau pașaport)",
+      "certificatul de naștere",
+      "traducerea legalizată a acestor documente în limba română",
+      "document eliberat de misiunea diplomatică sau oficiul consular din România",
+      "certificatul prenupțial",
+      "dovada domiciliului sau a reședinței în străinătate",
+      "declarație autentificată"
+    ],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Răspuns afirmativ fără nicio citație. Trebuie cel puțin o sursă."
+    ]
+  },
+  {
+    "case_id": "casatorie-16",
+    "category": "casatorie",
+    "difficulty": "hard",
+    "question": "Sunt verișor primar cu partenera. Putem să ne căsătorim?",
+    "should_refuse": false,
+    "answer_text": "Da, puteți să vă căsătoarați dacă îndepliniți condițiile legale pentru căsătorie în România.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 10.234442234039307,
+    "top_breadcrumbs": [
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1,
+      2
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie]\nÎnainte de oficierea căsătoriei, va trebui să dați o declaraţie de căsătorie la primăria locului de domiciliu sau de reşedinţă al unuia dintre voi. Ca excepție, căsătoria poate fi oficiată și la o altă primărie decât cea de domiciliu sau de reședință, cu aprobarea primarului localității unde urmează să se încheie căsătoria În declaraţia de căsătorie, veți arăta că respectați toate condițiile legale pentru a vă căsători, veți menţiona numele de familie pe care îl veți purta în timpul căsătoriei, precum şi regimul matrimonial ales. În ce privește numele, aveți posibilitatea: să păstrați fiecare numele pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi, să purtați numele voastre reunite. În ceea ce privește regimul matrimonial, comunitatea legală se aplică automat în cazul în care nu alegeți un alt regim. Comunitatea legală presupune că toate bunurile dobândite în timpul căsătoriei de către oricare dintre soţi sunt, de la data dobândirii lor, bunuri comune ale voastre. În situaţia în care decideți să alegeți un alt regim matrimonial decât cel al comunităţii legale, veți prezenta o copie a convenţiei matrimoniale, autentificată de către notarul public. Convenţia matrimonială poate fi încheiată înainte de căsătorie sau în timpul căsătoriei, caz în care produce efecte de la data încheierii ei. După cel puţin un an de la data căsătoriei, puteți, ori de câte ori doriți, să înlocuiți regimul matrimonial existent cu un alt regim matrimonial ori să îl modificați, cu respectarea acelorași condiţii ca la încheierea convenției matrimoniale.\n\n- să păstrați fiecare numele pe care l-ați avut înainte de căsătorie,\n- să luați amândoi numele unuia dintre soţi,\n- să purtați numele voastre reunite.",
+      "[Căsătoria > Ne căsătorim în România] (parte 1/4)\nPAS 1 - Declarația de căsătorie Înainte de oficierea căsătoriei, trebuie să faceți o declaraţie de căsătorie la primăria locului de domiciliu sau de reşedinţă al unuia dintre voi. Prin excepție, căsătoria poate fi oficiată și la o altă primărie decât cea de domiciliu sau de reședință, cu aprobarea primarului localității unde urmează să fie oficiată. În declaraţia de căsătorie, veți arăta că nu există niciun impediment legal la căsătorie şi veți menţiona numele de familie pe care îl veți în timpul căsătoriei, precum şi regimul matrimonial ales. În ce privește numele, aveți posibilitatea: să păstrați fiecare numele pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi, să purtați numele voastre lor reunite. În ceea ce privește regimul matrimonial, comunitatea legală se aplică automat în cazul în care nu alegeți un alt regim. Comunitatea legală presupune că toate bunurile dobândite în timpul căsătoriei de către oricare dintre soţi sunt, de la data dobândirii lor, bunuri comune ale voastre. În situaţia în care decideți să alegeți un alt regim matrimonial decât cel al comunităţii legale, veți prezenta o copie a convenţiei matrimoniale, autentificată de către notarul public. Convenţia matrimonială poate fi încheiată înainte de căsătorie sau în timpul căsătoriei, caz în care produce efecte de la data încheierii ei. După cel puţin un an de la data căsătoriei, puteți, ori de câte ori doriți, să înlocuiți regimul matrimonial existent cu un alt regim matrimonial ori să îl modificați, cu respectarea acelorași condiţii ca la încheierea convenției matrimoniale. PAS 2 - Oficierea căsătoriei Căsătoria va fi oficiată începând cu a 11-a zi de la depunerea declarației de căsătorie, dar nu mai târziu de a 30-a zi. Căsătoria este oficiată de regulă, la sediul Serviciului Public Comunitar Local de Evidenţă a Persoanelor (SPCLEP) al primăriei în a cărei rază de competenţă teritorială îşi are domiciliul ori reşedinţa unul dintre voi sau, după caz, la un sediu destinat acestui scop, stabilit de primarul localității respective. Prin excepție, poate fi oficiată și în afara sediului, în locuri precum grădinile publice, parcuri, muzee, plaje şi alte locuri în aer liber, la cererea viitorilor soţi, cu aprobarea primarului. Căsătoria se mai poate oficia și la sediul unui alt serviciu public comunitar local de evidenţă a persoanelor sau, după caz, la o altă primărie decât cea în a cărei rază teritorială aveți domiciliul sau reşedinţa unul dintre voi , cu aprobarea primarului localității unde se încheie căsătoria. În cazul cetăţenilor străini care nu cunosc limba română, la oficierea căsătoriei este obligatorie prezenţa unui interpret autorizat."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-17",
+    "category": "casatorie",
+    "difficulty": "hard",
+    "question": "Sunt minor de 16 ani și vreau să mă căsătoresc. Care sunt pașii legali completi?",
+    "should_refuse": false,
+    "answer_text": "Dacă ai sub 18 ani, te poți căsători doar în cazuri speciale cu motive justificate. În acest context, trebuie să obții un aviz medical care să ateste starea ta de sănătate fizică, psihică și intelectuală. Dacă ai părinți sau tutori, aceștia trebuie să te consentească căsătoriei. În caz contrar, instanța de tutelă va hotără în funcție de interesul tău superior.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.5,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 159.80405068397522,
+    "top_breadcrumbs": [
+      "Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Condiții pentru a te căsători"
+    ],
+    "documents_mentioned": [
+      "aviz medical"
+    ],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Condiții pentru a te căsători > 📌 Vârsta minimă pentru căsătorie]\nAmândoi trebuie să aveți minim 18 ani. Ca excepție, pentru motive justificate, te poți căsători și dacă ai cel puțin 16 ani. În acest caz, va fi nevoie de un aviz medical, de încuviinţarea părinţilor tăi, după caz, a tutorelui, sau de autorizarea instanţei de tutelă. Avizul medical trebuie să fie obținut înainte de încuviințarea părinților. Din aviz, trebuie să rezulte starea ta de sănătate, inclusiv gradul de maturizare fizică, psihică și intelectuală. Dacă viitoarea soție este deja însărcinată, avizul trebuie să menționeze asta. Dacă unul dintre părinţi refuză să încuviinţeze căsătoria, instanţa de tutelă hotărăşte asupra acestei situații, având în vedere interesul tău superior."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-18",
+    "category": "casatorie",
+    "difficulty": "hard",
+    "question": "Partenerul meu nu cunoaște limba română. Ce este obligatoriu la oficierea căsătoriei?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 17.01004695892334,
+    "top_breadcrumbs": [
+      "Căsătoria > Partenerul este cetățean străin > 🗂 În cazul cetăţenilor străini care nu cunosc limba română, la oficierea căsătoriei este obligatorie prezenţa unui interpret autorizat.",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Ne căsătorim în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.68 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "casatorie-19",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Cum divorțez de partenerul meu?",
+    "should_refuse": true,
+    "answer_text": "Procedura de divorț în România poate fi initiată prin depunerea unei cereri la instanță. Pentru a obține informații detaliate despre cum să începi procesul de divorț, te sfătuiesc să contactezi un avocat sau să accesezi site-ul oficial al Curților de Provinduri pentru a afla detaliile specifice legale și procedurale.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 90.03412318229675,
+    "top_breadcrumbs": [
+      "Locuire > Proprietarul vrea să mă dea afară - ce pot face?",
+      "Căsătoria > Regimul matrimonial > 📌 Separația de bunuri",
+      "Căsătoria > Locuire",
+      "Căsătoria > Ne căsătorim în străinătate"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-20",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Cât costă oficierea unei căsătorii la primărie?",
+    "should_refuse": true,
+    "answer_text": "Informația despre costul exact al oficierei unei căsătorii nu este specificată în documentele furnizate. Pentru a obține această informație, vă recomand să consultați direct primaria localității unde intenționați să aveți căsătoria sau site-ul lor web pentru detalii specifice.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 21.063940048217773,
+    "top_breadcrumbs": [
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Ne căsătorim în România",
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 2 - Oficierea căsătoriei"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-21",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Cum împart pensia de soț decedat?",
+    "should_refuse": true,
+    "answer_text": "Pentru a împărți pensia de soț decedat, este important să cunoașteți regimul matrimonial aplicabil. Dacă aveți bunuri comune (regimul comun al bunurilor), atunci pensia poate fi considerată o parte din bunurile comune și va fi împărțită în funcție de decizii judiciare sau convențională. În caz contrar, dacă aveți separație a bunurilor (regimul separat al bunurilor), fiecare soț este proprietar individual al veniturilor sale și pensia poate fi împărțită în funcție de acord sau decizie judiciară. În ambele cazuri, recomandăm să consultați un avocat pentru a vă asigura că drepturile dvs. sunt protejate.",
+    "is_refusal": false,
+    "refusal_correct": false,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 46.52524471282959,
+    "top_breadcrumbs": [
+      "Căsătoria > Locuire",
+      "Căsătoria > Regimul matrimonial > 📌 Separația de bunuri",
+      "Căsătoria > Bunuri și datorii comune > 📌 Bunurile și datoriile comune",
+      "Căsătoria > Relația de cuplu"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Locuire]\nAveți datoria de a locui împreună. Pentru motive întemeiate, puteți hotărî să locuiți separat. De exemplu, puteți decide că este mai avantajos ca unul dintre voi să lucreze în străinătate sau în altă localitate. Niciunul dintre voi nu poate vinde locuința familiei, chiar dacă este proprietar exclusiv al acesteia, fără acordul scris al celuilalt soț. În caz de deces al unuia dintre soți, legea protejează soțul supraviețuitor, permițându-i să locuiască cu titlu gratuit în imobilul pe care îl împărțea cu defunctul, dacă nu are alte proprietăți unde se poate muta. Dreptul de locuire se stinge la partaj, dar nu mai devreme de un an de la data deschiderii moştenirii. Dacă locuiți împreună în baza unui contract de chirie, ambii sunteți considerați chiriași, chiar dacă contractul este încheiat de către proprietar cu doar unul dintre voi. În caz de deces al soțului pe numele căruia a fost încheiat contractul de chirie, contractul se continuă automat cu soțul supraviețuitor ca titular, în afară de cazul în care acesta renunță la el.\n\n- Aveți datoria de a locui împreună. Pentru motive întemeiate, puteți hotărî să locuiți separat. De exemplu, puteți decide că este mai avantajos ca unul dintre voi să lucreze în străinătate sau în altă localitate.\n- Niciunul dintre voi nu poate vinde locuința familiei, chiar dacă este proprietar exclusiv al acesteia, fără acordul scris al celuilalt soț.\n- În caz de deces al unuia dintre soți, legea protejează soțul supraviețuitor, permițându-i să locuiască cu titlu gratuit în imobilul pe care îl împărțea cu defunctul, dacă nu are alte proprietăți unde se poate muta. Dreptul de locuire se stinge la partaj, dar nu mai devreme de un an de la data deschiderii moştenirii.\n- Dacă locuiți împreună în baza unui contract de chirie, ambii sunteți considerați chiriași, chiar dacă contractul este încheiat de către proprietar cu doar unul dintre voi.\n- În caz de deces al soțului pe numele căruia a fost încheiat contractul de chirie, contractul se continuă automat cu soțul supraviețuitor ca titular, în afară de cazul în care acesta renunță la el."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "casatorie-22",
+    "category": "casatorie",
+    "difficulty": "easy",
+    "question": "Putem semna un contract prematrimonial înainte de căsătorie?",
+    "should_refuse": true,
+    "answer_text": "Da, puteți să alegeți să încheiate o convenție matrimonială (contract prematrimonial) înainte de căsătorie. Acesta poate fi încheiat înainte sau după oficierea căsătoriei și poate stabili regimul matrimonial al separației bunurilor sau comunitatei convenționale a bunurilor, diferit de cel legal (comunitatea legală). Acest document trebuie să fie autentificat de un notar public din România.",
+    "is_refusal": false,
+    "refusal_correct": false,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 13.766930103302002,
+    "top_breadcrumbs": [
+      "Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie",
+      "Căsătoria > Ne căsătorim în străinătate",
+      "Căsătoria > Condiții pentru a te căsători",
+      "Căsătoria > Ne căsătorim în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Căsătoria > Partenerul este cetățean străin > 📌 PASUL 1 - Declarația de căsătorie]\nÎnainte de oficierea căsătoriei, va trebui să dați o declaraţie de căsătorie la primăria locului de domiciliu sau de reşedinţă al unuia dintre voi. Ca excepție, căsătoria poate fi oficiată și la o altă primărie decât cea de domiciliu sau de reședință, cu aprobarea primarului localității unde urmează să se încheie căsătoria În declaraţia de căsătorie, veți arăta că respectați toate condițiile legale pentru a vă căsători, veți menţiona numele de familie pe care îl veți purta în timpul căsătoriei, precum şi regimul matrimonial ales. În ce privește numele, aveți posibilitatea: să păstrați fiecare numele pe care l-ați avut înainte de căsătorie, să luați amândoi numele unuia dintre soţi, să purtați numele voastre reunite. În ceea ce privește regimul matrimonial, comunitatea legală se aplică automat în cazul în care nu alegeți un alt regim. Comunitatea legală presupune că toate bunurile dobândite în timpul căsătoriei de către oricare dintre soţi sunt, de la data dobândirii lor, bunuri comune ale voastre. În situaţia în care decideți să alegeți un alt regim matrimonial decât cel al comunităţii legale, veți prezenta o copie a convenţiei matrimoniale, autentificată de către notarul public. Convenţia matrimonială poate fi încheiată înainte de căsătorie sau în timpul căsătoriei, caz în care produce efecte de la data încheierii ei. După cel puţin un an de la data căsătoriei, puteți, ori de câte ori doriți, să înlocuiți regimul matrimonial existent cu un alt regim matrimonial ori să îl modificați, cu respectarea acelorași condiţii ca la încheierea convenției matrimoniale.\n\n- să păstrați fiecare numele pe care l-ați avut înainte de căsătorie,\n- să luați amândoi numele unuia dintre soţi,\n- să purtați numele voastre reunite."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-01",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Sunt cetățean român și vreau să cumpăr un apartament. Care este primul pas?",
+    "should_refuse": false,
+    "answer_text": "Pentru a cumpăra un imobil, inclusiv un apartament, ca cetățean român, primul pas este să te întrebi de la vânzător informațiile necesare despre imobil și să stabiliți condițiile contractuale. După aceste negocieri, atât tu cât și vânzător trebuie să mergeți la un notar pentru a încheia contractul.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 61.46467876434326,
+    "top_breadcrumbs": [
+      "Locuire > Sunt cetățean român",
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățeanul unui alt stat"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Sunt cetățean român]\nAtenție! Dacă vrei să cumperi un imobil (casă, apartament, teren etc.), tu și vânzătorul trebuie să vă duceți în mod obligatoriu la notar. Poți găsi lista birourilor notariale din fiecare județ și din Municipiul București aici."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-02",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Ce acte îmi trebuie ca cumpărător al unui imobil în România?",
+    "should_refuse": false,
+    "answer_text": "Ca cumpărător al unui imobiliar din România, ești obligat să aduci următoarele documente: actul de identitate și certificatul de căsătorie dacă ești căsătorit(ă). Acestea sunt necesare pentru a verifica identitatea ta în fața notarului.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.5,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 12.237065076828003,
+    "top_breadcrumbs": [
+      "Locuire > Nu am reședința în România > 📌 Ce acte trebuie să aducă vânzătorul?",
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 De ce acte am nevoie?",
+      "Locuire > Am reședința în România > 📌 Ce acte trebuie să aducă vânzătorul?",
+      "Locuire > Am reședința în România > 📌 De ce acte am nevoie?"
+    ],
+    "documents_mentioned": [
+      "act de identitate",
+      "certificat de căsătorie"
+    ],
+    "cited_source_indices": [
+      4
+    ],
+    "cited_sources_text": [
+      "[Locuire > Am reședința în România > 📌 De ce acte am nevoie?]\nFiind cumpărător, este nevoie să aduci doar actul de identitate, pentru ca notarul să poată verifica cine ești. De asemenea, dacă ești căsătorit(ă), este nevoie și de certificatul de căsătorie."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-03",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Ce trebuie să conțină un contract de închiriere între proprietar și chiriaș?",
+    "should_refuse": false,
+    "answer_text": "Un contract de închiriere între proprietar și chiriaș ar trebui să conțină următoarele informații: identitatea ambeilor părți (nume, cod personal de identificare, date de contact); descrierea imobilului care este închiriat; valoarea chiriei și modul de plată; durata contractului; obligațiile ambeilor părți; situații în care încetează contractul. De asemenea, recomandăm să anexezi un proces verbal de predare-primire care să includă lista obiectelor din imobil și starea lor, precum și situația utilităților.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 102.68851327896118,
+    "top_breadcrumbs": [
+      "Locuire > Despre contractul de locațiune (închiriere)",
+      "Locuire > Obligațiile proprietarului (locatorului)",
+      "Locuire > Drepturile proprietarului (locatorului)",
+      "Locuire > Despre contractul de locațiune (închiriere)"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Despre contractul de locațiune (închiriere)] (parte 1/2)\nContractul de închiriere, numit în termeni legali contract de locațiune, nu trebuie să fie încheiat în fața unui notar. Este suficient dacă proprietarul (locatorul) și chiriașul (locatarul) au un contract în formă scrisă și semnat de amândoi. Atenție! Începând cu 1 ianuarie 2023, proprietarii care obțin venituri din închirierea imobilelor au obligația să declare contractele de închiriere la Agenția Națională de Administrare Fiscală (ANAF) în termen de 30 de zile de la semnarea acestora. Aceasta este o obligație care cade în sarcina proprietarului (locatorului). În ceea ce privește prețul, acesta poartă denumirea de chirie și poate fi stabilit fie într-o sumă de bani, fie în orice alt bun sau chiar o altă prestație. Un contract de închiriere al unui imobil poate fi încheiat și dacă ești un minor care a împlinit vârsta de 14 ani, dar, în acest caz, durata contractului nu poate depăși 5 ani. Contractul de închiriere ar trebui să conțină următoarele informații: identitatea locatorului și a locatarului (nume, cod de identificare personal, date de contact); descrierea imobilului care urmează să fie închiriat; valoarea chiriei, modul de plată al acesteia (cash, transfer bancar etc.), data din lună la care trebuie să fie plătită și eventuale penalizări în cazul în care nu e plătită la timp; valoarea garanției și condițiile în care aceasta poate să fie reținută de proprietar la finalul contractului; durata contractului de închiriere; obligațiile locatorului și ale locatarului; situații în care încetează contractul, inclusiv la cererea uneia dintre părți. Pentru inspirație, poți să consulți și următorul model de contract de închiriere: MODEL CONTRACT INCHIRIERE În afară de contractul de închiriere propriu-zis, recomandăm și realizarea unui proces verbal de predare-primire, care să fie anexă contractului și care să includă: lista obiectelor aflate în apartament (mobilier, electrocasnice etc.) și a stării în care se află acestea; situația utilităților / index (ex. cifrele indicate de contoare, ultimele facturi achitate); alte aspecte legate de starea în care se află imobilul. Aveți grijă să menționați și eventuale defecte ale diferitelor obiecte din casă (de exemplu, faptul că canapeaua este zgâriată, lampa din dormitor nu funcționează sau că există pete pe parchet). Pentru și mai multă siguranță, puteți să faceți fotografii sau să filmați imobilul la momentul predării. Cu ajutorul acestei documentații, atât proprietarul, cât și chiriașul sunt mai protejați în fața unor eventuale abuzuri ale celeilalte părți."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-04",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Vreau să închiriez un apartament. Trebuie obligatoriu să facem contract în scris?",
+    "should_refuse": false,
+    "answer_text": "În conformitate cu prevederile legale, pentru a formaliza o închiriere de imobil este necesar să se încheie un contract scris care stabilește condițiile de închirie între proprietar și chiriaș. Acest document este esențial atât din punct de vedere legal, cât și pentru protecția ambilor părți implicații ale relației lor.\n\nConform articolului 129 din Legea nr. 83/2014 privind închirierea imobiliară, contractul de închirie trebuie să fie încheiat în formă scrisă pentru a fi considerat valid și executabil.\n\nUn exemplu de contract de închiriere poate fi găsit la Ministerul Justiției (Model 1).\n\nAcest document formalizează condițiile de închirie, inclusiv durata contractului, suma chiriei și termenii de plată, responsabilitatea pentru întretinerea imobilului și alte aspecte importante legate de relația dintre proprietar și chiriaș.\n\nÎn unele cazuri, cum ar fi înregistrarea la ANAF sau încheierea față de notar, contractul devine un titlu executoriu care permite executarea silită a chiriei.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": false,
+    "violations": [
+      "R6_FORM_ID_IN_DOCS"
+    ],
+    "attempts": 2,
+    "latency_s": 47.94811153411865,
+    "top_breadcrumbs": [
+      "Locuire > Despre contractul de locațiune (închiriere)",
+      "Locuire > Obligațiile proprietarului (locatorului)",
+      "Locuire > Obligațiile chiriașului (locatarului)",
+      "Locuire > Drepturile proprietarului (locatorului)"
+    ],
+    "documents_mentioned": [
+      "contract_inchiriere"
+    ],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Despre contractul de locațiune (închiriere)] (parte 1/2)\nContractul de închiriere, numit în termeni legali contract de locațiune, nu trebuie să fie încheiat în fața unui notar. Este suficient dacă proprietarul (locatorul) și chiriașul (locatarul) au un contract în formă scrisă și semnat de amândoi. Atenție! Începând cu 1 ianuarie 2023, proprietarii care obțin venituri din închirierea imobilelor au obligația să declare contractele de închiriere la Agenția Națională de Administrare Fiscală (ANAF) în termen de 30 de zile de la semnarea acestora. Aceasta este o obligație care cade în sarcina proprietarului (locatorului). În ceea ce privește prețul, acesta poartă denumirea de chirie și poate fi stabilit fie într-o sumă de bani, fie în orice alt bun sau chiar o altă prestație. Un contract de închiriere al unui imobil poate fi încheiat și dacă ești un minor care a împlinit vârsta de 14 ani, dar, în acest caz, durata contractului nu poate depăși 5 ani. Contractul de închiriere ar trebui să conțină următoarele informații: identitatea locatorului și a locatarului (nume, cod de identificare personal, date de contact); descrierea imobilului care urmează să fie închiriat; valoarea chiriei, modul de plată al acesteia (cash, transfer bancar etc.), data din lună la care trebuie să fie plătită și eventuale penalizări în cazul în care nu e plătită la timp; valoarea garanției și condițiile în care aceasta poate să fie reținută de proprietar la finalul contractului; durata contractului de închiriere; obligațiile locatorului și ale locatarului; situații în care încetează contractul, inclusiv la cererea uneia dintre părți. Pentru inspirație, poți să consulți și următorul model de contract de închiriere: MODEL CONTRACT INCHIRIERE În afară de contractul de închiriere propriu-zis, recomandăm și realizarea unui proces verbal de predare-primire, care să fie anexă contractului și care să includă: lista obiectelor aflate în apartament (mobilier, electrocasnice etc.) și a stării în care se află acestea; situația utilităților / index (ex. cifrele indicate de contoare, ultimele facturi achitate); alte aspecte legate de starea în care se află imobilul. Aveți grijă să menționați și eventuale defecte ale diferitelor obiecte din casă (de exemplu, faptul că canapeaua este zgâriată, lampa din dormitor nu funcționează sau că există pete pe parchet). Pentru și mai multă siguranță, puteți să faceți fotografii sau să filmați imobilul la momentul predării. Cu ajutorul acestei documentații, atât proprietarul, cât și chiriașul sunt mai protejați în fața unor eventuale abuzuri ale celeilalte părți."
+    ],
+    "violation_messages": [
+      "'contract_inchiriere' este un id de formular, nu un nume de document. Trebuie pus în form_offer, nu în documents_mentioned."
+    ]
+  },
+  {
+    "case_id": "locuire-05",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Care sunt obligațiile proprietarului față de chiriaș?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 77.38230633735657,
+    "top_breadcrumbs": [
+      "Locuire > Drepturile proprietarului (locatorului)",
+      "Locuire > Obligațiile proprietarului (locatorului)",
+      "Locuire > Obligațiile chiriașului (locatarului)",
+      "Locuire > Drepturile chiriașului (locatarului)"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.77 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "locuire-06",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Care sunt drepturile mele ca chiriaș?",
+    "should_refuse": false,
+    "answer_text": "Ca chiriaș (locatar), ai următoarele drepturi:",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 10.714502573013306,
+    "top_breadcrumbs": [
+      "Locuire > Drepturile proprietarului (locatorului)",
+      "Locuire > Drepturile chiriașului (locatarului)",
+      "Locuire",
+      "Locuire > Obligațiile chiriașului (locatarului)"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      2
+    ],
+    "cited_sources_text": [
+      "[Locuire > Drepturile chiriașului (locatarului)]\n📌 Folosința liniștită - Proprietarul respectivei locuințe trebuie să îți predea în primul rând bunul, să păstreze locuința într-o stare bună, dar și să îți asigure posibilitatea de a folosi liniștit respectiva casă/ respectivul apartament. 📌 Reparații - Proprietarul este responsabil să facă acele reparații capitale care nu au fost cauzate de tine (ex. legate de instalația de apă, canalizare, electricitate, gaze etc.) Totuși, în cazul în care ești chiriaș și ai adus la cunoștință reparațiile de care este nevoie, dar nu s-a produs nici o reparație, o poți face chiar tu, urmând ca apoi proprietarul să îți plătească atât sumele pe care le-ai cheltuit făcând reparații, cât și dobânzi care să fie calculate de la data reparării respectivelor daune. Dacă a fost o situație de urgență, îl poți anunța pe proprietar și după ce ai început reparațiile, dar atunci dobânzile pe care le poți primi vor putea fi aplicate doar după momentul în care acesta a fost anunțat. 📌 Garanție - Proprietarul trebuie, de asemenea, să ofere garanții împotriva oricăror probleme care apar, chiar dacă aceste probleme nu erau evidente în momentul încheierii contractului și chiar dacă voi, ca chiriași, nu ați menționat nimic despre ele. Dacă proprietarul nu înlătură aceste probleme, tu, în calitate de chiriaș, ai dreptul la scăderea chiriei, iar dacă, știind despre aceste probleme, nu ai fi încheiat această închiriere, poți chiar rezilia contractul. 📌 Subînchirierea (sublocațiunea) - ai voie să subînchiriezi locuința atât timp cât în contractul dintre tine și proprietar nu există o clauză care interzice asta."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-07",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Care sunt obligațiile mele ca proprietar într-o asociație de proprietari?",
+    "should_refuse": false,
+    "answer_text": "Ca membru al unei asociații de proprietari, obligațiile tale includ:\n- Anunțarea președintelui cu privire la orice schimbare intervenită la structura și numărul membrilor familiei, a persoanelor luate în spațiu sau a chiriașilor/comodatarilor, în termen de 10 zile de la schimbare;\n- Menținerea spațiului propriu într-o funcționare bună pe propria cheltuială;\n- Repararea stricăciunilor sau acoperirea cheltuielilor reparațiilor necesare în cazul în care s-au produs stricăciuni în proprietatea individuală a unui vecin;\n- Permite accesul președintelui asociației, membrilor din comitetul executiv, administratorului și unei persoane calificate pentru lucrări care țin de proprietatea comună;\n- Luarea măsurilor necesare pentru repararea, consolidarea și modernizarea condominiului.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 45.23521566390991,
+    "top_breadcrumbs": [
+      "Locuire > Relația cu asociația de proprietari > 📌 Ce obligații am ca membru al unei asociații de proprietari?",
+      "Locuire > Relația cu asociația de proprietari > 📌 Ce drepturi am ca membru al unei asociații de proprietari?",
+      "Locuire > Relația cu asociația de proprietari > 📌Atribuțiile asociației de proprietari sunt:",
+      "Locuire > Relația cu asociația de proprietari > 📌 Cum se înființează asociația de proprietari?"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Relația cu asociația de proprietari > 📌 Ce obligații am ca membru al unei asociații de proprietari?]\nCa proprietar ai obligația: Să anunți președintele asociației cu privire la orice schimbare intervenită la structura și numărul membrilor familiei, a persoanelor luate în spațiu sau a chiriașilor/comodatarilor, în termen de 10 zile de la schimbare, în scris; Să menții spațiul propriu într-o funcționare bună pe propria cheltuială; Să repari stricăciunile sau să acoperi cheltuielile reparațiilor necesare în cazul în care s-au produs stricăciuni în proprietatea individuală a unui vecin; Să permiți accesul președintelui asociației, a membrilor din comitetul executiv, a administratorului și al unei persoane calificate, în momentul în care trebuie să se realizeze lucrări care țin de proprietatea comună a proprietarilor; Să iei măsuri pentru repararea, consolidarea și modernizarea condominiului, pentru a putea menține un aspect armonios al întregului imobil.\n\n- Să anunți președintele asociației cu privire la orice schimbare intervenită la structura și numărul membrilor familiei, a persoanelor luate în spațiu sau a chiriașilor/comodatarilor, în termen de 10 zile de la schimbare, în scris;\n- Să menții spațiul propriu într-o funcționare bună pe propria cheltuială;\n- Să repari stricăciunile sau să acoperi cheltuielile reparațiilor necesare în cazul în care s-au produs stricăciuni în proprietatea individuală a unui vecin;\n- Să permiți accesul președintelui asociației, a membrilor din comitetul executiv, a administratorului și al unei persoane calificate, în momentul în care trebuie să se realizeze lucrări care țin de proprietatea comună a proprietarilor;\n- Să iei măsuri pentru repararea, consolidarea și modernizarea condominiului, pentru a putea menține un aspect armonios al întregului imobil."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-08",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Care sunt obligațiile chiriașului față de proprietar?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 28.095033168792725,
+    "top_breadcrumbs": [
+      "Locuire > Drepturile proprietarului (locatorului)",
+      "Locuire > Obligațiile proprietarului (locatorului)",
+      "Locuire > Obligațiile chiriașului (locatarului)",
+      "Locuire > Drepturile chiriașului (locatarului)"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.77 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "locuire-09",
+    "category": "locuire",
+    "difficulty": "medium",
+    "question": "Sunt cetățean al unui stat UE. În ce condiții pot cumpăra o casă în România?",
+    "should_refuse": false,
+    "answer_text": "Dacă ești cetățean al unei țări din Uniunea Europeană, poți achiziționa un imobil în România pe aceleași condiții ca și un cetățean român. Este necesar să ai capabilitatea de a contracta, să acordi consimțământul la momentul încheierii contractului, obiectul contractului (în acest caz casa) trebuie specificat clarament și cauza pentru care se încheie contractul trebuie să fie morală și permisă de lege. De asemenea, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 47.38550806045532,
+    "top_breadcrumbs": [
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățean român > 📌 În ce condiții pot cumpăra un imobil?"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      2,
+      3
+    ],
+    "cited_sources_text": [
+      "[Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?]\nDacă ești cetățean al unui stat membru al Uniunii Europene sau al Spațiului Economic European și vrei să cumperi un imobil, o poți face în aceleași condiții ca un cetățean român. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară.",
+      "[Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?]\nDacă ești cetățean al unui stat membru al Uniunii Europene sau al Spațiului Economic European și vrei să cumperi un imobil, o poți face în aceleași condiții ca un cetățean român. Totuși, fiind nerezident, va trebui să obții de la ANAF un cod special, denumit NIF (număr de înregistrare fiscală), prin completarea Formularului 030, care să îți permită să plătești taxe și impozite. Află mai multe despre obținerea NIF din Ghidul elaborat de ANAF. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-10",
+    "category": "locuire",
+    "difficulty": "medium",
+    "question": "Sunt cetățean al unui stat non-UE. Pot cumpăra un imobil în România?",
+    "should_refuse": false,
+    "answer_text": "Dacă ești cetățean al unui stat terț (nemembru UE/SEE), poți achiziționa un imobil în România pe baza unui acord internațional reciproc între România și respectiva țară. În absența asemenea unui acord, cele mai frecvente opțiuni sunt dobândirea dreptului de superficie sau înființarea unei societăți cu asociat unic (SRL) pe teritoriul României și achiziționarea imobilului pe numele firmei.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 17.09258508682251,
+    "top_breadcrumbs": [
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Căsătoria > Partenerul este cetățean străin > ⚠️ ATENȚIE!"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?]\nÎn cazul în care nu ești cetățean român sau al vreunui stat membru UE/SEE, poți achiziționa un imobil pe baza unui acord internațional reciproc între România și respectiva țară. Cetățenii statelor terțe pot dobândi drept de proprietate asupra construcțiilor și drept de superficie (un drept de folosință pe durata existenței construcției) asupra terenurilor, în situația în care doresc să cumpere imobile în România. Totuși, cea mai rapidă soluție pentru un cetățean non-UE în ceea ce privește achiziționarea unui imobil este înființarea unui SRL cu asociat unic pe teritoriul României. Acesta poate achiziționa imobilul pe numele respectivei firme pe care o deține, respectând legislația în vigoare în ceea ce privește cumpărarea unui imobil de către o persoană juridică cu sediul în România. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-11",
+    "category": "locuire",
+    "difficulty": "medium",
+    "question": "Care sunt obligațiile chiriașului față de imobil?",
+    "should_refuse": false,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a descrie obligațiile chiriașului (locatarului) față de imobil.",
+    "is_refusal": true,
+    "refusal_correct": false,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": false,
+    "violations": [
+      "R7_OVERREFUSAL"
+    ],
+    "attempts": 2,
+    "latency_s": 45.73446869850159,
+    "top_breadcrumbs": [
+      "Locuire > Drepturile proprietarului (locatorului)",
+      "Locuire > Obligațiile proprietarului (locatorului)",
+      "Locuire > Obligațiile chiriașului (locatarului)",
+      "Locuire > Obligațiile chiriașului (locatarului)"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": [
+      "Ai refuzat, dar sursa [S1] are similaritate 0.77 (prag 0.64) cu întrebarea. Citește [S1] și răspunde din ea dacă informația există; refuză doar dacă subiectul lipsește complet din SURSE."
+    ]
+  },
+  {
+    "case_id": "locuire-12",
+    "category": "locuire",
+    "difficulty": "medium",
+    "question": "Sunt cetățean turc. Pot cumpăra un apartament în România?",
+    "should_refuse": false,
+    "answer_text": "Dacă ești cetățean al Turciei, nu ai drepturi de proprietate directe asupra imobiliarului din România, cu excepția acordurilor internaționale reciproc stipulate între cele două țări. În general, o soluție este înființarea unei societăți românești (SRL) și achiziționarea imobilului pe numele acesteia. Consultă un avocat sau un specialist în dreptul imobiliar pentru detalii specifice.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.6666666666666666,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 13.070412397384644,
+    "top_breadcrumbs": [
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățean român"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?]\nÎn cazul în care nu ești cetățean român sau al vreunui stat membru UE/SEE, poți achiziționa un imobil pe baza unui acord internațional reciproc între România și respectiva țară. Cetățenii statelor terțe pot dobândi drept de proprietate asupra construcțiilor și drept de superficie (un drept de folosință pe durata existenței construcției) asupra terenurilor, în situația în care doresc să cumpere imobile în România. Totuși, cea mai rapidă soluție pentru un cetățean non-UE în ceea ce privește achiziționarea unui imobil este înființarea unui SRL cu asociat unic pe teritoriul României. Acesta poate achiziționa imobilul pe numele respectivei firme pe care o deține, respectând legislația în vigoare în ceea ce privește cumpărarea unui imobil de către o persoană juridică cu sediul în România. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-13",
+    "category": "locuire",
+    "difficulty": "medium",
+    "question": "Care sunt drepturile proprietarului asupra unui imobil închiriat?",
+    "should_refuse": false,
+    "answer_text": "Proprietarul are următoarele drepturi și obligații asupra unui imobil închiriat:\n- A prelua imobilul respectiv și a plăti chirie la termene stabili.\n- A garanta că locuința este într-o stare bună și sigură pentru folosire.\n- A face reparațiile capitale care nu au fost cauzate de chiriaș (ex. instalații de apă, canalizare, electricitate).\n- A oferi garanție împotriva oricaror probleme care apar și să le rezolve.\n- Accesul în imobil pentru verificarea stării sale, cu notificare prealabilă și acordul chiriașului.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 44.832881927490234,
+    "top_breadcrumbs": [
+      "Locuire",
+      "Locuire > Drepturile proprietarului (locatorului)",
+      "Locuire > Obligațiile proprietarului (locatorului)",
+      "Locuire > Drepturile chiriașului (locatarului)"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      2
+    ],
+    "cited_sources_text": [
+      "[Locuire > Drepturile proprietarului (locatorului)]\n📌 Chiria - Chiriașul (locatarul) are, în primul rând, obligația de a prelua imobilul respectiv și de a plăti chiria stabilită la încheierea contractului la termenele stabilite. În general, în contractele de închiriere (locațiune) se optează pentru plata chiriei o dată pe lună. Dacă nu există o clauză specifică, plata chiriei se face lunar, în avans, conform practicii uzuale. Contractul de închiriere încheiat în fața unui notar public constituie titlu executoriu, adică poți executa silit chiriașul (să îl pui să îți dea sumele restante) numai pe baza lui, fără să mai fie nevoie de alte acțiuni din partea ta. Contractele înregistrate la ANAF sunt obligatorii din punct de vedere fiscal, dar nu conferă dreptul la executare silită automată 📌Grija față de imobil - Chiriașul are obligația să folosească respectiva locuință cu grijă, fără să producă mari daune, dar și să elibereze locuința și să ți-o predea în momentul în care încetează contractul. 📌Plata utilităților - chiriașul este responsabil pentru plata utilităților pe perioada cât locuiește în respectivul imobil. 📌 Reparații - chiriașul este responsabil pentru reparațiile locative, a căror necesitate rezultă din folosirea normală a imobilului (ex. să schimbe un bec sau un robinet defect). 📌 Accesul proprietarului în imobil - Proprietarul are dreptul de a verifica periodic imobilul, dar cu notificare prealabilă și acordul chiriașului, respectând limite rezonabile. Accesul este permis și pentru vizionări cu viitori chiriași sau cumpărători, în condițiile stabilite în contract. 📌 Garanție - în cele mai multe contracte de închiriere, chiriașului i se cere să plătească o garanție la încheierea contractului. Acesta are rolul de a te asigura pentru eventuale daune, pentru neplata chiriei sau a utilităților. Garanția are, cel mai frecvent, valoarea chiriei pe o lună. Pentru ca totul să fie clar pentru tine și pentru chiriaș trebuie specificate explicit în contractul de închiriere suma stabilită drept garanție, scopul acesteia și situațiile în care este sau nu returnată. Recomandăm să fii deosebit de atent la realizarea semnarea procesului verbal de predare - primire a imobilului, pentru a avea o evidență cât mai bună a stării în care se află imobilul, precum și obiectele din interiorul lui și pentru a evita situații în care nu îți poți recupera eventuale daune."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-14",
+    "category": "locuire",
+    "difficulty": "medium",
+    "question": "Care sunt drepturile mele ca membru al unei asociații de proprietari?",
+    "should_refuse": false,
+    "answer_text": "Ca membru al unei asociații de proprietari, ai următoarele drepturi:\n- Să participi și să votezi la adunarea generală a respectivei asociații;\n- Să îți înscrii candidatura, să candidezi, să alegi și să fii ales în structura organizatorică a asociației;\n- Să fii informat în legătură cu activitatea asociației și să primești copie, la cerere, a oricărui document al acesteia;\n- Să primești explicații referitoare la suma cu care trebuie să contribui în această asociație;\n- Să adresezi președintelui, comitetului executiv sau instituțiilor specializate, plângeri cu privire la tulburarea liniștii și respectarea ordinii publice;\n- Să soliciți anularea unei hotărâri ale asociației care este contrară cu ce prevede legea, sau cu interesele proprietarilor.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 22.030940294265747,
+    "top_breadcrumbs": [
+      "Locuire > Relația cu asociația de proprietari > 📌 Ce drepturi am ca membru al unei asociații de proprietari?",
+      "Locuire > Relația cu asociația de proprietari > 📌 Ce obligații am ca membru al unei asociații de proprietari?",
+      "Locuire > Relația cu asociația de proprietari > 📌Atribuțiile asociației de proprietari sunt:",
+      "Locuire > Relația cu asociația de proprietari > 📌 Cum se înființează asociația de proprietari?"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Relația cu asociația de proprietari > 📌 Ce drepturi am ca membru al unei asociații de proprietari?]\nCa membru al unei asociații de proprietari, ai următoarele drepturi: Să participi și să votezi la adunarea generală a respectivei asociații; Să îți înscrii candidatura, să candidezi, să alegi și să fii ales în structura organizatorică a asociației; Să fii informat în legătură cu activitatea asociației și să primești copie, la cerere, a oricărui document al acesteia; Să primești explicații referitoare la suma cu care trebuie să contribui în această asociație; Să adresezi președintelui, comitetului executiv sau instituțiilor specializate, plângeri cu privire la tulburarea liniștii și respectarea ordinii publice; Să soliciți anularea unei hotărâri ale asociației care este contrară cu ce prevede legea, sau cu interesele proprietarilor.\n\n- Să participi și să votezi la adunarea generală a respectivei asociații;\n- Să îți înscrii candidatura, să candidezi, să alegi și să fii ales în structura organizatorică a asociației;\n- Să fii informat în legătură cu activitatea asociației și să primești copie, la cerere, a oricărui document al acesteia;\n- Să primești explicații referitoare la suma cu care trebuie să contribui în această asociație;\n- Să adresezi președintelui, comitetului executiv sau instituțiilor specializate, plângeri cu privire la tulburarea liniștii și respectarea ordinii publice;\n- Să soliciți anularea unei hotărâri ale asociației care este contrară cu ce prevede legea, sau cu interesele proprietarilor."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-15",
+    "category": "locuire",
+    "difficulty": "hard",
+    "question": "Care sunt drepturile mele dacă sunt proprietarul unui apartament și membru al asociației de proprietari?",
+    "should_refuse": false,
+    "answer_text": "Drepturile tale ca membru al unei asociații de proprietari includ:\n- Participarea și votarea la adunarea generală a asociației;\n- Înscrierea candidaturilor, candidatura ta, alegerile și alegerea în structura organizatorică a asociației;\n- Informarea cu privire la activitatea asociației și primirea copiilor documentelor pe care le ceri;\n- Primirea explicațiilor referitoare la contribuțiile tale la asociație;\n- Adresarea plângerilor președintelui, comitetului executiv sau instituțiilor specializate cu privire la tulburări ale liniștii și respectarea ordinii publice;\n- Solicitarea anulării unei hotărâri a asociației care este contrară legii sau interesele proprietarilor.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 41.49750065803528,
+    "top_breadcrumbs": [
+      "Locuire > Relația cu asociația de proprietari > 📌 Ce drepturi am ca membru al unei asociații de proprietari?",
+      "Locuire > Relația cu asociația de proprietari > 📌 Ce obligații am ca membru al unei asociații de proprietari?",
+      "Locuire > Relația cu asociația de proprietari > 📌Atribuțiile asociației de proprietari sunt:",
+      "Locuire"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Relația cu asociația de proprietari > 📌 Ce drepturi am ca membru al unei asociații de proprietari?]\nCa membru al unei asociații de proprietari, ai următoarele drepturi: Să participi și să votezi la adunarea generală a respectivei asociații; Să îți înscrii candidatura, să candidezi, să alegi și să fii ales în structura organizatorică a asociației; Să fii informat în legătură cu activitatea asociației și să primești copie, la cerere, a oricărui document al acesteia; Să primești explicații referitoare la suma cu care trebuie să contribui în această asociație; Să adresezi președintelui, comitetului executiv sau instituțiilor specializate, plângeri cu privire la tulburarea liniștii și respectarea ordinii publice; Să soliciți anularea unei hotărâri ale asociației care este contrară cu ce prevede legea, sau cu interesele proprietarilor.\n\n- Să participi și să votezi la adunarea generală a respectivei asociații;\n- Să îți înscrii candidatura, să candidezi, să alegi și să fii ales în structura organizatorică a asociației;\n- Să fii informat în legătură cu activitatea asociației și să primești copie, la cerere, a oricărui document al acesteia;\n- Să primești explicații referitoare la suma cu care trebuie să contribui în această asociație;\n- Să adresezi președintelui, comitetului executiv sau instituțiilor specializate, plângeri cu privire la tulburarea liniștii și respectarea ordinii publice;\n- Să soliciți anularea unei hotărâri ale asociației care este contrară cu ce prevede legea, sau cu interesele proprietarilor."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-16",
+    "category": "locuire",
+    "difficulty": "hard",
+    "question": "Vreau să închiriez locuința altcuiva și nu vrem să încheiem contract în scris. E legal?",
+    "should_refuse": false,
+    "answer_text": "Este recomandabil să încheieți un contract de închiriere în formă scrisă, chiar dacă legea permite încheierea orală a acestuia. Totuși, pentru siguranță și pentru a evita conflicte ulterioare, este cel mai bine să aveți un contract semnat de ambele părți. Acesta va clarifica toate condițiile și obligațiile legale ale ambelor părți.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 0.6666666666666666,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 13.71668028831482,
+    "top_breadcrumbs": [
+      "Locuire > Despre contractul de locațiune (închiriere)",
+      "Locuire > Proprietarul vrea să mă dea afară - ce pot face?",
+      "Locuire > Despre contractul de comodat (împrumut de folosință)",
+      "Locuire"
+    ],
+    "documents_mentioned": [
+      "contract de închiriere"
+    ],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Despre contractul de locațiune (închiriere)] (parte 1/2)\nContractul de închiriere, numit în termeni legali contract de locațiune, nu trebuie să fie încheiat în fața unui notar. Este suficient dacă proprietarul (locatorul) și chiriașul (locatarul) au un contract în formă scrisă și semnat de amândoi. Atenție! Începând cu 1 ianuarie 2023, proprietarii care obțin venituri din închirierea imobilelor au obligația să declare contractele de închiriere la Agenția Națională de Administrare Fiscală (ANAF) în termen de 30 de zile de la semnarea acestora. Aceasta este o obligație care cade în sarcina proprietarului (locatorului). În ceea ce privește prețul, acesta poartă denumirea de chirie și poate fi stabilit fie într-o sumă de bani, fie în orice alt bun sau chiar o altă prestație. Un contract de închiriere al unui imobil poate fi încheiat și dacă ești un minor care a împlinit vârsta de 14 ani, dar, în acest caz, durata contractului nu poate depăși 5 ani. Contractul de închiriere ar trebui să conțină următoarele informații: identitatea locatorului și a locatarului (nume, cod de identificare personal, date de contact); descrierea imobilului care urmează să fie închiriat; valoarea chiriei, modul de plată al acesteia (cash, transfer bancar etc.), data din lună la care trebuie să fie plătită și eventuale penalizări în cazul în care nu e plătită la timp; valoarea garanției și condițiile în care aceasta poate să fie reținută de proprietar la finalul contractului; durata contractului de închiriere; obligațiile locatorului și ale locatarului; situații în care încetează contractul, inclusiv la cererea uneia dintre părți. Pentru inspirație, poți să consulți și următorul model de contract de închiriere: MODEL CONTRACT INCHIRIERE În afară de contractul de închiriere propriu-zis, recomandăm și realizarea unui proces verbal de predare-primire, care să fie anexă contractului și care să includă: lista obiectelor aflate în apartament (mobilier, electrocasnice etc.) și a stării în care se află acestea; situația utilităților / index (ex. cifrele indicate de contoare, ultimele facturi achitate); alte aspecte legate de starea în care se află imobilul. Aveți grijă să menționați și eventuale defecte ale diferitelor obiecte din casă (de exemplu, faptul că canapeaua este zgâriată, lampa din dormitor nu funcționează sau că există pete pe parchet). Pentru și mai multă siguranță, puteți să faceți fotografii sau să filmați imobilul la momentul predării. Cu ajutorul acestei documentații, atât proprietarul, cât și chiriașul sunt mai protejați în fața unor eventuale abuzuri ale celeilalte părți."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-17",
+    "category": "locuire",
+    "difficulty": "hard",
+    "question": "Sunt cetățean român, vreau să cumpăr un imobil împreună cu un partener cetățean turc. Există restricții?",
+    "should_refuse": false,
+    "answer_text": "Dacă ești cetățean al României și partenerul tău este cetățean al Turciei, care nu face parte din UE sau SEE, există anumite aspecte speciale pe care trebuie să le ai în vedere. Cetățenii statelor terțe pot dobândi drept de proprietate asupra construcțiilor și drept de superficie (un drept de folosință pe durata existenței construcției) asupra terenurilor, în situația în care doresc să cumpere imobile în România. Acesta este un proces care poate implica acorduri internaționale reciproc între țările respective și respectarea legislației românești privind achiziționarea imobiliară de către cetățeni străini.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 41.068464517593384,
+    "top_breadcrumbs": [
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Căsătoria > Condiții pentru a te căsători > 📌 Căsătoria dintre persoanele de același sex",
+      "Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?]\nÎn cazul în care nu ești cetățean român sau al vreunui stat membru UE/SEE, poți achiziționa un imobil pe baza unui acord internațional reciproc între România și respectiva țară. Cetățenii statelor terțe pot dobândi drept de proprietate asupra construcțiilor și drept de superficie (un drept de folosință pe durata existenței construcției) asupra terenurilor, în situația în care doresc să cumpere imobile în România. Totuși, cea mai rapidă soluție pentru un cetățean non-UE în ceea ce privește achiziționarea unui imobil este înființarea unui SRL cu asociat unic pe teritoriul României. Acesta poate achiziționa imobilul pe numele respectivei firme pe care o deține, respectând legislația în vigoare în ceea ce privește cumpărarea unui imobil de către o persoană juridică cu sediul în România. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-18",
+    "category": "locuire",
+    "difficulty": "hard",
+    "question": "Care e diferența între un cetățean UE și unul non-UE când vine vorba despre cumpărarea unui imobil în România?",
+    "should_refuse": false,
+    "answer_text": "Un cetățean al Uniunii Europene sau al Spațiului Economic European poate achiziționa un imobil în aceleași condiții ca și un cetățean român, indiferent de locul unde are reședința. În caz contrar, dacă ești cetățean al unei țări terțe (non-UE), trebuie să te bazezi pe acorduri internaționale reciproc sau să înființezi o SRL cu asociat unic pentru a cumpăra un imobil.",
+    "is_refusal": false,
+    "refusal_correct": true,
+    "breadcrumb_recall": true,
+    "keyword_coverage": 1.0,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 10.933075666427612,
+    "top_breadcrumbs": [
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățeanul unui stat membru UE sau al Spațiului Economic European"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1,
+      2,
+      3
+    ],
+    "cited_sources_text": [
+      "[Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?]\nÎn cazul în care nu ești cetățean român sau al vreunui stat membru UE/SEE, poți achiziționa un imobil pe baza unui acord internațional reciproc între România și respectiva țară. Cetățenii statelor terțe pot dobândi drept de proprietate asupra construcțiilor și drept de superficie (un drept de folosință pe durata existenței construcției) asupra terenurilor, în situația în care doresc să cumpere imobile în România. Totuși, cea mai rapidă soluție pentru un cetățean non-UE în ceea ce privește achiziționarea unui imobil este înființarea unui SRL cu asociat unic pe teritoriul României. Acesta poate achiziționa imobilul pe numele respectivei firme pe care o deține, respectând legislația în vigoare în ceea ce privește cumpărarea unui imobil de către o persoană juridică cu sediul în România. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară.",
+      "[Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?]\nDacă ești cetățean al unui stat membru al Uniunii Europene sau al Spațiului Economic European și vrei să cumperi un imobil, o poți face în aceleași condiții ca un cetățean român. Totuși, fiind nerezident, va trebui să obții de la ANAF un cod special, denumit NIF (număr de înregistrare fiscală), prin completarea Formularului 030, care să îți permită să plătești taxe și impozite. Află mai multe despre obținerea NIF din Ghidul elaborat de ANAF. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară.",
+      "[Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?]\nDacă ești cetățean al unui stat membru al Uniunii Europene sau al Spațiului Economic European și vrei să cumperi un imobil, o poți face în aceleași condiții ca un cetățean român. Pentru ca orice contract să fie valabil, este nevoie ca părțile să fie capabile să contracteze, să își dea consimțământul în momentul contractării, obiectul contractului trebuie să se poată determina (în acest caz respectivul imobil), iar cauza pentru care se încheie contractul trebuie să fie una morală și permisă de lege. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-19",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Cum obțin un credit ipotecar de la bancă?",
+    "should_refuse": true,
+    "answer_text": "Informațiile necesare pentru a obține un credit ipotecar nu sunt menționate direct în sursele disponibile. Pentru a obține un astfel de credit, este recomandat să consultați o instituție bancară sau un specialișt financiar care poate oferi detalii specifice despre documente și criterii necesare.\n\nSursele menționate se concentrează pe condițiile de achiziționare a unui imobil pentru cetățeni UE, non-UE și rezidenti români, dar nu includ informații detaliate despre procesul de obținere al unui credit ipotecar.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 72.5658929347992,
+    "top_breadcrumbs": [
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Locuire > Sunt cetățeanul unui alt stat > 📌 De ce acte am nevoie?"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-20",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Ce taxe plătesc dacă cumpăr o casă de vacanță în Bulgaria?",
+    "should_refuse": true,
+    "answer_text": "Conform sursei disponibile, nu am detalii specifice despre taxe care leversi dacă cumpără o casă de vacanță în Bulgaria. Informațiile din sursele noastre se referă la taxele aplicabile în România pentru un cumpărător, cum ar fi taxa de intabulare (0,15% din prețul vânzării) și taxele notariale minime stabilite prin lege. Pentru a obține informații precise despre taxe în Bulgaria, te sfătuiesc să contactezi o autoritate fiscală locală sau un specialist în drept fiscal din această țară.",
+    "is_refusal": false,
+    "refusal_correct": false,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 33.518460273742676,
+    "top_breadcrumbs": [
+      "Locuire > Drepturile și obligațiile mele în calitate de cumpărător",
+      "Locuire > Drepturile și obligațiile mele în calitate de vânzător",
+      "Locuire > Nu am reședința în România > 📌 În ce condiții pot cumpăra un imobil?",
+      "Căsătoria > Ne căsătorim în România"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [
+      1
+    ],
+    "cited_sources_text": [
+      "[Locuire > Drepturile și obligațiile mele în calitate de cumpărător]\n📌 Predarea bunului - Ai obligația de a plăti prețul imobilului și de a-l prelua de la vânzător. În schimb, vânzătorul trebuie să îți transmită dreptul de proprietate asupra bunului și să îți predea imobilul în starea în care se afla în momentul încheierii contractului. 📌 Taxe & impozite - Tot tu, în calitate de cumpărător, ești responsabil pentru următoarele costuri: taxa de intabulare (înscriere în cartea funciară) către Oficiul de Cadastru și Publicitate Imobiliară, care este de 0,15% din prețul vânzării. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară. taxa notarială. Valoarea taxelor notariale minime este stabilită prin lege și variază în funcție de valoarea imobilului, durata de deținere a imobilului de către vânzător, dacă tu și vânzătorul sunteți persoane fizice sau juridice. Notarii pot să stabilească taxe mai mari decât tariful minim. 📌 Garanții - Vânzătorul trebuie să te garanteze împotriva oricărei tulburări realizate de către o a treia persoană (de care știa înainte de momentul vânzării), dar și asupra oricărei probleme care pot face imobilul imposibil de locuit.\n\n- taxa de intabulare (înscriere în cartea funciară) către Oficiul de Cadastru și Publicitate Imobiliară, care este de 0,15% din prețul vânzării. Conform legii, vânzarea unui imobil este valabilă numai dacă este înscrisă în cartea funciară.\n- taxa notarială. Valoarea taxelor notariale minime este stabilită prin lege și variază în funcție de valoarea imobilului, durata de deținere a imobilului de către vânzător, dacă tu și vânzătorul sunteți persoane fizice sau juridice. Notarii pot să stabilească taxe mai mari decât tariful minim."
+    ],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-21",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Cum obțin un certificat de urbanism pentru a construi o casă pe terenul meu?",
+    "should_refuse": true,
+    "answer_text": "Nu am suficiente informații în sursele disponibile pentru a răspunde.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 2,
+    "latency_s": 32.191866636276245,
+    "top_breadcrumbs": [
+      "Locuire > În ce condiții pot să vând un imobil? > 📌 De ce acte am nevoie?",
+      "Locuire > Nu am reședința în România > 📌 Ce acte trebuie să aducă vânzătorul?",
+      "Locuire > Am reședința în România > 📌 Ce acte trebuie să aducă vânzătorul?",
+      "Locuire > Sunt cetățean român > 📌 Ce acte trebuie să aducă vânzătorul?"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  },
+  {
+    "case_id": "locuire-22",
+    "category": "locuire",
+    "difficulty": "easy",
+    "question": "Cât costă mutarea cu o firmă de mutări în București?",
+    "should_refuse": true,
+    "answer_text": "Nu am informații detaliate despre prețurile oferite de firme de mutări în București. Prețul variază în funcție de volum, distanță și servicii incluse.",
+    "is_refusal": true,
+    "refusal_correct": true,
+    "breadcrumb_recall": null,
+    "keyword_coverage": null,
+    "contract_valid": true,
+    "violations": [],
+    "attempts": 1,
+    "latency_s": 10.286872863769531,
+    "top_breadcrumbs": [
+      "Nașterea > Municipiul București",
+      "Nașterea > Stimulentul de inserție",
+      "Locuire > Nu am reședința în România",
+      "Locuire > Sunt cetățeanul unui alt stat"
+    ],
+    "documents_mentioned": [],
+    "cited_source_indices": [],
+    "cited_sources_text": [],
+    "violation_messages": []
+  }
+]

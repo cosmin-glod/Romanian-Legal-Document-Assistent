@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+wheels/
+
+# Virtual environments / tooling
+.venv/
+.python-version
+
+# ---------------------------------------------------------------------------
+# OS / editors / local tooling
+# ---------------------------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+.claude/
+
+# Secrets
+.env
+.env.local
+
+# ---------------------------------------------------------------------------
+# LaTeX build artifacts (thesis sources in thesis/ are kept)
+# ---------------------------------------------------------------------------
+*.aux
+*.log
+*.bbl
+*.blg
+*.bcf
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.lof
+*.lot
+*.xdv
+*.run.xml
+*.synctex.gz
+*-SAVE-ERROR
+
+# ---------------------------------------------------------------------------
+# Generated / large data — regenerable from the corpus dump + scripts
+# ---------------------------------------------------------------------------
+data/chroma_db/
+data/forms/
+
+# ---------------------------------------------------------------------------
+# PDFs: ignore generated output, but KEEP the thesis figures and the
+# final compiled thesis (main.pdf at the repo root).
+# ---------------------------------------------------------------------------
+*.pdf
+!thesis/images/*.pdf
+!main.pdf

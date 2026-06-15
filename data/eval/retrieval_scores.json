@@ -1,0 +1,590 @@
+[
+  {
+    "id": "nastere-01",
+    "top1": 0.7358185648918152,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-02",
+    "top1": 0.7859872579574585,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-03",
+    "top1": 0.6596804261207581,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-04",
+    "top1": 0.7903522849082947,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-05",
+    "top1": 0.7326354384422302,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-06",
+    "top1": 0.7241561412811279,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-07",
+    "top1": 0.7093875408172607,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-08",
+    "top1": 0.796965479850769,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-09",
+    "top1": 0.7248197793960571,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-10",
+    "top1": 0.7815470695495605,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-11",
+    "top1": 0.695458173751831,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-12",
+    "top1": 0.7433379888534546,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-13",
+    "top1": 0.7542639970779419,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-14",
+    "top1": 0.7202072739601135,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-15",
+    "top1": 0.7038845419883728,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-16",
+    "top1": 0.7247743606567383,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-17",
+    "top1": 0.6743659377098083,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-18",
+    "top1": 0.5412977337837219,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-19",
+    "top1": 0.6342484951019287,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-20",
+    "top1": 0.6995218992233276,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-21",
+    "top1": 0.5705855488777161,
+    "is_refusal": false,
+    "should_refuse": true
+  },
+  {
+    "id": "nastere-22",
+    "top1": 0.6184966564178467,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "nastere-23",
+    "top1": 0.566715657711029,
+    "is_refusal": false,
+    "should_refuse": true
+  },
+  {
+    "id": "nastere-24",
+    "top1": 0.5049629807472229,
+    "is_refusal": false,
+    "should_refuse": true
+  },
+  {
+    "id": "nastere-x25",
+    "top1": 0.8079429268836975,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x26",
+    "top1": 0.7615129947662354,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x27",
+    "top1": 0.7773231863975525,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x28",
+    "top1": 0.7982495427131653,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x29",
+    "top1": 0.7884377241134644,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x30",
+    "top1": 0.8097407817840576,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x31",
+    "top1": 0.688170313835144,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x32",
+    "top1": 0.6815745234489441,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x33",
+    "top1": 0.6913600564002991,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x34",
+    "top1": 0.4831274151802063,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "nastere-x35",
+    "top1": 0.5012474060058594,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "casatorie-01",
+    "top1": 0.7084084749221802,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-02",
+    "top1": 0.7436876893043518,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-03",
+    "top1": 0.6660642027854919,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-04",
+    "top1": 0.6778514981269836,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-05",
+    "top1": 0.648684024810791,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-06",
+    "top1": 0.7135329246520996,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-07",
+    "top1": 0.80194091796875,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-08",
+    "top1": 0.6297869086265564,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-09",
+    "top1": 0.695609986782074,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-10",
+    "top1": 0.6131706237792969,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-11",
+    "top1": 0.7020584344863892,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-12",
+    "top1": 0.7560920715332031,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-13",
+    "top1": 0.7457690834999084,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-14",
+    "top1": 0.6984837651252747,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-15",
+    "top1": 0.7077860832214355,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-16",
+    "top1": 0.5619106888771057,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-17",
+    "top1": 0.6593436598777771,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-18",
+    "top1": 0.6884790062904358,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-19",
+    "top1": 0.5835500955581665,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "casatorie-20",
+    "top1": 0.6277259588241577,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "casatorie-21",
+    "top1": 0.5368539094924927,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "casatorie-22",
+    "top1": 0.5813124775886536,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "casatorie-x23",
+    "top1": 0.7300460338592529,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-x24",
+    "top1": 0.7196221351623535,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-x25",
+    "top1": 0.6599035263061523,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-x26",
+    "top1": 0.7818790078163147,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-x27",
+    "top1": 0.7355748414993286,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-x28",
+    "top1": 0.5820463299751282,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-x29",
+    "top1": 0.5862085223197937,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "casatorie-x30",
+    "top1": 0.5839805603027344,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "locuire-01",
+    "top1": 0.6711856126785278,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-02",
+    "top1": 0.8066343665122986,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-03",
+    "top1": 0.7502435445785522,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-04",
+    "top1": 0.7330812215805054,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-05",
+    "top1": 0.7831863760948181,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-06",
+    "top1": 0.7466092109680176,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-07",
+    "top1": 0.8124956488609314,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-08",
+    "top1": 0.7904979586601257,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-09",
+    "top1": 0.752267599105835,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-10",
+    "top1": 0.8040602207183838,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-11",
+    "top1": 0.7873978614807129,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-12",
+    "top1": 0.5991441607475281,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-13",
+    "top1": 0.7333588600158691,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-14",
+    "top1": 0.8050995469093323,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-15",
+    "top1": 0.7801482677459717,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-16",
+    "top1": 0.6754193902015686,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-17",
+    "top1": 0.5947006940841675,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-18",
+    "top1": 0.7093721628189087,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-19",
+    "top1": 0.5675314664840698,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "locuire-20",
+    "top1": 0.5277511477470398,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "locuire-21",
+    "top1": 0.6077498197555542,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "locuire-22",
+    "top1": 0.45342063903808594,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "locuire-x23",
+    "top1": 0.7688502073287964,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x24",
+    "top1": 0.7264565229415894,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x25",
+    "top1": 0.7502727508544922,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x26",
+    "top1": 0.7379411458969116,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x27",
+    "top1": 0.7999261617660522,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x28",
+    "top1": 0.7132915258407593,
+    "is_refusal": false,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x29",
+    "top1": 0.5624497532844543,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x30",
+    "top1": 0.6983208656311035,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x31",
+    "top1": 0.5809536576271057,
+    "is_refusal": true,
+    "should_refuse": false
+  },
+  {
+    "id": "locuire-x32",
+    "top1": 0.6261246204376221,
+    "is_refusal": true,
+    "should_refuse": true
+  },
+  {
+    "id": "locuire-x33",
+    "top1": 0.5375934839248657,
+    "is_refusal": false,
+    "should_refuse": true
+  }
+]
