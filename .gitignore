@@ -56,3 +56,5 @@ data/forms/
 *.pdf
 !thesis/images/*.pdf
 !main.pdf
+!Asistent conversational pentru proceduri administrative din Romania folosind RAG si local LLMs.pdf
+prezentare/
