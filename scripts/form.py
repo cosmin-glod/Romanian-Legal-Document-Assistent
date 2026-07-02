@@ -22,7 +22,7 @@ _SAMPLE = {
     "cnp": "1900101123456",
     "id_series": "RT",
     "id_number": "123456",
-    "date": "2026-05-25",
+    "date": "25.05.2026",
     "sex": "M",
     "iban": "RO49AAAA1B31007593840000",
     "amount": "1500",

@@ -1,5 +1,10 @@
 """Interactive chat CLI: question → retrieval → local LLM answer.
 
+The REPL is conversational: each turn is answered with the prior turns as
+context, so follow-up questions ("dar dacă nu suntem căsătoriți?") resolve
+against what was already discussed. Grounding rules still apply — the answer
+must come from the sources retrieved for the current turn.
+
 If the assistant detects that the user wants to pre-fill a form, the REPL
 transitions into form-collection mode: it lists the required fields, accepts
 a natural-language paragraph from the user, runs LLM extraction, validates,
@@ -25,22 +30,46 @@ from licenta.form_registry import (
     FormDef,
     capability_answer,
     detect_capability_intent,
+    detect_conversational_intent,
     detect_form_intent,
+    looks_administrative,
     problem_field_names,
 )
-from licenta.generator import DEFAULT_MODEL, generate
+from licenta.generator import DEFAULT_MODEL, chat_reply, generate
 from licenta.retriever import Retriever
 
 MAX_LLM_TURNS = 2  # try LLM extraction this many times before falling back
 MAX_FORM_ATTEMPTS = 4
 FORMS_OUTPUT_DIR = Path("data/forms")
+HISTORY_TURNS = 4  # prior user/assistant turns fed back as conversation context
+
+
+def _prior_turns(history: list[dict]) -> list[dict]:
+    """Last HISTORY_TURNS user/assistant messages as plain dialogue."""
+    turns = [
+        {"role": m["role"], "content": m["content"]}
+        for m in history
+        if m["role"] in ("user", "assistant")
+    ]
+    return turns[-HISTORY_TURNS * 2 :]
+
+
+def _retrieval_query(history: list[dict], question: str) -> str:
+    """Prepend the previous user turn so a bare follow-up still retrieves on the
+    right topic. Generation gets the full history; this only steers retrieval."""
+    prior_users = [m["content"] for m in history if m["role"] == "user"]
+    if prior_users:
+        return f"{prior_users[-1]} {question}"
+    return question
 
 
 # ---------------------------- Q&A turn ----------------------------
 
-def _answer_one(retriever: Retriever, question: str, k: int, model: str):
-    hits = retriever.query(question, k=k)
-    answer = generate(question, hits, model=model)
+def _answer_one(
+    retriever: Retriever, question: str, k: int, model: str, history: list[dict]
+):
+    hits = retriever.query(_retrieval_query(history, question), k=k)
+    answer = generate(question, hits, model=model, history=_prior_turns(history))
 
     print("\n" + "=" * 80)
     print(f"Q: {question}")
@@ -222,6 +251,7 @@ def main() -> None:
 
     logging.basicConfig(level=logging.WARNING, format="%(message)s")
     retriever = Retriever()
+    history: list[dict] = []  # conversation turns, shared across the REPL
 
     def handle(question: str) -> None:
         # Capability/meta questions are answered from the registry, not RAG.
@@ -229,8 +259,26 @@ def main() -> None:
             print("\n" + "=" * 80)
             print(capability_answer())
             print("=" * 80)
+            history.append({"role": "user", "content": question})
+            history.append({"role": "assistant", "content": capability_answer()})
             return
-        answer = _answer_one(retriever, question, args.k, args.model)
+        # Personal/meta questions are answered from history, not RAG.
+        # Administrative/form intent wins (a mixed message still goes to RAG).
+        if (
+            detect_conversational_intent(question)
+            and not detect_form_intent(question)
+            and not looks_administrative(question)
+        ):
+            reply = chat_reply(question, _prior_turns(history), args.model)
+            print("\n" + "=" * 80)
+            print(reply)
+            print("=" * 80)
+            history.append({"role": "user", "content": question})
+            history.append({"role": "assistant", "content": reply})
+            return
+        answer = _answer_one(retriever, question, args.k, args.model, history)
+        history.append({"role": "user", "content": question})
+        history.append({"role": "assistant", "content": answer.text})
         # Hybrid intent detection: trust LLM if it set form_offer, else fall
         # back to rule-based keyword match for high-confidence triggers.
         form_id = answer.schema.form_offer or detect_form_intent(question)

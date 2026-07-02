@@ -291,3 +291,36 @@ def generate(
         model, hits, parse_failures=parse_failures,
         forced=parse_failures > 0, max_raw_chars=max_raw,
     )
+
+
+# ==========================================================================
+#  Conversational path (no retrieval, no output contract)
+#
+#  Personal/meta turns ("what's my name?", "do you remember?") are about the
+#  conversation, not the corpus. The grounded path above would refuse them
+#  (R2 requires a citation). This answers them from the conversation history.
+#  The output contract still governs every *administrative* answer via generate().
+# ==========================================================================
+
+CHAT_SYSTEM_PROMPT = """Ești un asistent conversațional pentru proceduri administrative din România (naștere, căsătorie, locuire).
+
+Răspunzi natural, pe baza conversației de până acum. Poți reține și folosi detaliile pe care ți le-a dat utilizatorul în această conversație (numele lui, situația personală) și poți răspunde la întrebări despre ce ți-a spus sau despre conversație.
+
+Pentru fapte administrative concrete (documente necesare, termene, instituții, sume) NU inventa: spune pe scurt că te bazezi pe surse oficiale și invită utilizatorul să întrebe direct procedura. Răspunde scurt, clar, în limba română."""
+
+
+def chat_reply(question: str, history: list[dict], model: str = DEFAULT_MODEL) -> str:
+    """Plain conversational reply from the conversation history, with no
+    retrieval and no output contract. `history` is the prior turns
+    ({"role","content"}); the current question is appended here."""
+    messages: list[dict] = [{"role": "system", "content": CHAT_SYSTEM_PROMPT}]
+    messages.extend(history)
+    messages.append({"role": "user", "content": question})
+    try:
+        resp = ollama.chat(
+            model=model, messages=messages, options={"temperature": 0.3}
+        )
+        return resp["message"]["content"].strip()
+    except Exception:  # pragma: no cover - network/backend failure
+        log.exception("chat_reply failed")
+        return "Momentan nu pot răspunde. Te rog încearcă din nou."

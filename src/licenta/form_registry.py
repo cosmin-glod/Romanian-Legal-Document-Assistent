@@ -116,6 +116,54 @@ def capability_answer() -> str:
     return "\n".join(lines)
 
 
+# Personal/meta questions about the conversation itself (the user's name, what
+# they said earlier, whether we remember). The corpus has nothing to say about
+# these, so the grounded RAG path would refuse — instead they are answered from
+# the conversation history, with no retrieval and no output contract.
+_CONVERSATIONAL_CUES = (
+    # memory / recall
+    "tii minte", "tine minte", "iti amintesti", "iti mai amintesti",
+    "va amintiti", "mai stii", "ai retinut",
+    # what the user told / asked earlier in the conversation
+    "ti-am spus", "ti am spus", "ti-am zis", "ti am zis", "ti-am mentionat",
+    "ti-am dat", "am spus mai devreme", "am mentionat mai devreme",
+    "ce te-am intrebat", "ce am intrebat", "ce am discutat",
+    "despre ce am vorbit",
+    # personal identity (both the question and the statement)
+    "numele meu", "cum ma numesc", "cum ma cheama", "care e numele meu",
+    "care este numele meu", "cine sunt eu", "ma numesc", "ma cheama",
+)
+
+
+def detect_conversational_intent(query: str) -> bool:
+    """True for personal/meta questions about the conversation (the user's name,
+    what they said, whether we remember). Answered from history, not the corpus."""
+    q = _fold(query)
+    return any(cue in q for cue in _CONVERSATIONAL_CUES)
+
+
+# Administrative/procedural cues. A message that mixes a personal aside with an
+# administrative request ("mă numesc X și ce acte îmi trebuie?") must go through
+# RAG, not the conversational path — so this gates conversational routing.
+_ADMIN_CUES = (
+    "acte", "act de", "actul", "actele", "documente", "document", "certificat",
+    "adeverint", "cerere", "declaratie", "declaratia", "formular", "contract",
+    "inchiri", "chirie", "chiria", "nastere", "nasterii", "casatori", "casator",
+    "cununi", "locuir", "domicili", "resedinta", "alocati", "indemnizati",
+    "paternitat", "primari", "notar", "stare civil", "buletin",
+    "carte de identitate", "procedura", "inregistr", "ce am nevoie",
+    "de ce am nevoie", "ce imi trebuie", "ce trebuie", "completez", "completa",
+    "sa fac rost", "cum obtin", "cum fac",
+)
+
+
+def looks_administrative(query: str) -> bool:
+    """True if the message asks about an administrative document or procedure, so
+    it must go through RAG even when it also carries a personal aside."""
+    q = _fold(query)
+    return any(cue in q for cue in _ADMIN_CUES)
+
+
 def detect_form_intent(query: str) -> str | None:
     """Deterministic keyword-based intent detection. Used as a fallback when
     the LLM fails to set form_offer. A query matches a form if it contains at

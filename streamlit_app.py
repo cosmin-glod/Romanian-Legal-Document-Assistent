@@ -1,9 +1,10 @@
 """Streamlit UI for the citizen-assistant prototype.
 
-Layout: chat in a centered, reading-width main column; sources + generated forms
-in the sidebar. When the user expresses form-filling intent (detected via either
-the LLM's `form_offer` field or the keyword fallback), a form-collection block
-opens under the chat. It uses up to MAX_LLM_TURNS LLM extraction passes, then
+Layout: chat in a centered, reading-width main column; conversation list and
+cited sources in a fixed sidebar. When the user expresses form-filling intent
+(detected via either the LLM's `form_offer` field or the keyword fallback), a
+form-collection block opens under the chat, and the completed form's PDF is
+offered for download at the end of that conversation. It uses up to MAX_LLM_TURNS LLM extraction passes, then
 falls back to deterministic field-by-field manual entry. Manual fields are shown
 with their Romanian labels (from the form spec), grouped by section. The same
 components power the CLI in scripts/chat.py — this file is purely the UI layer.
@@ -25,16 +26,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 import streamlit as st
 
-from licenta.extractor import expected_llm_calls, extract
+from licenta.extractor import extract
 from licenta.form_registry import (
     FORMS,
     FormDef,
     capability_answer,
     detect_capability_intent,
+    detect_conversational_intent,
     detect_form_intent,
+    looks_administrative,
     problem_field_names,
 )
-from licenta.generator import DEFAULT_MODEL, generate
+from licenta.generator import DEFAULT_MODEL, chat_reply, generate
 from licenta.retriever import Retriever
 
 MAX_LLM_TURNS = 2
@@ -46,7 +49,7 @@ _KIND_PLACEHOLDER: dict[str, str] = {
     "cnp": "ex: 1850412220011 (13 cifre)",
     "id_series": "ex: RT (2 litere mari)",
     "id_number": "ex: 234567 (6 cifre)",
-    "date": "ex: 2024-03-15 (AAAA-LL-ZZ)",
+    "date": "ex: 15.03.2024 (ZZ.LL.AAAA)",
     "sex": "M (masculin) sau F (feminin)",
     "iban": "ex: RO49AAAA1B31007593840000",
     "amount": "ex: 1500 (RON)",
@@ -85,7 +88,7 @@ HISTORY_TURNS = 4
 # ---------------------------- session state ----------------------------
 
 def _new_conversation() -> dict:
-    return {"title": "Întrebare nouă", "history": [], "form_state": None}
+    return {"title": "Conversație nouă", "history": [], "form_state": None}
 
 
 def _init_state() -> None:
@@ -98,6 +101,23 @@ def _init_state() -> None:
 def _conv() -> dict:
     """The active conversation (its own history + form state)."""
     return st.session_state.conversations[st.session_state.active]
+
+
+def _delete_conversation(i: int) -> None:
+    """Remove conversation i and keep `active` pointing at a valid entry.
+    Deleting the last one leaves a fresh empty conversation behind."""
+    convs = st.session_state.conversations
+    del convs[i]
+    if not convs:
+        convs.append(_new_conversation())
+        st.session_state.active = 0
+        return
+    active = st.session_state.active
+    if i < active:
+        active -= 1
+    elif i == active:
+        active = min(active, len(convs) - 1)
+    st.session_state.active = active
 
 
 # ---------------------------- styling ----------------------------
@@ -152,6 +172,34 @@ _CSS = """
   }
   [data-testid="stSidebar"] [data-testid="stCaptionContainer"],
   [data-testid="stSidebar"] p { overflow-wrap: break-word; }
+  /* Hide the "Deploy" button in the top toolbar (demo build, not a deployment). */
+  [data-testid="stAppDeployButton"] { display: none !important; }
+  /* Fixed sidebar: remove the collapse control so it can't be retracted. */
+  [data-testid="stSidebarCollapseButton"],
+  [data-testid="collapsedControl"] { display: none !important; }
+  /* Delete buttons (keyed del_*): red, centered icon so they read as "delete". */
+  [class*="st-key-del_"] button {
+      display: flex !important; align-items: center !important;
+      justify-content: center !important;
+      color: #ff4b4b !important;
+      border-color: rgba(255, 75, 75, 0.35) !important;
+  }
+  /* Center the glyph inside the button (kill the icon's line-height offset). */
+  [class*="st-key-del_"] button [data-testid="stMarkdownContainer"],
+  [class*="st-key-del_"] button p {
+      display: flex !important; align-items: center !important;
+      justify-content: center !important;
+      margin: 0 !important; line-height: 1 !important;
+  }
+  [class*="st-key-del_"] button span {
+      line-height: 1 !important; display: inline-flex !important;
+      align-items: center !important;
+  }
+  [class*="st-key-del_"] button:hover {
+      color: #ff4b4b !important;
+      border-color: #ff4b4b !important;
+      background: rgba(255, 75, 75, 0.15) !important;
+  }
 </style>
 """
 
@@ -160,19 +208,48 @@ _CSS = """
 
 def _render_sidebar() -> None:
     with st.sidebar:
-        st.header("Întrebări recente")
-        if st.button("➕ Întrebare nouă", use_container_width=True):
-            st.session_state.conversations.append(_new_conversation())
-            st.session_state.active = len(st.session_state.conversations) - 1
+        st.header("Conversații recente")
+        if st.button("➕ Conversație nouă", use_container_width=True):
+            # Reuse an existing blank conversation instead of stacking empties.
+            empty = next(
+                (i for i, c in enumerate(st.session_state.conversations)
+                 if not c["history"]),
+                None,
+            )
+            if empty is not None:
+                st.session_state.active = empty
+            else:
+                st.session_state.conversations.append(_new_conversation())
+                st.session_state.active = len(st.session_state.conversations) - 1
             st.rerun()
+        # The blank new conversation isn't listed until it has messages.
+        shown = 0
         for i, conv in enumerate(st.session_state.conversations):
-            label = conv["title"] if conv["title"] else "Întrebare nouă"
+            if not conv["history"]:
+                continue
+            shown += 1
+            label = conv["title"] if conv["title"] else "Conversație nouă"
             prefix = "▶ " if i == st.session_state.active else "　"
-            if st.button(
-                f"{prefix}{label}", key=f"conv_{i}", use_container_width=True
-            ):
-                st.session_state.active = i
-                st.rerun()
+            col_sel, col_del = st.columns(
+                [5, 1], gap="small", vertical_alignment="center"
+            )
+            with col_sel:
+                if st.button(
+                    f"{prefix}{label}", key=f"conv_{i}", use_container_width=True
+                ):
+                    st.session_state.active = i
+                    st.rerun()
+            with col_del:
+                if st.button(
+                    ":material/delete:",
+                    key=f"del_{i}",
+                    use_container_width=True,
+                    help="Șterge",
+                ):
+                    _delete_conversation(i)
+                    st.rerun()
+        if shown == 0:
+            st.caption("Conversațiile tale vor apărea aici.")
         st.divider()
 
         st.header("Surse")
@@ -186,39 +263,13 @@ def _render_sidebar() -> None:
             for i, src in enumerate(last_with_sources["sources"], start=1):
                 marker = "**★**" if i in cited else "·"
                 st.markdown(f"{marker} **S{i}** — {src['breadcrumb']}")
-                st.caption(src["url"])
         else:
             st.caption("Întreabă ceva pentru a vedea sursele citate.")
 
         st.divider()
-        st.header("Formulare generate")
-        pdfs = (
-            sorted(
-                FORMS_OUTPUT_DIR.glob("*.pdf"),
-                key=lambda p: p.stat().st_mtime,
-                reverse=True,
-            )[:5]
-            if FORMS_OUTPUT_DIR.exists()
-            else []
-        )
-        if not pdfs:
-            st.caption("Niciun formular generat încă.")
-        for pdf in pdfs:
-            with open(pdf, "rb") as f:
-                st.download_button(
-                    f"⬇ {pdf.name}",
-                    f.read(),
-                    file_name=pdf.name,
-                    mime="application/pdf",
-                    use_container_width=True,
-                    key=f"sidebar_dl_{pdf}",
-                )
-
-        st.divider()
         st.caption(
             f"Model generare: `{DEFAULT_MODEL}`\n\n"
-            "Regăsire: BAAI/bge-m3 + Chroma\n\n"
-            "Contracte de ieșire: schemă Pydantic + reguli R1–R7"
+            "Regăsire: BAAI/bge-m3 + Chroma"
         )
 
 
@@ -231,9 +282,20 @@ def _render_welcome() -> None:
             "ori cere-mi să îți **pre-completez un formular**. Răspunsurile sunt "
             "bazate pe surse citate din *cezicelegea.ro*."
         )
+        st.info(
+            "💬 **Este o conversație.** Rețin ce discutăm în aceeași conversație, "
+            "așa că poți continua cu întrebări de completare, fără să repeți "
+            "contextul de fiecare dată.\n\n"
+            "De exemplu:\n"
+            "- întrebare: „Ce acte îmi trebuie pentru certificatul de naștere?”\n"
+            "- continuare: „Dar dacă părinții nu sunt căsătoriți?”\n\n"
+            "Cu cât dai mai multe detalii (cetățenie, stare civilă, locul "
+            "evenimentului), cu atât răspunsul e mai precis."
+        )
         st.caption("Încearcă un exemplu:")
         examples = [
-            "Ce documente îmi trebuie pentru înregistrarea nașterii?",
+            "Sunt cetățean român, căsătorit. Ce acte îmi trebuie pentru "
+            "certificatul de naștere al copilului?",
             "Care este vârsta minimă pentru căsătorie?",
             "Vreau să completez declarația de căsătorie.",
         ]
@@ -271,18 +333,58 @@ def _close_form() -> None:
     _conv()["form_state"] = None
 
 
-def _render_collected(form_def: FormDef, accumulated) -> None:
-    """Collected-fields view: Romanian labels, grouped by section, with a
-    filled/empty marker per field."""
-    with st.expander("Vezi câmpurile colectate", expanded=False):
-        current_section = None
-        for f in form_def.spec.fields:
-            if f.section != current_section:
-                current_section = f.section
-                st.markdown(f"**{f.section}**")
-            val = getattr(accumulated, f.name)
-            mark = "✅" if val else "⬜"
-            st.markdown(f"{mark} {f.label}: {val if val else '—'}")
+def _render_editable_fields(form_def: FormDef, fs: dict) -> None:
+    """All fields, pre-filled and editable, so the user can correct anything the
+    LLM extracted wrong (or fill what's missing). Grouped by section. The `rev`
+    counter in the widget keys forces a fresh re-init after each save, so the
+    inputs always reflect the current accumulated values."""
+    fmt = form_def.field_format_regex or {}
+    # `rev` is bumped on every change to `accumulated` (LLM extraction, manual
+    # save, edit save). It is part of the widget keys so the inputs re-init and
+    # reflect the current values — otherwise Streamlit keeps the stale (empty)
+    # widget state and the extracted values never show.
+    rev = fs.setdefault("rev", 0)
+    with st.expander("✏️ Vezi și ajustează câmpurile", expanded=False):
+        with st.form(f"edit_all_{rev}"):
+            new_values: dict[str, str] = {}
+            current_section = None
+            for f in form_def.spec.fields:
+                if f.section != current_section:
+                    current_section = f.section
+                    st.markdown(f"##### {f.section}")
+                info = form_def.schema.model_fields[f.name]
+                current = getattr(fs["accumulated"], f.name) or ""
+                new_values[f.name] = st.text_input(
+                    f.label,
+                    value=current,
+                    help=info.description,
+                    placeholder=_KIND_PLACEHOLDER.get(f.kind, ""),
+                    key=f"edit_{rev}_{f.name}",
+                )
+            submitted = st.form_submit_button(
+                "💾 Salvează modificările", use_container_width=True
+            )
+        if submitted:
+            # Validate everything first; save only if all edited values are
+            # well-formed, so one bad field doesn't partially apply.
+            errors: list[str] = []
+            for f in form_def.spec.fields:
+                val = new_values[f.name].strip()
+                if val and f.name in fmt and not fmt[f.name].match(val):
+                    example = _KIND_PLACEHOLDER.get(f.kind, "")
+                    errors.append(
+                        f"„{f.label}”: valoarea „{val}” nu are formatul corect"
+                        + (f" ({example})." if example else ".")
+                    )
+            if errors:
+                for e in errors:
+                    st.error(e)
+            else:
+                for f in form_def.spec.fields:
+                    val = new_values[f.name].strip()
+                    setattr(fs["accumulated"], f.name, val or None)
+                fs["rev"] = rev + 1
+                st.rerun()
 
 
 def _render_manual_form(form_def: FormDef, fs: dict, problems: list[str]) -> None:
@@ -329,6 +431,7 @@ def _render_manual_form(form_def: FormDef, fs: dict, problems: list[str]) -> Non
                 )
                 continue
             setattr(fs["accumulated"], name, val)
+        fs["rev"] = fs.get("rev", 0) + 1
         st.rerun()
 
 
@@ -350,7 +453,7 @@ def _render_form_block() -> None:
             text=f"{filled} din {len(all_fields)} câmpuri completate",
         )
 
-        _render_collected(form_def, fs["accumulated"])
+        _render_editable_fields(form_def, fs)
 
         # Final state: complete and render PDF.
         errors = form_def.validate_fn(fs["accumulated"])
@@ -404,12 +507,10 @@ def _render_form_block() -> None:
                 fs["mode"] = "manual"
                 st.rerun()
             if submitted and text.strip():
-                n_calls = expected_llm_calls(form_def)
-                with st.spinner(
-                    f"Extrag câmpurile din mesajul tău ({n_calls} apeluri LLM)…"
-                ):
+                with st.spinner("Extrag câmpurile din mesajul tău…"):
                     result = extract(text, form_def, accumulated=fs["accumulated"])
                 fs["accumulated"] = result.form
+                fs["rev"] = fs.get("rev", 0) + 1  # refresh editable inputs
                 fs["llm_turns_used"] += 1
                 if result.fields_extracted_this_turn:
                     st.toast(
@@ -439,6 +540,16 @@ def _prior_turns(history: list[dict]) -> list[dict]:
     return turns[-HISTORY_TURNS * 2 :]
 
 
+def _retrieval_query(prior_history: list[dict], question: str) -> str:
+    """Contextualize retrieval for follow-ups: a bare follow-up like „dar dacă
+    nu suntem căsătoriți?" has no topic on its own, so prepend the previous user
+    turn. Generation already gets the full history; this only steers retrieval."""
+    prior_users = [m["content"] for m in prior_history if m["role"] == "user"]
+    if prior_users:
+        return f"{prior_users[-1]} {question}"
+    return question
+
+
 def _handle_question(question: str) -> None:
     conv = _conv()
     if not conv["history"]:  # title the conversation after its first question
@@ -453,11 +564,25 @@ def _handle_question(question: str) -> None:
         )
         return
 
+    # Personal/meta questions ("what's my name?", "do you remember?") are about
+    # the conversation, not the corpus — answer from history, skip RAG + contract.
+    # Administrative/form intent wins: a mixed message ("mă numesc X, ce acte
+    # îmi trebuie?") still goes through RAG (the name is kept in history anyway).
+    if (
+        detect_conversational_intent(question)
+        and not detect_form_intent(question)
+        and not looks_administrative(question)
+    ):
+        with st.spinner("Mă gândesc…"):
+            reply = chat_reply(question, _prior_turns(conv["history"][:-1]))
+        conv["history"].append({"role": "assistant", "content": reply})
+        return
+
     prior = _prior_turns(conv["history"][:-1])  # exclude the just-added question
     retriever = get_retriever()
     with st.spinner("Caut surse…"):
-        hits = retriever.query(question, k=4)
-    with st.spinner("Generez răspunsul (verificat cu contracte de ieșire)…"):
+        hits = retriever.query(_retrieval_query(conv["history"][:-1], question), k=4)
+    with st.spinner("Generez răspunsul…"):
         answer = generate(question, hits, history=prior)
 
     conv["history"].append(
@@ -492,7 +617,7 @@ def main() -> None:
         page_title="Asistent administrație publică",
         layout="wide",
         page_icon="📄",
-        initial_sidebar_state="collapsed",
+        initial_sidebar_state="expanded",
     )
     _init_state()
     st.markdown(_CSS, unsafe_allow_html=True)
@@ -500,14 +625,24 @@ def main() -> None:
     st.title("Asistent pentru proceduri administrative")
 
     _render_sidebar()
+    # Read the input first (chat_input is pinned to the bottom regardless of
+    # call order) so we can render the pending question before generating.
+    question = st.chat_input("Scrie un mesaj despre naștere, căsătorie sau locuire…")
+
     _render_history()
     _render_form_block()
 
-    if not _conv()["history"] and _conv()["form_state"] is None:
+    if not _conv()["history"] and _conv()["form_state"] is None and not question:
         _render_welcome()
 
-    if question := st.chat_input("Întreabă despre naștere, căsătorie sau locuire…"):
-        _handle_question(question)
+    if question:
+        # Show the user's message and the "generating" spinner immediately,
+        # instead of only after the answer is ready. Continues the active
+        # conversation (multi-turn); a new conversation starts from the sidebar.
+        with st.chat_message("user"):
+            st.markdown(question)
+        with st.chat_message("assistant"):
+            _handle_question(question)
         st.rerun()
 
 

@@ -46,15 +46,15 @@ _DATE_TEXT = re.compile(
 
 
 def _dates_in_text(text: str) -> list[str]:
-    """All dates in appearance order, normalized to YYYY-MM-DD."""
+    """All dates in appearance order, normalized to ZZ.LL.AAAA (dd.mm.yyyy)."""
     found: list[tuple[int, str]] = []
-    for m in _DATE_ISO.finditer(text):
-        found.append((m.start(), f"{m[1]}-{m[2]}-{m[3]}"))
-    for m in _DATE_DMY.finditer(text):
-        found.append((m.start(), f"{int(m[3]):04d}-{int(m[2]):02d}-{int(m[1]):02d}"))
+    for m in _DATE_ISO.finditer(text):  # m[1]=YYYY m[2]=MM m[3]=DD
+        found.append((m.start(), f"{m[3]}.{m[2]}.{m[1]}"))
+    for m in _DATE_DMY.finditer(text):  # m[1]=day m[2]=month m[3]=year
+        found.append((m.start(), f"{int(m[1]):02d}.{int(m[2]):02d}.{int(m[3]):04d}"))
     for m in _DATE_TEXT.finditer(text):
         mo = _RO_MONTHS[m[2].lower()]
-        found.append((m.start(), f"{int(m[3]):04d}-{mo:02d}-{int(m[1]):02d}"))
+        found.append((m.start(), f"{int(m[1]):02d}.{mo:02d}.{int(m[3]):04d}"))
     seen: set[str] = set()
     out: list[str] = []
     for _, d in sorted(found):
@@ -122,9 +122,9 @@ SECTION_PROMPT = """Extrage din textul utilizatorului datele pentru secțiunea �
 
 Reguli stricte:
 1. Lasă un câmp NULL dacă utilizatorul nu l-a furnizat. NU inventa nume, CNP-uri, adrese sau sume.
-2. Respectă formatul indicat în descrierea fiecărui câmp (CNP 13 cifre; seria CI 2 litere mari; numărul CI 6 cifre; date YYYY-MM-DD; sume doar cifre).
+2. Respectă formatul indicat în descrierea fiecărui câmp (CNP 13 cifre; seria CI 2 litere mari; numărul CI 6 cifre; date ZZ.LL.AAAA; sume doar cifre).
 3. Nu pune valori de tip „necunoscut", „TBD" sau ghilimele goale — lasă null.
-4. Extrage datele calendaristice care apar („născut la", „din data de", „azi") în format YYYY-MM-DD.
+4. Extrage datele calendaristice care apar („născut la", „din data de", „azi") în format ZZ.LL.AAAA (zi.lună.an).
 5. Pentru sex, deduce din context: „fiu/băiat/băiețel" = M, „fiică/fată/fetiță" = F.
 
 Câmpuri de extras:
@@ -198,7 +198,7 @@ Reguli stricte:
 - Prima persoană = cea care vorbește la persoana I („eu", „subsemnatul", „mă numesc").
 - A doua persoană = „soția mea" / „soțul meu" / „partenerul" / „celălalt" / „chiriașul".
 - Lasă null orice câmp care nu apare. NU inventa.
-- CNP: exact 13 cifre. Data nașterii: format YYYY-MM-DD (extrage-o dacă apare „născut(ă) la").
+- CNP: exact 13 cifre. Data nașterii: format ZZ.LL.AAAA (extrage-o dacă apare „născut(ă) la").
 - Seria CI are EXACT 2 litere; numărul CI are EXACT 6 cifre. NICIODATĂ nu le combina.
 
 EXEMPLE buletin:

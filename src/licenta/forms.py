@@ -20,7 +20,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field as dfield
-from datetime import date
+from datetime import date, datetime
 
 from pydantic import BaseModel, Field as PydField, create_model
 
@@ -28,10 +28,11 @@ from pydantic import BaseModel, Field as PydField, create_model
 
 # kind -> compiled format regex (absent kind = free text, no format check)
 _KIND_REGEX: dict[str, re.Pattern] = {
-    "cnp": re.compile(r"^\d{13}$"),
+    # First digit is the sex/century marker (1-9); 0 is never assigned.
+    "cnp": re.compile(r"^[1-9]\d{12}$"),
     "id_series": re.compile(r"^[A-Z]{2}$"),
     "id_number": re.compile(r"^\d{6}$"),
-    "date": re.compile(r"^\d{4}-\d{2}-\d{2}$"),
+    "date": re.compile(r"^(0[1-9]|[12]\d|3[01])\.(0[1-9]|1[0-2])\.\d{4}$"),
     "sex": re.compile(r"^[MF]$"),
     "iban": re.compile(r"^RO\d{2}[A-Za-z0-9]{16,30}$"),
     "amount": re.compile(r"^\d+([.,]\d{1,2})?$"),
@@ -43,7 +44,7 @@ _KIND_HINT: dict[str, str] = {
     "cnp": "CNP, exact 13 cifre, fără spații.",
     "id_series": "Seria CI: EXACT 2 litere mari (ex: RT).",
     "id_number": "Numărul CI: EXACT 6 cifre.",
-    "date": "Format YYYY-MM-DD.",
+    "date": "Format ZZ.LL.AAAA (zi.lună.an).",
     "sex": "'M' (masculin) sau 'F' (feminin). Deduce din context: fiu/băiat/băiețel/soț=M, fiică/fată/fetiță/soție=F.",
     "iban": "IBAN românesc (începe cu RO).",
     "amount": "Sumă în RON, doar cifre (ex: 1500 sau 1500.50).",
@@ -133,7 +134,7 @@ def render_body(spec: FormSpec, values: dict[str, str | None]) -> str:
 
 
 def parse_declaration_date(value: str) -> date:
-    return date.fromisoformat(value)
+    return datetime.strptime(value, "%d.%m.%Y").date()
 
 
 # ============================ THE CATALOG ============================

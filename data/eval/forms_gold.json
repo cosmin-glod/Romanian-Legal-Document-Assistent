@@ -2,155 +2,155 @@
   {
     "id": "nume_copil-1",
     "form_id": "declaratie_nume_copil",
-    "text": "Eu sunt Andrei Popescu, CNP 1850412220011, domiciliat in Bucuresti Str. Florilor 12, CI seria RT nr 234567. Mama copilului este Maria Ionescu, CNP 2870825330022, domiciliata in Bucuresti Str. Florilor 12, CI seria RX nr 765432. Fiica noastra se numeste Sofia si va purta numele de familie Popescu-Ionescu. Declaratia o facem azi 2026-06-10 la Primaria Sectorului 3.",
+    "text": "Eu sunt Andrei Popescu, CNP 1850412220011, domiciliat in Bucuresti Str. Florilor 12, CI seria RT nr 234567. Mama copilului este Maria Ionescu, CNP 2870825330022, domiciliata in Bucuresti Str. Florilor 12, CI seria RX nr 765432. Fiica noastra se numeste Sofia si va purta numele de familie Popescu-Ionescu. Declaratia o facem azi 10.06.2026 la Primaria Sectorului 3.",
     "expected": {
       "parent1_full_name": "Andrei Popescu", "parent1_cnp": "1850412220011", "parent1_address": "Bucuresti Str. Florilor 12", "parent1_id_series": "RT", "parent1_id_number": "234567",
       "parent2_full_name": "Maria Ionescu", "parent2_cnp": "2870825330022", "parent2_address": "Bucuresti Str. Florilor 12", "parent2_id_series": "RX", "parent2_id_number": "765432",
       "child_given_name": "Sofia", "child_sex": "F", "declared_family_name": "Popescu-Ionescu",
-      "declaration_date": "2026-06-10", "declaration_place": "Primaria Sectorului 3"
+      "declaration_date": "10.06.2026", "declaration_place": "Primaria Sectorului 3"
     }
   },
   {
     "id": "nume_copil-2",
     "form_id": "declaratie_nume_copil",
-    "text": "Subsemnatul Vasile Marin, CNP 1900101110033, locuiesc in Cluj Str. Mare 4, buletin seria CJ nr 111222. Sotia mea, Elena Dumitru, CNP 2920303440044, aceeasi adresa, CI seria CJ nr 333444. Baiatul nostru Mihai va purta numele Marin. Locul: Primaria Cluj-Napoca, data 2026-07-01.",
+    "text": "Subsemnatul Vasile Marin, CNP 1900101110033, locuiesc in Cluj Str. Mare 4, buletin seria CJ nr 111222. Sotia mea, Elena Dumitru, CNP 2920303440044, aceeasi adresa, CI seria CJ nr 333444. Baiatul nostru Mihai va purta numele Marin. Locul: Primaria Cluj-Napoca, data 01.07.2026.",
     "expected": {
       "parent1_full_name": "Vasile Marin", "parent1_cnp": "1900101110033", "parent1_address": "Cluj Str. Mare 4", "parent1_id_series": "CJ", "parent1_id_number": "111222",
       "parent2_full_name": "Elena Dumitru", "parent2_cnp": "2920303440044", "parent2_address": "Cluj Str. Mare 4", "parent2_id_series": "CJ", "parent2_id_number": "333444",
       "child_given_name": "Mihai", "child_sex": "M", "declared_family_name": "Marin",
-      "declaration_date": "2026-07-01", "declaration_place": "Primaria Cluj-Napoca"
+      "declaration_date": "01.07.2026", "declaration_place": "Primaria Cluj-Napoca"
     }
   },
   {
     "id": "paternitate-1",
     "form_id": "recunoastere_paternitate",
-    "text": "Eu, tatal, sunt Ion Georgescu, CNP 1880505550055, domiciliat in Iasi Str. Pacii 7, CI seria IS nr 222111. Recunosc copilul Luca Georgescu, baiat, nascut la 2026-05-20. Mama este Ana Vasilescu, CNP 2950606660066. Data declaratiei 2026-06-15, la Primaria Iasi.",
+    "text": "Eu, tatal, sunt Ion Georgescu, CNP 1880505550055, domiciliat in Iasi Str. Pacii 7, CI seria IS nr 222111. Recunosc copilul Luca Georgescu, baiat, nascut la 20.05.2026. Mama este Ana Vasilescu, CNP 2950606660066. Data declaratiei 15.06.2026, la Primaria Iasi.",
     "expected": {
       "father_full_name": "Ion Georgescu", "father_cnp": "1880505550055", "father_address": "Iasi Str. Pacii 7", "father_id_series": "IS", "father_id_number": "222111",
       "mother_full_name": "Ana Vasilescu", "mother_cnp": "2950606660066",
-      "child_full_name": "Luca Georgescu", "child_sex": "M", "child_birth_date": "2026-05-20",
-      "declaration_date": "2026-06-15", "declaration_place": "Primaria Iasi"
+      "child_full_name": "Luca Georgescu", "child_sex": "M", "child_birth_date": "20.05.2026",
+      "declaration_date": "15.06.2026", "declaration_place": "Primaria Iasi"
     }
   },
   {
     "id": "paternitate-2",
     "form_id": "recunoastere_paternitate",
-    "text": "Tatal: George Stan, CNP 1830707770077, adresa Brasov Str. Lunga 9, CI seria BV nr 444555. Recunosc fetita Ioana Stan, nascuta 2026-04-10. Mama copilului: Diana Munteanu, CNP 2960808880088. Declarat la 2026-05-01, Primaria Brasov.",
+    "text": "Tatal: George Stan, CNP 1830707770077, adresa Brasov Str. Lunga 9, CI seria BV nr 444555. Recunosc fetita Ioana Stan, nascuta 10.04.2026. Mama copilului: Diana Munteanu, CNP 2960808880088. Declarat la 01.05.2026, Primaria Brasov.",
     "expected": {
       "father_full_name": "George Stan", "father_cnp": "1830707770077", "father_address": "Brasov Str. Lunga 9", "father_id_series": "BV", "father_id_number": "444555",
       "mother_full_name": "Diana Munteanu", "mother_cnp": "2960808880088",
-      "child_full_name": "Ioana Stan", "child_sex": "F", "child_birth_date": "2026-04-10",
-      "declaration_date": "2026-05-01", "declaration_place": "Primaria Brasov"
+      "child_full_name": "Ioana Stan", "child_sex": "F", "child_birth_date": "10.04.2026",
+      "declaration_date": "01.05.2026", "declaration_place": "Primaria Brasov"
     }
   },
   {
     "id": "alocatie-1",
     "form_id": "cerere_alocatie_copil",
-    "text": "Solicit alocatia de stat. Sunt Maria Popa, CNP 2900909990099, domiciliata in Bucuresti Str. Verde 3, CI seria RD nr 555666. Copilul: Andrei Popa, CNP 5260101010101, nascut la 2026-01-01. Contul meu este RO49AAAA1B31007593840000. Data 2026-02-01, Primaria Sectorului 1.",
+    "text": "Solicit alocatia de stat. Sunt Maria Popa, CNP 2900909990099, domiciliata in Bucuresti Str. Verde 3, CI seria RD nr 555666. Copilul: Andrei Popa, CNP 5260101010101, nascut la 01.01.2026. Contul meu este RO49AAAA1B31007593840000. Data 01.02.2026, Primaria Sectorului 1.",
     "expected": {
       "applicant_full_name": "Maria Popa", "applicant_cnp": "2900909990099", "applicant_address": "Bucuresti Str. Verde 3", "applicant_id_series": "RD", "applicant_id_number": "555666",
-      "child_full_name": "Andrei Popa", "child_cnp": "5260101010101", "child_birth_date": "2026-01-01",
+      "child_full_name": "Andrei Popa", "child_cnp": "5260101010101", "child_birth_date": "01.01.2026",
       "iban": "RO49AAAA1B31007593840000",
-      "declaration_date": "2026-02-01", "declaration_place": "Primaria Sectorului 1"
+      "declaration_date": "01.02.2026", "declaration_place": "Primaria Sectorului 1"
     }
   },
   {
     "id": "alocatie-2",
     "form_id": "cerere_alocatie_copil",
-    "text": "Cerere alocatie copii. Tatal solicitant: Radu Ilie, CNP 1910202020022, domiciliat in Timisoara Str. Noua 11, CI seria TM nr 666777. Pentru copilul Sara Ilie, CNP 6260303030303, nascuta 2026-03-03. IBAN RO12BBBB1234567890123456. Depusa 2026-04-04 la Primaria Timisoara.",
+    "text": "Cerere alocatie copii. Tatal solicitant: Radu Ilie, CNP 1910202020022, domiciliat in Timisoara Str. Noua 11, CI seria TM nr 666777. Pentru copilul Sara Ilie, CNP 6260303030303, nascuta 03.03.2026. IBAN RO12BBBB1234567890123456. Depusa 04.04.2026 la Primaria Timisoara.",
     "expected": {
       "applicant_full_name": "Radu Ilie", "applicant_cnp": "1910202020022", "applicant_address": "Timisoara Str. Noua 11", "applicant_id_series": "TM", "applicant_id_number": "666777",
-      "child_full_name": "Sara Ilie", "child_cnp": "6260303030303", "child_birth_date": "2026-03-03",
+      "child_full_name": "Sara Ilie", "child_cnp": "6260303030303", "child_birth_date": "03.03.2026",
       "iban": "RO12BBBB1234567890123456",
-      "declaration_date": "2026-04-04", "declaration_place": "Primaria Timisoara"
+      "declaration_date": "04.04.2026", "declaration_place": "Primaria Timisoara"
     }
   },
   {
     "id": "indemnizatie-1",
     "form_id": "cerere_indemnizatie_crestere",
-    "text": "Solicit indemnizatia de crestere. Sunt Elena Toma, CNP 2880404040044, domiciliata in Bucuresti Str. Lalele 8, CI seria RT nr 777888, angajata la Firma SRL. Copilul Matei Toma, CNP 5260505050505, nascut 2026-05-05. Cont RO77CCCC0000111122223333. Data 2026-06-06, Primaria Sectorului 2.",
+    "text": "Solicit indemnizatia de crestere. Sunt Elena Toma, CNP 2880404040044, domiciliata in Bucuresti Str. Lalele 8, CI seria RT nr 777888, angajata la Firma SRL. Copilul Matei Toma, CNP 5260505050505, nascut 05.05.2026. Cont RO77CCCC0000111122223333. Data 06.06.2026, Primaria Sectorului 2.",
     "expected": {
       "parent_full_name": "Elena Toma", "parent_cnp": "2880404040044", "parent_address": "Bucuresti Str. Lalele 8", "parent_id_series": "RT", "parent_id_number": "777888",
       "employer": "Firma SRL",
-      "child_full_name": "Matei Toma", "child_cnp": "5260505050505", "child_birth_date": "2026-05-05",
+      "child_full_name": "Matei Toma", "child_cnp": "5260505050505", "child_birth_date": "05.05.2026",
       "iban": "RO77CCCC0000111122223333",
-      "declaration_date": "2026-06-06", "declaration_place": "Primaria Sectorului 2"
+      "declaration_date": "06.06.2026", "declaration_place": "Primaria Sectorului 2"
     }
   },
   {
     "id": "indemnizatie-2",
     "form_id": "cerere_indemnizatie_crestere",
-    "text": "Parinte solicitant: Paul Albu, CNP 1870606060066, domiciliat in Sibiu Str. Cetatii 2, CI seria SB nr 888999, angajat la Tech Solutions. Copil: Nora Albu, CNP 6260707070707, nascuta 2026-07-07. IBAN RO88DDDD4444555566667777. Declarat 2026-08-08, Primaria Sibiu.",
+    "text": "Parinte solicitant: Paul Albu, CNP 1870606060066, domiciliat in Sibiu Str. Cetatii 2, CI seria SB nr 888999, angajat la Tech Solutions. Copil: Nora Albu, CNP 6260707070707, nascuta 07.07.2026. IBAN RO88DDDD4444555566667777. Declarat 08.08.2026, Primaria Sibiu.",
     "expected": {
       "parent_full_name": "Paul Albu", "parent_cnp": "1870606060066", "parent_address": "Sibiu Str. Cetatii 2", "parent_id_series": "SB", "parent_id_number": "888999",
       "employer": "Tech Solutions",
-      "child_full_name": "Nora Albu", "child_cnp": "6260707070707", "child_birth_date": "2026-07-07",
+      "child_full_name": "Nora Albu", "child_cnp": "6260707070707", "child_birth_date": "07.07.2026",
       "iban": "RO88DDDD4444555566667777",
-      "declaration_date": "2026-08-08", "declaration_place": "Primaria Sibiu"
+      "declaration_date": "08.08.2026", "declaration_place": "Primaria Sibiu"
     }
   },
   {
     "id": "casatorie-1",
     "form_id": "declaratie_casatorie",
-    "text": "Eu sunt Ion Popescu, CNP 1900101123456, nascut la 1990-01-01, domiciliat in Bucuresti Str. Lalelelor 5, CI seria RT nr 123456. Viitoarea sotie este Maria Ionescu, CNP 2920202234567, nascuta la 1992-02-02, domiciliata in Cluj Str. Florilor 2, CI seria RX nr 654321. Dupa casatorie vom purta numele Popescu. Declaratia azi 2026-06-10 la Primaria Sectorului 3.",
+    "text": "Eu sunt Ion Popescu, CNP 1900101123456, nascut la 01.01.1990, domiciliat in Bucuresti Str. Lalelelor 5, CI seria RT nr 123456. Viitoarea sotie este Maria Ionescu, CNP 2920202234567, nascuta la 02.02.1992, domiciliata in Cluj Str. Florilor 2, CI seria RX nr 654321. Dupa casatorie vom purta numele Popescu. Declaratia azi 10.06.2026 la Primaria Sectorului 3.",
     "expected": {
-      "spouse1_full_name": "Ion Popescu", "spouse1_cnp": "1900101123456", "spouse1_address": "Bucuresti Str. Lalelelor 5", "spouse1_id_series": "RT", "spouse1_id_number": "123456", "spouse1_birth_date": "1990-01-01",
-      "spouse2_full_name": "Maria Ionescu", "spouse2_cnp": "2920202234567", "spouse2_address": "Cluj Str. Florilor 2", "spouse2_id_series": "RX", "spouse2_id_number": "654321", "spouse2_birth_date": "1992-02-02",
+      "spouse1_full_name": "Ion Popescu", "spouse1_cnp": "1900101123456", "spouse1_address": "Bucuresti Str. Lalelelor 5", "spouse1_id_series": "RT", "spouse1_id_number": "123456", "spouse1_birth_date": "01.01.1990",
+      "spouse2_full_name": "Maria Ionescu", "spouse2_cnp": "2920202234567", "spouse2_address": "Cluj Str. Florilor 2", "spouse2_id_series": "RX", "spouse2_id_number": "654321", "spouse2_birth_date": "02.02.1992",
       "family_name_after": "Popescu",
-      "declaration_date": "2026-06-10", "declaration_place": "Primaria Sectorului 3"
+      "declaration_date": "10.06.2026", "declaration_place": "Primaria Sectorului 3"
     }
   },
   {
     "id": "casatorie-2",
     "form_id": "declaratie_casatorie",
-    "text": "Subsemnatul Mihai Dan, CNP 1880303123456, nascut 1988-03-03, domiciliat in Iasi Str. Mica 1, CI seria IS nr 121212. Partenera mea Ana Lung, CNP 2930404123456, nascuta 1993-04-04, domiciliata in Iasi Str. Mica 1, CI seria IS nr 343434. Vom purta numele de familie Dan. Data 2026-09-09, Primaria Iasi.",
+    "text": "Subsemnatul Mihai Dan, CNP 1880303123456, nascut 03.03.1988, domiciliat in Iasi Str. Mica 1, CI seria IS nr 121212. Partenera mea Ana Lung, CNP 2930404123456, nascuta 04.04.1993, domiciliata in Iasi Str. Mica 1, CI seria IS nr 343434. Vom purta numele de familie Dan. Data 09.09.2026, Primaria Iasi.",
     "expected": {
-      "spouse1_full_name": "Mihai Dan", "spouse1_cnp": "1880303123456", "spouse1_address": "Iasi Str. Mica 1", "spouse1_id_series": "IS", "spouse1_id_number": "121212", "spouse1_birth_date": "1988-03-03",
-      "spouse2_full_name": "Ana Lung", "spouse2_cnp": "2930404123456", "spouse2_address": "Iasi Str. Mica 1", "spouse2_id_series": "IS", "spouse2_id_number": "343434", "spouse2_birth_date": "1993-04-04",
+      "spouse1_full_name": "Mihai Dan", "spouse1_cnp": "1880303123456", "spouse1_address": "Iasi Str. Mica 1", "spouse1_id_series": "IS", "spouse1_id_number": "121212", "spouse1_birth_date": "03.03.1988",
+      "spouse2_full_name": "Ana Lung", "spouse2_cnp": "2930404123456", "spouse2_address": "Iasi Str. Mica 1", "spouse2_id_series": "IS", "spouse2_id_number": "343434", "spouse2_birth_date": "04.04.1993",
       "family_name_after": "Dan",
-      "declaration_date": "2026-09-09", "declaration_place": "Primaria Iasi"
+      "declaration_date": "09.09.2026", "declaration_place": "Primaria Iasi"
     }
   },
   {
     "id": "necasatorit-1",
     "form_id": "declaratie_necasatorit",
-    "text": "Declar pe propria raspundere ca nu am mai fost casatorit. Sunt Alexandru Pop, CNP 1950505123456, domiciliat in Bucuresti Str. Soarelui 10, CI seria RT nr 565656. Data 2026-06-20, Primaria Sectorului 4.",
+    "text": "Declar pe propria raspundere ca nu am mai fost casatorit. Sunt Alexandru Pop, CNP 1950505123456, domiciliat in Bucuresti Str. Soarelui 10, CI seria RT nr 565656. Data 20.06.2026, Primaria Sectorului 4.",
     "expected": {
       "declarant_full_name": "Alexandru Pop", "declarant_cnp": "1950505123456", "declarant_address": "Bucuresti Str. Soarelui 10", "declarant_id_series": "RT", "declarant_id_number": "565656",
-      "declaration_date": "2026-06-20", "declaration_place": "Primaria Sectorului 4"
+      "declaration_date": "20.06.2026", "declaration_place": "Primaria Sectorului 4"
     }
   },
   {
     "id": "necasatorit-2",
     "form_id": "declaratie_necasatorit",
-    "text": "Eu, Cristina Voicu, CNP 2960606123456, domiciliata in Constanta Str. Marii 3, CI seria CT nr 787878, declar ca sunt necasatorita. Declarat la 2026-07-15 la Primaria Constanta.",
+    "text": "Eu, Cristina Voicu, CNP 2960606123456, domiciliata in Constanta Str. Marii 3, CI seria CT nr 787878, declar ca sunt necasatorita. Declarat la 15.07.2026 la Primaria Constanta.",
     "expected": {
       "declarant_full_name": "Cristina Voicu", "declarant_cnp": "2960606123456", "declarant_address": "Constanta Str. Marii 3", "declarant_id_series": "CT", "declarant_id_number": "787878",
-      "declaration_date": "2026-07-15", "declaration_place": "Primaria Constanta"
+      "declaration_date": "15.07.2026", "declaration_place": "Primaria Constanta"
     }
   },
   {
     "id": "inchiriere-1",
     "form_id": "contract_inchiriere",
-    "text": "Proprietarul este Ion Popescu, CNP 1900101123456, domiciliat in Bucuresti Str. Lunga 1, CI seria RT nr 123456. Chiriasul este Vasile Marin, CNP 1850505123456, domiciliat in Cluj Str. Scurta 2, CI seria CJ nr 222333. Imobilul e in Bucuresti Str. Florilor 5. Chiria 1500 lei pe luna, platita pe data 5, garantie 1500 lei, pe 12 luni de la 2026-07-01. Contract semnat 2026-06-25 la Bucuresti.",
+    "text": "Proprietarul este Ion Popescu, CNP 1900101123456, domiciliat in Bucuresti Str. Lunga 1, CI seria RT nr 123456. Chiriasul este Vasile Marin, CNP 1850505123456, domiciliat in Cluj Str. Scurta 2, CI seria CJ nr 222333. Imobilul e in Bucuresti Str. Florilor 5. Chiria 1500 lei pe luna, platita pe data 5, garantie 1500 lei, pe 12 luni de la 01.07.2026. Contract semnat 25.06.2026 la Bucuresti.",
     "expected": {
       "landlord_full_name": "Ion Popescu", "landlord_cnp": "1900101123456", "landlord_address": "Bucuresti Str. Lunga 1", "landlord_id_series": "RT", "landlord_id_number": "123456",
       "tenant_full_name": "Vasile Marin", "tenant_cnp": "1850505123456", "tenant_address": "Cluj Str. Scurta 2", "tenant_id_series": "CJ", "tenant_id_number": "222333",
       "property_address": "Bucuresti Str. Florilor 5",
-      "rent_amount": "1500", "payment_day": "5", "deposit_amount": "1500", "duration_months": "12", "start_date": "2026-07-01",
-      "declaration_date": "2026-06-25", "declaration_place": "Bucuresti"
+      "rent_amount": "1500", "payment_day": "5", "deposit_amount": "1500", "duration_months": "12", "start_date": "01.07.2026",
+      "declaration_date": "25.06.2026", "declaration_place": "Bucuresti"
     }
   },
   {
     "id": "inchiriere-2",
     "form_id": "contract_inchiriere",
-    "text": "Locator: Elena Stan, CNP 2900202123456, domiciliata in Timisoara Str. Noua 7, CI seria TM nr 909090. Locatar: Radu Ene, CNP 1870303123456, domiciliat in Arad Str. Veche 8, CI seria AR nr 101010. Apartamentul este in Timisoara Str. Mare 20. Chirie 2000 lei lunar, plata pe data 10, garantie 4000 lei, durata 24 luni incepand cu 2026-08-01. Semnat 2026-07-20 la Timisoara.",
+    "text": "Locator: Elena Stan, CNP 2900202123456, domiciliata in Timisoara Str. Noua 7, CI seria TM nr 909090. Locatar: Radu Ene, CNP 1870303123456, domiciliat in Arad Str. Veche 8, CI seria AR nr 101010. Apartamentul este in Timisoara Str. Mare 20. Chirie 2000 lei lunar, plata pe data 10, garantie 4000 lei, durata 24 luni incepand cu 01.08.2026. Semnat 20.07.2026 la Timisoara.",
     "expected": {
       "landlord_full_name": "Elena Stan", "landlord_cnp": "2900202123456", "landlord_address": "Timisoara Str. Noua 7", "landlord_id_series": "TM", "landlord_id_number": "909090",
       "tenant_full_name": "Radu Ene", "tenant_cnp": "1870303123456", "tenant_address": "Arad Str. Veche 8", "tenant_id_series": "AR", "tenant_id_number": "101010",
       "property_address": "Timisoara Str. Mare 20",
-      "rent_amount": "2000", "payment_day": "10", "deposit_amount": "4000", "duration_months": "24", "start_date": "2026-08-01",
-      "declaration_date": "2026-07-20", "declaration_place": "Timisoara"
+      "rent_amount": "2000", "payment_day": "10", "deposit_amount": "4000", "duration_months": "24", "start_date": "01.08.2026",
+      "declaration_date": "20.07.2026", "declaration_place": "Timisoara"
     }
   }
 ]
